@@ -1,0 +1,48 @@
+.works
+	padding: 68px 0 40px 0
+	.container
+		background: white
+		box-shadow: $container-shadow
+		padding: 59px 53px 63px 51px
+		+flex(row, between, end, wrap)
+		max-width: 1562px
+	.block-title
+		font-size: 46px
+		span
+			font-size: 40px
+	.block-text
+		font-size: 16px
+		margin: 17px 0 0 0
+	.slider-for
+		max-width: 609px
+		width: 100%
+	.inner
+		max-width: 826px
+		width: 100%
+	.slider-nav
+		position: relative
+		margin: 40px 0 0 0
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			width: 120px
+			background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+		.twentytwenty-wrapper
+			margin: 0 26px 0 0
+		.slide
+			width: 340px
+			&__img
+				height: 193px
+	.arrow
+		position: absolute
+		top: -60%
+		&-prev
+			right: 90px
+			transform: translate(0, 0) rotate(180deg)
+		&-next
+			right: 20px
+			transform: translate(0, 0)

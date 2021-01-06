@@ -1,0 +1,75 @@
+.footer
+	+flex(row, null, null, wrap)
+	min-height: 513px
+	&-left
+		background: white
+		width: 54.79%
+		padding: 66px 62px 109px 152px
+		+flex(column, null, null, nowrap)
+	&-right
+		color: white
+		background: $footer-dark
+		width: 45.21%
+		padding: 54px 154px 109px 86px
+		+flex(column, null, null, nowrap)
+		.row
+			&:first-child
+				margin: 0
+				+flex(row, start, center, wrap)
+	.row
+		margin: auto 0 0 0
+		+flex(row, between, end, wrap)
+	.menu
+		+flex(row, null, start, wrap)
+		&-block
+			max-width: 390px
+			width: 100%
+			&__title
+				font-size: 16px
+				font-weight: 700
+				margin: 0 0 26px 0
+			&-list
+				+flex(row, between, null, wrap)
+				li
+					width: 50%
+					margin: 0 0 13px 0
+				a
+					color: black
+					font-family: 'UniBook', sans-serif
+					font-size: 14px
+	.social
+		margin: 0 0 35px 0
+		&__title
+			font-size: 16px
+		&-list
+			margin: 22px 0 0 0
+		&__item
+			&:not(:last-child)
+				margin: 0 25px 0 0
+			svg
+				path,
+				rect
+					fill: white
+	.links
+		li
+			&:not(:last-child)
+				margin: 0 0 8px 0
+		a
+			color: white
+			font-size: 14px
+			text-decoration: underline
+	.phone
+		&-list
+			a
+				color: white
+				font-size: 24px
+				font-family: 'UniBook', sans-serif
+		&__text
+			text-align: center
+			font-size: 16px
+			font-family: 'UniBook', sans-serif
+			margin: 5px 0 0 0
+	.action
+		margin: 0 0 0 47px
+	&__text
+		font-size: 14px

@@ -1,0 +1,57 @@
+.rating
+	padding: 146px 0 114px 0
+	+bg(null, null, 'rating/bg.png', no-repeat, center, center, auto)
+	.block-title
+		margin: 6px 0 0 0
+		font-size: 38px
+		span
+			font-size: 34px
+	.container
+		position: relative
+		max-width: 1431px
+		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15)
+		background: white
+		padding: 41px 38px 65px 38px
+	.inner
+		position: relative
+		z-index: 3
+		max-width: 946px
+		width: 100%
+		margin: 0 0 0 auto
+	.cards
+		margin: 46px 0 0 -7.5px
+		+flex(row, null, null, wrap)
+	.card
+		min-width: 101px
+		background: white
+		box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15)
+		border-radius: 11px
+		padding: 25px
+		text-align: center
+		line-height: 1
+		position: relative
+		margin: 7.5px
+		&:before
+			content: ''
+			display: block
+			border-radius: 11px
+			border: 1px solid #DCDCDC
+			position: absolute
+			top: 11px
+			right: 11px
+			bottom: 11px
+			left: 11px
+		&__title
+			font-size: 16px
+			margin: 0 0 14px 0
+		&__num
+			color: $brown
+			font-weight: 700
+			font-size: 27px
+			span
+				font-size: 16px
+
+	.hand
+		position: absolute
+		left: -60px
+		bottom: -114px

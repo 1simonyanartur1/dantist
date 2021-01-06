@@ -1,0 +1,72 @@
+.metro
+	padding: 75px 0 68px 0
+	.container
+		+flex(row, between, null, wrap)
+		max-width: 1593px
+	&-left
+		background: white
+		border-radius: 10px
+		+flex(row, start, end, wrap)
+		box-shadow: $container-shadow
+		max-width: 1071px
+		width: 100%
+		padding: 29px 34px 43px 34px
+	.slider-for
+		max-width: 678px
+		width: 100%
+		.slide
+			&__img
+				display: block
+				width: 100%
+	.slider-nav
+		max-width: 155px
+		width: 100%
+		margin: 0 15px -15px 0
+		.slide
+			margin: 0 0 15px 0
+			&__img
+				display: block
+				width: 100%
+	&-right
+		display: block
+		max-width: 500px
+		width: 100%
+		position: relative
+	.card
+		border-radius: 10px
+		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15)
+		max-width: 328px
+		width: 100%
+	.map
+		position: absolute
+		bottom: 0
+		right: 0
+		width: 100%
+		display: block
+		height: auto
+		z-index: -1
+	
+	.slider-counter
+		font-family: 'PF', sans-serif
+		font-weight: 700
+		font-style: italic
+		line-height: .8
+		margin: 0 0 0 40px
+		&__curr
+			display: inline-block
+			font-size: 67px
+		&__all
+			vertical-align: top
+			display: inline-block
+			font-size: 20px
+
+
+	.arrow
+		top: 0
+		position: absolute
+		&-prev
+			right: -90px
+			transform: translate(0, 0) rotate(180deg)
+		&-next
+			right: -170px
+			transform: translate(0, 0)

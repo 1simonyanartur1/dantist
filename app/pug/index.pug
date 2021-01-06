@@ -1,0 +1,342 @@
+- var img = '../img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+
+			section.mainblock
+				.container
+
+			section.doctors
+				.container
+					.block-title Наши врачи
+					.block-text Вы можете прочесть о враче подробнее и оставить свой отзыв о его работе
+					.slider
+						.slide
+							.exp
+								.exp__title 28
+									span лет
+								.exp__text Стаж
+							img.slide__img(src=img+"doctors/img.png", alt="")
+							.slide__name Плиса <br> Ирина Анатольевна
+							.slide__text Главный врач центра
+
+			section.online
+				.container
+					img.journal(src=img+"online/journal.png", alt="")
+					.inner
+						img.online__img-text(src=img+"online/img-text.png", alt="")
+						.block-title Запишитесь на прием <br>
+							span и мы Вам перезвоним
+						include blocks/_entry-form.pug
+						a.see-link(href="#")
+							img.see-link__icon(src=img+"icons/witness.svg", alt="")
+							.see-link__text Посмотреть <br> стоимость
+					.items
+						.item
+							.item-icon
+								img.item__icon(src=img+"icons/operator.svg", alt="")
+							.item__text Дистанционная <br> консультация <br> врача
+						.item
+							.item-icon
+								img.item__icon(src=img+"icons/tooth.svg", alt="")
+							.item__text Восстановление <br> зубов за 1-3 дня
+						.item
+							.item-icon
+								img.item__icon(src=img+"icons/route.svg", alt="")
+							.item__text Организация <br> проезда и <br> размещения
+						.item
+							.item-icon
+								img.item__icon(src=img+"icons/taxi.svg", alt="")
+							.item__text Вызовим такси и <br> сопроводим <br> пациента до авто
+						.item
+							.item-icon
+								img.item__icon(src=img+"icons/parking.svg", alt="")
+							.item__text Бесплатная <br> парковка в 50м <br> от стамотологии
+
+			section.metro
+				.container
+					.metro-left
+						.slider-nav
+							.slide
+								img.slide__img(src=img+"metro/img1.jpg", alt="")
+							.slide
+								img.slide__img(src=img+"metro/img1.jpg", alt="")
+							.slide
+								img.slide__img(src=img+"metro/img1.jpg", alt="")
+							.slide
+								img.slide__img(src=img+"metro/img1.jpg", alt="")
+							.slide
+								img.slide__img(src=img+"metro/img1.jpg", alt="")
+						.slider-for
+							.slide
+								img.slide__img(src=img+"metro/img1.jpg", alt="")
+							.slide
+								img.slide__img(src=img+"metro/img1.jpg", alt="")
+							.slide
+								img.slide__img(src=img+"metro/img1.jpg", alt="")
+							.slide
+								img.slide__img(src=img+"metro/img1.jpg", alt="")
+							.slide
+								img.slide__img(src=img+"metro/img1.jpg", alt="")
+						.slider-counter
+					.metro-right
+						img.card(src=img+"metro/card.png", alt="")
+						img.map(src=img+"metro/map.png", alt="")
+
+			section.works
+				.container
+					.slider-for
+						.slide
+							img.slide__img(src=img+"works/before.jpg", alt="")
+							img.slide__img(src=img+"works/after.jpg", alt="")
+						.slide
+							img.slide__img(src=img+"works/before.jpg", alt="")
+							img.slide__img(src=img+"works/after.jpg", alt="")
+						.slide
+							img.slide__img(src=img+"works/before.jpg", alt="")
+							img.slide__img(src=img+"works/after.jpg", alt="")
+					.inner
+						.block-title Наши работы <span>наша гордость!</span>
+						.block-text Вы хотите преобразиться за 1 день?
+						.slider-nav
+							.slide
+								img.slide__img(src=img+"works/before.jpg", alt="")
+								img.slide__img(src=img+"works/after.jpg", alt="")
+							.slide
+								img.slide__img(src=img+"works/before.jpg", alt="")
+								img.slide__img(src=img+"works/after.jpg", alt="")
+							.slide
+								img.slide__img(src=img+"works/before.jpg", alt="")
+								img.slide__img(src=img+"works/after.jpg", alt="")
+
+			section.recommend
+				.container
+					.recommend-left
+						.recommend__title
+							b 98% 
+							span пациентов 
+							i рекомендуют клинику
+						img.recommend__img-text(src=img+"ExpertDentist.png", alt="")
+						form.entry-form.vertical(action="#", method="post")
+							.entry-form-label
+								<svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.055 16.8657L16.305 13.604C15.7571 12.9568 14.7706 12.8929 14.1064 13.4628L12.7427 14.6321C12.5891 14.7638 12.3665 14.7773 12.1991 14.6636V14.6636C11.2907 14.0533 10.0474 13.2171 8.78742 11.7217C7.52359 10.223 6.90443 8.84897 6.45161 7.84589V7.84589C6.37016 7.66466 6.41711 7.45041 6.56802 7.32117L7.40222 6.60677L7.93796 6.14669C8.60322 5.57596 8.69812 4.58393 8.15171 3.9351L5.40175 0.672982C4.85527 0.0249922 3.86838 -0.038944 3.20313 0.531794L2.30766 1.30431C2.30039 1.31057 2.29954 1.32153 2.30576 1.32884V1.32884C2.31145 1.33555 2.31128 1.34544 2.30536 1.35195C1.99905 1.68925 1.734 2.08456 1.52543 2.5169C1.32993 2.93351 1.19703 3.33554 1.11873 3.74295C0.465799 7.00799 1.72327 10.1464 5.45659 14.5741C10.6172 20.6941 15.1667 20.6432 15.3632 20.6386C15.7915 20.6228 16.2062 20.5544 16.6321 20.4269C17.086 20.2901 17.5161 20.0894 17.8959 19.8383C17.9016 19.8345 17.9091 19.8354 17.9137 19.8403V19.8403C17.9188 19.8456 17.9272 19.8461 17.9328 19.8414L18.8414 19.0785C19.5054 18.5078 19.6011 17.5155 19.055 16.8657Z"/>
+								</svg>
+								input.entry-form__input(type="tel", name="entry-form-tel" placeholder="Введите номер")
+							button.entry-form__btn.submit(type="submit") Записаться
+					.recommend-right
+						.slider-for
+							.slide
+								a.slide-link.popup-video(href="recHRnwvAaY")
+									img.slide__img(src=img+"recommend/img11.jpg", alt="")
+									.play
+										<svg viewBox="0 0 177 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="88.5" cy="88.5" r="61" stroke="url(#paint0_linear)" stroke-width="7"/>
+											<circle cx="88.5" cy="88.5" r="88" stroke="url(#paint1_linear)"/>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M88.5 136C115.286 136 137 114.286 137 87.5C137 60.7142 115.286 39 88.5 39C61.7142 39 40 60.7142 40 87.5C40 114.286 61.7142 136 88.5 136ZM84.8319 93.3365L97.0588 86.2773L84.8319 79.2181V93.3365Z" fill="url(#paint2_linear)"/>
+											<defs>
+											<linearGradient id="paint0_linear" x1="132" y1="38" x2="48.5" y2="138.5" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FDD56E"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											<linearGradient id="paint1_linear" x1="144.5" y1="17.5" x2="26.5" y2="150.5" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FDD56E"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											<linearGradient id="paint2_linear" x1="123.143" y1="53.6723" x2="55.895" y2="120.513" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FFD772"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											</defs>
+										</svg>
+							.slide
+								a.slide-link.popup-video(href="recHRnwvAaY")
+									img.slide__img(src=img+"recommend/img11.jpg", alt="")
+									.play
+										<svg width="177" height="177" viewBox="0 0 177 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="88.5" cy="88.5" r="61" stroke="url(#paint0_linear)" stroke-width="7"/>
+											<circle cx="88.5" cy="88.5" r="88" stroke="url(#paint1_linear)"/>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M88.5 136C115.286 136 137 114.286 137 87.5C137 60.7142 115.286 39 88.5 39C61.7142 39 40 60.7142 40 87.5C40 114.286 61.7142 136 88.5 136ZM84.8319 93.3365L97.0588 86.2773L84.8319 79.2181V93.3365Z" fill="url(#paint2_linear)"/>
+											<defs>
+											<linearGradient id="paint0_linear" x1="132" y1="38" x2="48.5" y2="138.5" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FDD56E"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											<linearGradient id="paint1_linear" x1="144.5" y1="17.5" x2="26.5" y2="150.5" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FDD56E"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											<linearGradient id="paint2_linear" x1="123.143" y1="53.6723" x2="55.895" y2="120.513" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FFD772"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											</defs>
+										</svg>
+							.slide
+								a.slide-link.popup-video(href="recHRnwvAaY")
+									img.slide__img(src=img+"recommend/img11.jpg", alt="")
+									.play
+										<svg width="177" height="177" viewBox="0 0 177 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="88.5" cy="88.5" r="61" stroke="url(#paint0_linear)" stroke-width="7"/>
+											<circle cx="88.5" cy="88.5" r="88" stroke="url(#paint1_linear)"/>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M88.5 136C115.286 136 137 114.286 137 87.5C137 60.7142 115.286 39 88.5 39C61.7142 39 40 60.7142 40 87.5C40 114.286 61.7142 136 88.5 136ZM84.8319 93.3365L97.0588 86.2773L84.8319 79.2181V93.3365Z" fill="url(#paint2_linear)"/>
+											<defs>
+											<linearGradient id="paint0_linear" x1="132" y1="38" x2="48.5" y2="138.5" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FDD56E"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											<linearGradient id="paint1_linear" x1="144.5" y1="17.5" x2="26.5" y2="150.5" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FDD56E"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											<linearGradient id="paint2_linear" x1="123.143" y1="53.6723" x2="55.895" y2="120.513" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FFD772"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											</defs>
+										</svg>
+							.slide
+								a.slide-link.popup-video(href="recHRnwvAaY")
+									img.slide__img(src=img+"recommend/img11.jpg", alt="")
+									.play
+										<svg width="177" height="177" viewBox="0 0 177 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="88.5" cy="88.5" r="61" stroke="url(#paint0_linear)" stroke-width="7"/>
+											<circle cx="88.5" cy="88.5" r="88" stroke="url(#paint1_linear)"/>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M88.5 136C115.286 136 137 114.286 137 87.5C137 60.7142 115.286 39 88.5 39C61.7142 39 40 60.7142 40 87.5C40 114.286 61.7142 136 88.5 136ZM84.8319 93.3365L97.0588 86.2773L84.8319 79.2181V93.3365Z" fill="url(#paint2_linear)"/>
+											<defs>
+											<linearGradient id="paint0_linear" x1="132" y1="38" x2="48.5" y2="138.5" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FDD56E"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											<linearGradient id="paint1_linear" x1="144.5" y1="17.5" x2="26.5" y2="150.5" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FDD56E"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											<linearGradient id="paint2_linear" x1="123.143" y1="53.6723" x2="55.895" y2="120.513" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FFD772"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											</defs>
+										</svg>
+							.slide
+								a.slide-link.popup-video(href="recHRnwvAaY")
+									img.slide__img(src=img+"recommend/img11.jpg", alt="")
+									.play
+										<svg width="177" height="177" viewBox="0 0 177 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="88.5" cy="88.5" r="61" stroke="url(#paint0_linear)" stroke-width="7"/>
+											<circle cx="88.5" cy="88.5" r="88" stroke="url(#paint1_linear)"/>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M88.5 136C115.286 136 137 114.286 137 87.5C137 60.7142 115.286 39 88.5 39C61.7142 39 40 60.7142 40 87.5C40 114.286 61.7142 136 88.5 136ZM84.8319 93.3365L97.0588 86.2773L84.8319 79.2181V93.3365Z" fill="url(#paint2_linear)"/>
+											<defs>
+											<linearGradient id="paint0_linear" x1="132" y1="38" x2="48.5" y2="138.5" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FDD56E"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											<linearGradient id="paint1_linear" x1="144.5" y1="17.5" x2="26.5" y2="150.5" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FDD56E"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											<linearGradient id="paint2_linear" x1="123.143" y1="53.6723" x2="55.895" y2="120.513" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FFD772"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											</defs>
+										</svg>
+							.slide
+								a.slide-link.popup-video(href="recHRnwvAaY")
+									img.slide__img(src=img+"recommend/img11.jpg", alt="")
+									.play
+										<svg width="177" height="177" viewBox="0 0 177 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="88.5" cy="88.5" r="61" stroke="url(#paint0_linear)" stroke-width="7"/>
+											<circle cx="88.5" cy="88.5" r="88" stroke="url(#paint1_linear)"/>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M88.5 136C115.286 136 137 114.286 137 87.5C137 60.7142 115.286 39 88.5 39C61.7142 39 40 60.7142 40 87.5C40 114.286 61.7142 136 88.5 136ZM84.8319 93.3365L97.0588 86.2773L84.8319 79.2181V93.3365Z" fill="url(#paint2_linear)"/>
+											<defs>
+											<linearGradient id="paint0_linear" x1="132" y1="38" x2="48.5" y2="138.5" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FDD56E"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											<linearGradient id="paint1_linear" x1="144.5" y1="17.5" x2="26.5" y2="150.5" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FDD56E"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											<linearGradient id="paint2_linear" x1="123.143" y1="53.6723" x2="55.895" y2="120.513" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FFD772"/>
+											<stop offset="1" stop-color="#CC9A1B"/>
+											</linearGradient>
+											</defs>
+										</svg>
+						.slider-nav
+							.slide
+								img.slide__img(src=img+"recommend/img1.jpg", alt="")
+								.slide__name Александр
+							.slide
+								img.slide__img(src=img+"recommend/img2.jpg", alt="")
+								.slide__name Марина
+							.slide
+								img.slide__img(src=img+"recommend/img3.jpg", alt="")
+								.slide__name Василий
+							.slide
+								img.slide__img(src=img+"recommend/img4.jpg", alt="")
+								.slide__name Евгения
+							.slide
+								img.slide__img(src=img+"recommend/img5.jpg", alt="")
+								.slide__name Мария
+							.slide
+								img.slide__img(src=img+"recommend/img5.jpg", alt="")
+								.slide__name Мария
+
+			section.rating
+				.container
+					img.hand(src=img+"rating/hand.png", alt="")
+					.inner
+						.block-title Независимые 
+							span рейтинги
+						.block-text Репутация клиники и стоматологов - важный критерий при выборе места лечения. Нам нечего <br> скрывать! Узнайте, что думают пациенты о Expert Dentist на популярных интернет-порталах
+						.cards
+							.card
+								.card__title Стамотолгия. су
+								.card__num 4,8 <span>/5</span>
+							.card
+								.card__title Яндекс
+								.card__num 4 <span>/5</span>
+							.card
+								.card__title ZOON
+								.card__num 4 <span>/5</span>
+							.card
+								.card__title yell.ru
+								.card__num 4,4 <span>/5</span>
+							.card
+								.card__title СПР
+								.card__num 4 <span>/5</span>
+							.card
+								.card__title CLEOS
+								.card__num 14+ <span>/2-</span>
+							.card
+								.card__title Лайк Доктор
+								.card__num 4,9 <span>/2-</span>
+
+			section.seo
+				.container
+					.block-title СЕО-текст
+					.spoiler
+						.spoiler__title Спойлер 1
+						.spoiler__text Равным образом консультация с широким активом позволяет оценить значение направлений прогрессивного развития. Равным образом постоянный количественный рост и сфера нашей активности требуют от нас анализа дальнейших направлений развития. Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке модели развития. <br><br> Товарищи! рамки и место обучения кадров требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Товарищи! сложившаяся структура организации в значительной степени обуславливает создание дальнейших направлений развития. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
+					.spoiler
+						.spoiler__title Спойлер 2
+						.spoiler__text Равным образом консультация с широким активом позволяет оценить значение направлений прогрессивного развития. Равным образом постоянный количественный рост и сфера нашей активности требуют от нас анализа дальнейших направлений развития. Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке модели развития. <br><br> Товарищи! рамки и место обучения кадров требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Товарищи! сложившаяся структура организации в значительной степени обуславливает создание дальнейших направлений развития. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
+					.spoiler
+						.spoiler__title Спойлер 3
+						.spoiler__text Равным образом консультация с широким активом позволяет оценить значение направлений прогрессивного развития. Равным образом постоянный количественный рост и сфера нашей активности требуют от нас анализа дальнейших направлений развития. Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке модели развития. <br><br> Товарищи! рамки и место обучения кадров требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Товарищи! сложившаяся структура организации в значительной степени обуславливает создание дальнейших направлений развития. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
+					.spoiler
+						.spoiler__title Спойлер 4
+						.spoiler__text Равным образом консультация с широким активом позволяет оценить значение направлений прогрессивного развития. Равным образом постоянный количественный рост и сфера нашей активности требуют от нас анализа дальнейших направлений развития. Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке модели развития. <br><br> Товарищи! рамки и место обучения кадров требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Товарищи! сложившаяся структура организации в значительной степени обуславливает создание дальнейших направлений развития. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
+
+			include blocks/contact.pug
+
+		include blocks/footer.pug
+		include blocks/scripts.pug
