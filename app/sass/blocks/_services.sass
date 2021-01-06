@@ -1,0 +1,46 @@
+.services
+	padding: 40px 0 45px 0
+	.container
+		max-width: 1540px
+	.block-title
+		margin: 0 0 37px 0
+	.block-text
+		font-size: 18px
+		margin: 0 0 66px 0
+	.inner
+		+flex(row, between, start, wrap)
+	.item
+		width: 12%
+		+flex(column, null, center, nowrap)
+		text-align: center
+		&:hover
+			svg
+				path
+					fill: $brown !important
+			.item__title
+				color: $brown
+			.item__text
+				text-decoration: underline
+				color: $brown
+		&-icon
+			+flex(row, center, center, wrap)
+			background: white
+			border-radius: 100%
+			box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
+			width: 122px
+			height: 122px
+		&__title
+			font-family: 'PF', sans-serif
+			margin: 30px 0 17px 0
+			font-weight: 500
+			color: black
+			+trs
+		svg
+			path
+				+trs
+		&__text
+			font-size: 15px
+			+trs
+			color: #434343
+
+
