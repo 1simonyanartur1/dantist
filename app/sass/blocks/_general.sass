@@ -1,4 +1,6 @@
 // main page elements
+html
+	overflow-x: hidden
 body
 	font-size: 18px
 	color: black
@@ -12,7 +14,6 @@ body
 	max-width: 1920px
 	width: 100%
 	margin: 0 auto
-	overflow: hidden
 
 .container
 	max-width: 1170px
@@ -37,6 +38,18 @@ body
 	color: white
 	+flex(row, null, center, nowrap)
 	background: $btn-callback-gradient
+	cursor: pointer
+	svg
+		margin: 0 12px 0 0
+		path
+			fill: white
+.btn-entry
+	font-weight: 700
+	border-radius: 43px
+	padding: 12px 32px
+	color: white
+	+flex(row, null, center, nowrap)
+	background: $btn-entry-gradient
 	cursor: pointer
 	svg
 		margin: 0 12px 0 0
@@ -82,7 +95,7 @@ body
 
 .entry-form
 	&.horizontal
-		+flex(row, null, null, wrap)
+		+flex(row, null, null, nowrap)
 		.entry-form__btn
 			position: relative
 			z-index: 2
@@ -111,6 +124,7 @@ body
 			path
 				fill: $brown
 	&__input
+		background: rgba(255, 255, 255, .5)
 		padding: 19.5px 72px
 		border-radius: 6px
 		border: 3px solid $brown

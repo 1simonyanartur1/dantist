@@ -5,9 +5,21 @@
 		background: white
 		max-width: 1510px
 		+flex(row, between, start, wrap)
-		overflow: hidden
 		border-radius: 10px
 		box-shadow: $container-shadow
+		position: relative
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			border: 43px solid #FAFAFA
+			width: 431px
+			height: 431px
+			border-radius: 100%
+			right: 0
+			top: 0
+			z-index: -1
+			transform: translate(-10%, -40%)
 	.block-title
 		margin: 0 0 37px 0
 	&__img
@@ -16,6 +28,7 @@
 		display: block
 		max-width: 641px
 		width: auto
+		border-radius: 10px 0 0 10px
 	.text-container
 		margin: 45px 50px
 		width: calc( 100% - 741px )

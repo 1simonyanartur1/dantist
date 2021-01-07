@@ -32,6 +32,31 @@
 		max-width: 500px
 		width: 100%
 		position: relative
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			right: 0
+			top: 0
+			transform: translate(35%, -15%)
+			width: 1107px
+			height: 1107px
+			box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15)
+			background: #FCFCFC
+			z-index: -2
+			border-radius: 100%
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			right: 0
+			top: 0
+			transform: translate(38%, -23%)
+			width: 1466px
+			height: 1466px
+			box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15)
+			z-index: -3
+			border-radius: 100%
 	.card
 		border-radius: 10px
 		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15)
