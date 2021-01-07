@@ -1,8 +1,12 @@
 .metro
 	padding: 75px 0 68px 0
+	+mq($max-width: 1650px)
+		padding: 40px 0
 	.container
 		+flex(row, between, null, wrap)
 		max-width: 1593px
+		+mq($max-width: 1650px)
+			max-width: 1170px
 	&-left
 		background: white
 		border-radius: 10px
@@ -11,9 +15,13 @@
 		max-width: 1071px
 		width: 100%
 		padding: 29px 34px 43px 34px
+		+mq($max-width: 1650px)
+			max-width: 840px
 	.slider-for
 		max-width: 678px
 		width: 100%
+		+mq($max-width: 1650px)
+			max-width: 490px
 		.slide
 			&__img
 				display: block
@@ -22,8 +30,12 @@
 		max-width: 155px
 		width: 100%
 		margin: 0 15px -15px 0
+		+mq($max-width: 1650px)
+			max-width: 110px
 		.slide
 			margin: 0 0 15px 0
+			+mq($max-width: 1650px)
+				margin: 0 0 13px 0
 			&__img
 				display: block
 				width: 100%
@@ -32,6 +44,8 @@
 		max-width: 500px
 		width: 100%
 		position: relative
+		+mq($max-width: 1650px)
+			max-width: 300px
 		&:before
 			content: ''
 			display: block

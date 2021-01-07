@@ -1,8 +1,12 @@
 .recommend
-	padding: 45px 0 196px
+	padding: 45px 0 126px
+	+mq($max-width: 1650px)
+		padding: 45px 0
 	.container
-		max-width: 1430px
+		max-width: 1480px
 		+flex(row, between, start, wrap)
+		+mq($max-width: 1650px)
+			max-width: 1170px
 	&-left
 		+flex(column, null, center, nowrap)
 		max-width: 496px
@@ -11,8 +15,13 @@
 		padding: 65px 48px
 		border-radius: 10px
 		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15)
+		+mq($max-width: 1650px)
+			max-width: 350px
+			padding: 30px
 	&__img-text
 		margin: 37px 0 0 auto
+		+mq($max-width: 1650px)
+			margin: 15px 0 0 auto
 	&__title
 		text-align: center
 		b
@@ -21,21 +30,32 @@
 			font-style: italic
 			line-height: 1
 			font-family: 'PF', sans-serif
+			+mq($max-width: 1650px)
+				font-size: 70px
 		span
 			font-family: 'UniBook', sans-serif
 			font-size: 46px
+			+mq($max-width: 1650px)
+				font-size: 30px
 		i
 			font-size: 40px
 			font-style: italic
 			font-family: 'PF', sans-serif
+			+mq($max-width: 1650px)
+				font-size: 30px
 	.entry-form
 		margin: 55px 0 0 0
 	&-right
 		max-width: 761px
 		width: 100%
 		margin: 0 80px
+		+mq($max-width: 1650px)
+			max-width: 650px
+			margin: 0 40px
 	.slider-for
-		padding: 0 25px 50px
+		margin: 0 0 50px 0
+		+mq($max-width: 1650px)
+			margin: 0 0 20px 0
 		.slide
 			&-link
 				position: relative
@@ -63,11 +83,18 @@
 					opacity: 0
 	.slider-nav
 		position: relative
+		width: calc( 100% + 30px )
+		margin: 0 0 0 -15px
+		+mq($max-width: 1650px)
+			width: calc( 100% + 8px )
+			margin: 0 0 0 -4px
 		.slide
 			cursor: pointer
 			margin: 0 15px
 			+trs
 			opacity: 0.7
+			+mq($max-width: 1650px)
+				margin: 0 8px
 			&.slick-current
 				opacity: 1
 			&__img
@@ -79,6 +106,9 @@
 				font-size: 18px
 				font-weight: 600
 				margin: 21px 0 0 0
+				+mq($max-width: 1650px)
+					margin: 10px 0 0 0
+					font-size: 15px
 
 	.arrow
 		&-prev

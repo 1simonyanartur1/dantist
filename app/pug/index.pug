@@ -11,7 +11,9 @@ html
 
 			section.mainblock
 				.slider
-					.slide(style="background: url('img/mainblock/bg.png') no-repeat left bottom / contain")
+					//- .slide(style="background: url('img/mainblock/bg.png') no-repeat left bottom / contain")
+					.slide
+						img.slide__img(src=img+"mainblock/bg.png", alt="")
 						.slide-inner
 							img.play-img(src=img+"mainblock/play.png", alt="")
 							a.video-link(href="#") Смотрите видео <br> о нашей клинике
@@ -21,7 +23,9 @@ html
 								li Снимок 3D компьютерная томограмма
 								li Подробный план лечения
 							include blocks/_entry-form.pug
-					.slide(style="background: url('img/mainblock/bg.png') no-repeat left bottom / contain")
+					//- .slide(style="background: url('img/mainblock/bg.png') no-repeat left bottom / contain")
+					.slide
+						img.slide__img(src=img+"mainblock/bg.png", alt="")
 						.slide-inner
 							img.play-img(src=img+"mainblock/play.png", alt="")
 							a.video-link(href="#") Смотрите видео <br> о нашей клинике

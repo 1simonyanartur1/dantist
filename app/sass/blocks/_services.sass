@@ -14,6 +14,9 @@
 		background: #FCFCFC
 		z-index: -2
 		border-radius: 100%
+		+mq($max-width: 1650px)
+			width: 800px
+			height: 800px
 	&:after
 		content: ''
 		display: block
@@ -26,13 +29,22 @@
 		box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15)
 		z-index: -3
 		border-radius: 100%
+		+mq($max-width: 1650px)
+			width: 1100px
+			height: 1100px
 	.container
 		max-width: 1540px
+		+mq($max-width: 1650px)
+			max-width: 1170px
 	.block-title
 		margin: 0 0 37px 0
+		+mq($max-width: 1650px)
+			margin: 0 0 20px 0
 	.block-text
 		font-size: 18px
 		margin: 0 0 66px 0
+		+mq($max-width: 1650px)
+			margin: 0 0 25px 0
 	.inner
 		+flex(row, between, start, wrap)
 	.item
@@ -61,6 +73,9 @@
 			font-weight: 500
 			color: black
 			+trs
+			+mq($max-width: 1650px)
+				margin: 15px 0
+				font-size: 15px
 		svg
 			path
 				+trs
@@ -68,5 +83,7 @@
 			font-size: 15px
 			+trs
 			color: #434343
+			+mq($max-width: 1650px)
+				font-size: 14px
 
 

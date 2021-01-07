@@ -4,10 +4,12 @@
 	.container
 		background: white
 		max-width: 1510px
-		+flex(row, between, start, wrap)
+		+flex(row, between, null, wrap)
 		border-radius: 10px
 		box-shadow: $container-shadow
 		position: relative
+		+mq($max-width: 1650px)
+			max-width: 1170px
 		&::before
 			content: ''
 			display: block
@@ -20,19 +22,27 @@
 			top: 0
 			z-index: -1
 			transform: translate(-10%, -40%)
+			+mq($max-width: 1650px)
+				width: 310px
+				height: 310px
 	.block-title
 		margin: 0 0 37px 0
+		+mq($max-width: 1650px)
+			margin: 0 0 15px 0
 	&__img
-		max-height: 440px
-		height: 100%
 		display: block
 		max-width: 641px
 		width: auto
 		border-radius: 10px 0 0 10px
+		+mq($max-width: 1650px)
+			max-width: 40%
 	.text-container
 		margin: 45px 50px
 		width: calc( 100% - 741px )
 		overflow: auto
 		font-family: 'UniBook', sans-serif
 		line-height: 1.6
+		+mq($max-width: 1650px)
+			margin: 30px
+			width: calc(60% - 60px)
 

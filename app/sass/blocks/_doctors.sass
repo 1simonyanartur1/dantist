@@ -1,5 +1,7 @@
 .doctors
 	padding: 40px 0 120px 0
+	+mq($max-width: 1650px)
+		padding: 40px 0 80px
 	.block-text
 		margin: 15px 0 0 0
 	.slider
@@ -73,9 +75,14 @@
 	.arrow
 		position: absolute
 		top: 50%
+		z-index: 3
 		&-prev
 			left: -80px
 			transform: translate(0, -50%) rotate(180deg)
+			+mq($max-width: 1650px)
+				left: 0
 		&-next
 			right: -80px
 			transform: translate(0, -50%)
+			+mq($max-width: 1650px)
+				right: 0
