@@ -8,6 +8,10 @@ body
 	font-weight: 400
 	background: $body-bg
 	overflow-x: hidden
+	+mq($max-width: 1600px)
+		font-size: 16px
+	+mq($max-width: 1200px)
+		font-size: 14px
 	// +scrollbar(10px, auto, $yellow, $gray2, $dark, null)
 
 .page-container
@@ -22,8 +26,6 @@ body
 	margin: 0 auto
 	+mq($max-width: 1200px)
 		padding: 0 15px
-	+mq($max-width: 575px)
-		padding: 0 10px
 
 .no-page
 	margin: 150px 0
@@ -39,10 +41,14 @@ body
 	+flex(row, null, center, nowrap)
 	background: $btn-callback-gradient
 	cursor: pointer
+	+trs
+	&:hover
+		background: black
 	svg
 		margin: 0 12px 0 0
 		path
 			fill: white
+
 .btn-entry
 	font-weight: 700
 	border-radius: 43px
@@ -51,6 +57,9 @@ body
 	+flex(row, null, center, nowrap)
 	background: $btn-entry-gradient
 	cursor: pointer
+	+trs
+	&:hover
+		background: black
 	svg
 		margin: 0 12px 0 0
 		path
@@ -59,12 +68,15 @@ body
 .submit
 	text-align: center
 	color: white
-	background: $btn-submit-gradient
+	background: $brown
 	padding: 18px 55px
 	font-weight: 700
 	border-radius: 5px
 	font-size: 21px
 	cursor: pointer
+	+trs
+	&:hover
+		background: black
 
 .block-title
 	font-weight: 100
@@ -82,24 +94,41 @@ body
 
 .logo
 	+flex(row, null, center, wrap)
+	+mq($max-width: 700px)
+		flex-direction: column
+		align-items: flex-start
+	&:hover
+		.logo__img
+			opacity: .5
 	&__img
 		display: block
 		max-width: 141px
 		width: 100%
+		+trs
 	&__text
 		color: black
 		font-size: 14px
 		padding: 0 0 0 16px
 		margin: 0 0 0 16px
 		border-left: 1px solid #000
+		+mq($max-width: 700px)
+			margin: 0
+			padding: 5px 0 0 0
+			border: none
 
 .entry-form
+	+mq($max-width: 575px)
+		width: 100%
 	&.horizontal
 		+flex(row, null, null, nowrap)
 		.entry-form__btn
 			position: relative
 			z-index: 2
 			margin-left: -20px
+			+mq($max-width: 575px)
+				margin: 0
+		+mq($max-width: 575px)
+			flex-direction: column
 	&.vertical
 		width: 282px
 		+flex(column, null, null, nowrap)
@@ -113,6 +142,9 @@ body
 			margin: 0
 	&-label
 		position: relative
+		+mq($max-width: 575px)
+			width: 100%
+			margin: 0 0 10px 0
 		svg
 			display: block
 			width: 23px
@@ -132,8 +164,16 @@ body
 		font-family: 'UniBook', sans-serif
 		color: $brown
 		font-size: 18px
+		+trs
+		&:hover,
+		&:focus
+			border-color: #000
 		+mq($max-width: 1450px)
 			width: 285px
+		+mq($max-width: 575px)
+			width: 100%
+			text-align: center
+			padding: 19.5px 50px
 		&::placeholder
 			font-family: 'UniBook', sans-serif
 			font-size: 18px

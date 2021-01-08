@@ -1,21 +1,28 @@
 .footer
 	+flex(row, null, null, wrap)
-	min-height: 513px
 	&-left
 		background: white
 		width: 54.79%
 		padding: 66px 62px 109px 152px
 		+flex(column, null, null, nowrap)
+		min-height: 513px
 		+mq($max-width: 1850px)
 			padding: 60px 30px
+		+mq($max-width: 1200px)
+			width: 100%
+			padding: 30px 15px
 	&-right
 		color: white
 		background: $footer-dark
 		width: 45.21%
 		padding: 54px 154px 109px 86px
 		+flex(column, null, null, nowrap)
+		min-height: 513px
 		+mq($max-width: 1850px)
 			padding: 60px 30px
+		+mq($max-width: 1200px)
+			width: 100%
+			padding: 30px 15px
 		.row
 			&:first-child
 				margin: 0
@@ -23,6 +30,8 @@
 	.row
 		margin: auto 0 0 0
 		+flex(row, between, end, wrap)
+		+mq($max-width: 1200px)
+			margin: 30px 0 0 0
 	.menu
 		+flex(row, null, start, wrap)
 		&-block
@@ -30,19 +39,30 @@
 			width: 100%
 			+mq($max-width: 1550px)
 				max-width: 50%
+			+mq($max-width: 700px)
+				max-width: 100%
+				margin: 0 0 15px 0
 			&__title
 				font-size: 16px
 				font-weight: 700
 				margin: 0 0 26px 0
+				+mq($max-width: 700px)
+					margin: 0 0 10px 0
 			&-list
 				+flex(row, between, null, wrap)
 				li
 					width: 50%
 					margin: 0 0 13px 0
+					padding: 0 5px 0 0
+					+mq($max-width: 400px)
+						width: 100%
+						margin: 0 0 5px 0
 				a
 					color: black
 					font-family: 'UniBook', sans-serif
 					font-size: 14px
+					&:hover
+						color: $yellow
 	.social
 		margin: 0 0 35px 0
 		&__title
@@ -52,10 +72,16 @@
 		&__item
 			&:not(:last-child)
 				margin: 0 25px 0 0
+			&:hover
+				svg
+					path,
+					rect
+						fill: $yellow
 			svg
 				path,
 				rect
 					fill: white
+					+trs
 	.links
 		li
 			&:not(:last-child)
@@ -64,12 +90,17 @@
 			color: white
 			font-size: 14px
 			text-decoration: underline
+			&:hover
+				text-decoration: none
+				color: $yellow
 	.phone
 		&-list
 			a
 				color: white
 				font-size: 24px
 				font-family: 'UniBook', sans-serif
+				&:hover
+					color: $yellow
 		&__text
 			text-align: center
 			font-size: 16px
@@ -77,5 +108,10 @@
 			margin: 5px 0 0 0
 	.action
 		margin: 0 0 0 47px
+		+mq($max-width: 575px)
+			margin: 15px 0 0 0
 	&__text
 		font-size: 14px
+		+mq($max-width: 575px)
+			margin: 15px 0 0 0
+			width: 100%

@@ -3,6 +3,8 @@
 	+bg(null, null, 'rating/bg.png', no-repeat, center, center, auto)
 	+mq($max-width: 1650px)
 		padding: 75px 0
+	+mq($max-width: 1200px)
+		padding: 40px 15px
 	.block-title
 		margin: 6px 0 0 0
 		font-size: 38px
@@ -16,15 +18,22 @@
 		padding: 41px 38px 65px 38px
 		+mq($max-width: 1650px)
 			max-width: 1170px
+		+mq($max-width: 1200px)
+			max-width: 100%
+			padding: 15px
 	.inner
 		position: relative
 		z-index: 3
 		max-width: 946px
 		width: 100%
 		margin: 0 0 0 auto
+		+mq($max-width: 1200px)
+			max-width: 100%
 	.cards
 		margin: 46px 0 0 -7.5px
 		+flex(row, null, null, wrap)
+		+mq($max-width: 1200px)
+			margin: 15px 0 0 -7.5px
 	.card
 		min-width: 101px
 		background: white
@@ -65,3 +74,5 @@
 			max-width: 400px
 			left: -200px
 			bottom: -75px
+		+mq($max-width: 1200px)
+			display: none

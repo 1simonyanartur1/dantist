@@ -2,11 +2,15 @@
 	padding: 40px 0 120px 0
 	+mq($max-width: 1650px)
 		padding: 40px 0 80px
+	+mq($max-width: 1200px)
+		padding: 30px 0
 	.block-text
 		margin: 15px 0 0 0
 	.slider
 		margin: 50px 0 0 -12px
 		width: calc( 100% + 21px )
+		+mq($max-width: 1200px)
+			margin: 20px 0 0 -12px
 	.slide
 		background: white
 		border-radius: 11px
@@ -14,6 +18,7 @@
 		position: relative
 		padding: 54px 40px 20px
 		margin: 12px
+		+flex(column, null, center, nowrap)
 		.exp
 			position: absolute
 			left: 20px

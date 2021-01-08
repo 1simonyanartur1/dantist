@@ -2,6 +2,8 @@
 	padding: 120px 0 75px 0
 	+mq($max-width: 1650px)
 		padding: 50px 0
+	+mq($max-width: 700px)
+		padding: 30px 0
 	.container
 		position: relative
 	.journal
@@ -11,20 +13,36 @@
 		display: block
 		z-index: -1
 		transform: translate(-35%, 5%)
+		+mq($max-width: 1000px)
+			display: none
 	&__img-text
 		margin: 0 auto 0 0
+		+mq($max-width: 700px)
+			display: none
 	.block-title
 		margin: 20px 0 29px 0
 		font-size: 55px
 		text-align: right
+		+mq($max-width: 700px)
+			font-size: 40px
+		+mq($max-width: 575px)
+			font-size: 34px
 		span
 			font-size: 43px
+			+mq($max-width: 700px)
+				font-size: 35px
+			+mq($max-width: 575px)
+				font-size: 30px
 	.inner
 		position: relative
 		margin: 0 0 124px auto
 		max-width: 530px
 		width: 100%
 		+flex(column, null, end, wrap)
+		+mq($max-width: 1000px)
+			margin: 0 0 50px auto
+		+mq($max-width: 700px)
+			margin: 0 0 20px auto
 		&:before
 			content: ''
 			display: block
@@ -61,12 +79,33 @@
 		border-radius: 100%
 		text-align: center
 		transform: translate(-150%, 20%)
+		&:hover
+			.see-link__text
+				color: $dark
+				text-decoration: none
+		+mq($max-width: 1000px)
+			transform: translate(-100%, 10%)
+		+mq($max-width: 700px)
+			position: static
+			transform: translate(0,0)
+			width: auto
+			height: auto
+			flex-direction: row
+			align-items: center
+			text-align: left
+			margin: 10px 0
+			background: none
+			box-shadow: none
 		&__icon
 			margin: 0 0 11px 0
 		&__text
+			+trs
 			color: $brown
 			font-size: 22px
 			text-decoration: underline
+			+mq($max-width: 700px)
+				font-size: 18px
+				margin: 0 0 0 15px
 	.items
 		max-width: 960px
 		width: 100%
@@ -75,8 +114,18 @@
 	.item
 		+flex(column, null, end, wrap)
 		max-width: 140px
+		+mq($max-width: 700px)
+			margin: 1%
+		+mq($max-width: 400px)
+			margin: 2%
 		&:not(:last-child)
 			margin: 0 63px 0 0
+			+mq($max-width: 1000px)
+				margin: 0 30px 0 0
+			+mq($max-width: 700px)
+				margin: 1%
+			+mq($max-width: 400px)
+				margin: 2%
 		&-icon
 			background: white
 			width: 98px
@@ -84,8 +133,9 @@
 			border-radius: 100%
 			box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
 			+flex(row, center, center, nowrap)
-		&__icon
 		&__text
 			text-align: right
 			margin: 24px 0 0 0
+			+mq($max-width: 400px)
+				margin: 10px 0 0 0
 

@@ -1,5 +1,7 @@
 .mainblock
 	overflow: hidden
+	+mq($max-width: 1000px)
+		background: $body-bg
 	.slide
 		+flex(row, null, end, nowrap)
 		&__img
@@ -8,6 +10,8 @@
 			width: 60%
 			+mq($max-width: 1650px)
 				width: 50%
+			+mq($max-width: 1000px)
+				display: none
 		&-inner
 			display: block
 			width: 40%
@@ -19,8 +23,12 @@
 			+mq($max-width: 1850px)
 				padding: 50px 30px
 			+mq($max-width: 1650px)
-				padding: 0 30px 30px
+				padding: 10px 30px 30px
 				width: 50%
+			+mq($max-width: 1200px)
+				padding: 10px 15px 30px
+			+mq($max-width: 1000px)
+				width: 100%
 			&:before
 				content: ''
 				display: block
@@ -31,6 +39,8 @@
 				height: 411px
 				background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 81.98%)
 				z-index: -1
+				+mq($max-width: 1200px)
+					display: none
 		&-list
 			margin: 0 0 40px 20px
 			+mq($max-width: 1650px)
@@ -67,6 +77,8 @@
 			width: 256px
 			height: 256px
 			transform: translate(-50%, 0%)
+		+mq($max-width: 1200px)
+			display: none
 	.block-title
 		font-size: 58px
 		max-width: 522px
@@ -76,6 +88,8 @@
 			font-size: 37px
 			width: 60%
 			margin: 15px 0 15px 0
+		+mq($max-width: 1200px)
+			width: 100%
 		span
 			display: block
 			width: 100%
@@ -85,6 +99,9 @@
 			font-weight: 700
 			+mq($max-width: 1650px)
 				font-size: 32px
+			+mq($max-width: 1200px)
+				display: inline-block
+				width: auto
 	.video-link
 		margin: 0 0 0 20px
 		text-decoration: underline
@@ -92,7 +109,31 @@
 		&:hover
 			color: black
 			text-decoration: none
-
+	.entry-form
+		+mq($max-width: 1200px)
+			width: 100%
+		+mq($max-width: 1000px)
+			max-width: 600px
+		&.horizontal
+			.entry-form__btn
+				+mq($max-width: 1200px)
+					width: auto
+					padding: 18px 25px
+					margin: 0 0 0 -10px
+				+mq($max-width: 575px)
+					width: 100%
+					margin: 0
+		&-label
+			+mq($max-width: 1200px)
+				width: 50%
+			+mq($max-width: 575px)
+				width: 100%
+		&__input
+			+mq($max-width: 1200px)
+				width: 100%
+				padding: 19.5px 30px 19.5px 60px
+			+mq($max-width: 575px)
+				padding: 19.5px 72px
 	.slick-dots
 		display: flex
 		justify-content: center

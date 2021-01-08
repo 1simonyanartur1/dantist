@@ -18,12 +18,22 @@
 		+mq($max-width: 1650px)
 			max-width: 350px
 			padding: 30px
+		+mq($max-width: 1200px)
+			max-width: 640px
+			margin: 0 auto
+		+mq($max-width: 575px)
+			padding: 15px
 	&__img-text
 		margin: 37px 0 0 auto
 		+mq($max-width: 1650px)
 			margin: 15px 0 0 auto
+		+mq($max-width: 700px)
+			margin: 10px auto
+		+mq($max-width: 575px)
+			max-width: 100%
 	&__title
 		text-align: center
+		width: 100%
 		b
 			font-size: 90px
 			font-weight: 500
@@ -32,19 +42,46 @@
 			font-family: 'PF', sans-serif
 			+mq($max-width: 1650px)
 				font-size: 70px
+			+mq($max-width: 700px)
+				font-size: 40px
+				display: block
 		span
 			font-family: 'UniBook', sans-serif
 			font-size: 46px
 			+mq($max-width: 1650px)
 				font-size: 30px
+			+mq($max-width: 700px)
+				font-size: 25px
 		i
 			font-size: 40px
 			font-style: italic
 			font-family: 'PF', sans-serif
 			+mq($max-width: 1650px)
 				font-size: 30px
-	.entry-form
+			+mq($max-width: 700px)
+				font-size: 25px
+	.entry-form.vertical
 		margin: 55px 0 0 0
+		+mq($max-width: 1200px)
+			margin: 15px 0 0 0
+			flex-direction: row
+			width: 100%
+		+mq($max-width: 575px)
+			flex-direction: column
+			.entry-form-label
+				+mq($max-width: 1200px)
+					margin: 0
+					width: 60%
+				+mq($max-width: 575px)
+					width: 100%
+					margin: 0 0 10px 0
+			.entry-form__btn
+				z-index: 2
+				width: calc( 40% + 15px )
+				margin: 0 0 0 -15px
+				+mq($max-width: 575px)
+					margin: 0
+					width: 100%
 	&-right
 		max-width: 761px
 		width: 100%
@@ -52,6 +89,8 @@
 		+mq($max-width: 1650px)
 			max-width: 650px
 			margin: 0 40px
+		+mq($max-width: 1200px)
+			margin: 20px auto 0 auto
 	.slider-for
 		margin: 0 0 50px 0
 		+mq($max-width: 1650px)
@@ -74,6 +113,9 @@
 			display: block
 			width: 177px
 			height: 177px
+			+mq($max-width: 575px)
+				width: 100px
+				height: 100px
 			circle
 				opacity: 1
 				+trs
@@ -88,6 +130,11 @@
 		+mq($max-width: 1650px)
 			width: calc( 100% + 8px )
 			margin: 0 0 0 -4px
+		+mq($max-width: 800px)
+			width: 80%
+			margin: 0 auto
+		+mq($max-width: 575px)
+			width: calc( 100% - 140px )
 		.slide
 			cursor: pointer
 			margin: 0 15px
@@ -114,6 +161,10 @@
 		&-prev
 			left: -70px
 			transform: translate(0, -80%) rotate(180deg)
+			+mq($max-width: 700px)
+				left: -60px
 		&-next
 			right: -70px
 			transform: translate(0, -80%)
+			+mq($max-width: 700px)
+				right: -60px

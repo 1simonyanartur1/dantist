@@ -17,11 +17,19 @@
 		padding: 29px 34px 43px 34px
 		+mq($max-width: 1650px)
 			max-width: 840px
+		+mq($max-width: 1200px)
+			max-width: 100%
+			margin: 0 0 20px 0
+		+mq($max-width: 700px)
+			padding: 15px
+			position: relative
 	.slider-for
 		max-width: 678px
 		width: 100%
 		+mq($max-width: 1650px)
 			max-width: 490px
+		+mq($max-width: 700px)
+			max-width: 100%
 		.slide
 			&__img
 				display: block
@@ -32,6 +40,8 @@
 		margin: 0 15px -15px 0
 		+mq($max-width: 1650px)
 			max-width: 110px
+		+mq($max-width: 800px)
+			display: none
 		.slide
 			margin: 0 0 15px 0
 			+mq($max-width: 1650px)
@@ -46,6 +56,8 @@
 		position: relative
 		+mq($max-width: 1650px)
 			max-width: 300px
+		+mq($max-width: 1200px)
+			margin: 0 auto
 		&:before
 			content: ''
 			display: block
@@ -84,6 +96,8 @@
 		display: block
 		height: auto
 		z-index: -1
+		+mq($max-width: 1200px)
+			display: none
 	
 	.slider-counter
 		font-family: 'PF', sans-serif
@@ -91,21 +105,39 @@
 		font-style: italic
 		line-height: .8
 		margin: 0 0 0 40px
+		+mq($max-width: 700px)
+			position: absolute
+			right: 30px
+			bottom: 20px
 		&__curr
 			display: inline-block
 			font-size: 67px
+			+mq($max-width: 575px)
+				font-size: 45px
 		&__all
 			vertical-align: top
 			display: inline-block
 			font-size: 20px
 
-
 	.arrow
 		top: 0
 		position: absolute
+		z-index: 2
+		+mq($max-width: 370px)
+			display: none
 		&-prev
 			right: -90px
 			transform: translate(0, 0) rotate(180deg)
+			+mq($max-width: 700px)
+				right: 20px
+				top: 20px
 		&-next
 			right: -170px
 			transform: translate(0, 0)
+			+mq($max-width: 1000px)
+				right: -90px
+				top: 70px
+			+mq($max-width: 700px)
+				right: 20px
+				top: 90px
+
