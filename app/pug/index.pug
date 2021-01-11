@@ -5,13 +5,12 @@ html
 	include blocks/head.pug
 		title
 	body
-		//- include blocks/header.pug
+		include blocks/header.pug
 
 		main.page-container
 
 			section.mainblock
 				.slider
-					//- .slide(style="background: url('img/mainblock/bg.png') no-repeat left bottom / contain")
 					.slide
 						img.slide__img(src=img+"mainblock/bg.png", alt="")
 						.slide-inner
@@ -23,7 +22,6 @@ html
 								li Снимок 3D компьютерная томограмма
 								li Подробный план лечения
 							include blocks/_entry-form.pug
-					//- .slide(style="background: url('img/mainblock/bg.png') no-repeat left bottom / contain")
 					.slide
 						img.slide__img(src=img+"mainblock/bg.png", alt="")
 						.slide-inner

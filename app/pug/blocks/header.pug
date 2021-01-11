@@ -1,6 +1,54 @@
 header.header
 	.container
 		include _logo.pug
+		nav.main-nav
+			input#main-menu-state(type="checkbox")
+			label.main-menu-btn(for="main-menu-state")
+				span.main-menu-btn-icon
+			ul#main-menu.sm.sm-clean
+				li
+					a(href="#") Услуги
+					ul
+						li
+							a(href="#") All on 4
+						li
+							a(href="#") Виниры
+						li
+							a(href="#") Имплантация
+						li
+							a(href="#") Лечение
+						li
+							a(href="#") Ортодонтия
+						li
+							a(href="#") Протезирование
+						li
+							a(href="#") Эстетический уход
+				li
+					a(href="#") О нас
+				li
+					a(href="#") Портфолио
+				li
+					a(href="#") Отзывы
+				li
+					a(href="#") Цены
+				li
+					a(href="#") Статьи
+				li
+					a(href="#") Контакты
+				li
+					a(href="#") Акции
+		.choose-tel
+			.city
+				.city__curr Москва
+				.city-list
+					li.active(data-city="Москва") Москва
+					li(data-city="Россия") Россия
+			.phone
+				a.phone__curr(href="tel:+84953005656") 8 (495) <span>300 56 56</span>
+				.phone-list
+					li.active(data-city="Москва") 8 (495) <span>300 56 56</span>
+					li(data-city="Россия") 8 (495) <span>000 00 00</span>
+
 		a.btn-entry(href="#")
 			<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M17.209 10.7422C17.209 10.2028 16.7718 9.76562 16.2324 9.76562H6.17383C5.63447 9.76562 5.19727 10.2028 5.19727 10.7422C5.19727 11.2815 5.63447 11.7188 6.17383 11.7188H16.2324C16.7718 11.7188 17.209 11.2815 17.209 10.7422Z" fill="white"/>

@@ -26,6 +26,8 @@ body
 	margin: 0 auto
 	+mq($max-width: 1200px)
 		padding: 0 15px
+	+mq($max-width: 575px)
+		padding: 0 10px
 
 .no-page
 	margin: 150px 0
@@ -105,12 +107,18 @@ body
 		max-width: 141px
 		width: 100%
 		+trs
+		+mq($max-width: 1300px)
+			max-width: 121px
 	&__text
 		color: black
 		font-size: 14px
 		padding: 0 0 0 16px
 		margin: 0 0 0 16px
 		border-left: 1px solid #000
+		+mq($max-width: 1300px)
+			margin: 0 0 0 5px
+			padding: 0 0 0 5px
+			font-size: 12px
 		+mq($max-width: 700px)
 			margin: 0
 			padding: 5px 0 0 0
