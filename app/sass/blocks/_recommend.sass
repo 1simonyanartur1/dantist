@@ -63,25 +63,26 @@
 	.entry-form.vertical
 		margin: 55px 0 0 0
 		+mq($max-width: 1200px)
-			margin: 15px 0 0 0
-			flex-direction: row
-			width: 100%
-		+mq($max-width: 575px)
-			flex-direction: column
-			.entry-form-label
-				+mq($max-width: 1200px)
-					margin: 0
-					width: 60%
-				+mq($max-width: 575px)
-					width: 100%
-					margin: 0 0 10px 0
-			.entry-form__btn
-				z-index: 2
-				width: calc( 40% + 15px )
-				margin: 0 0 0 -15px
-				+mq($max-width: 575px)
-					margin: 0
-					width: 100%
+			margin: 15px 0 0 auto
+	// 		margin: 15px 0 0 0
+	// 		flex-direction: row
+	// 		width: 100%
+	// 	+mq($max-width: 575px)
+	// 		flex-direction: column
+	// 		.entry-form-label
+	// 			+mq($max-width: 1200px)
+	// 				margin: 0
+	// 				width: 60%
+	// 			+mq($max-width: 575px)
+	// 				width: 100%
+	// 				margin: 0 0 10px 0
+	// 		.entry-form__btn
+	// 			z-index: 2
+	// 			width: calc( 40% + 15px )
+	// 			margin: 0 0 0 -15px
+	// 			+mq($max-width: 575px)
+	// 				margin: 0
+	// 				width: 100%
 	&-right
 		max-width: 761px
 		width: 100%

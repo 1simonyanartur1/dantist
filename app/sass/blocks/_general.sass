@@ -34,7 +34,6 @@ body
 	.action
 		max-width: 350px
 
-
 .btn-callback
 	font-weight: 700
 	border-radius: 43px
@@ -71,7 +70,7 @@ body
 	text-align: center
 	color: white
 	background: $brown
-	padding: 18px 55px
+	padding: 22.5px 55px
 	font-weight: 700
 	border-radius: 5px
 	font-size: 21px
@@ -128,13 +127,18 @@ body
 	+mq($max-width: 575px)
 		width: 100%
 	&.horizontal
-		+flex(row, null, null, nowrap)
+		+flex(row, null, null, wrap)
+		max-width: 533px
+		width: 100%
+		+mq($max-width: 1500px)
+			max-width: 507px
 		.entry-form__btn
 			position: relative
 			z-index: 2
-			margin-left: -20px
+			margin-left: -10px
 			+mq($max-width: 575px)
 				margin: 0
+				width: 100%
 		+mq($max-width: 575px)
 			flex-direction: column
 	&.vertical
@@ -150,9 +154,16 @@ body
 			margin: 0
 	&-label
 		position: relative
+		width: 100%
 		+mq($max-width: 575px)
 			width: 100%
 			margin: 0 0 10px 0
+		&.big
+			width: 100%
+			margin: 0 0 10px 0
+			.entry-form__input
+				text-align: center
+				width: 100%
 		svg
 			display: block
 			width: 23px
@@ -163,6 +174,10 @@ body
 			transform: translate(0, -50%)
 			path
 				fill: $brown
+	&-row
+		+flex(row, null, null, nowrap)
+		+mq($max-width: 575px)
+			flex-wrap: wrap
 	&__input
 		background: rgba(255, 255, 255, .5)
 		padding: 19.5px 72px

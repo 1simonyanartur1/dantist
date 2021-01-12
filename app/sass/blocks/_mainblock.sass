@@ -1,6 +1,6 @@
 .mainblock
 	overflow: hidde
-	+mq($max-width: 1000px)
+	+mq($max-width: 1200px)
 		background: $body-bg
 	.slide
 		+flex(row, null, end, nowrap)
@@ -10,14 +10,14 @@
 			width: 60%
 			+mq($max-width: 1650px)
 				width: 50%
-			+mq($max-width: 1000px)
+			+mq($max-width: 1200px)
 				display: none
 		&-inner
 			display: block
 			width: 40%
 			margin: 0 0 0 auto
 			+flex(column, end, start, nowrap)
-			padding: 107px 41px
+			padding: 65px 41px
 			position: relative
 			z-index: 2
 			+mq($max-width: 1850px)
@@ -27,7 +27,6 @@
 				width: 50%
 			+mq($max-width: 1200px)
 				padding: 10px 15px 30px
-			+mq($max-width: 1000px)
 				width: 100%
 			&:before
 				content: ''
@@ -88,7 +87,8 @@
 			font-size: 37px
 			width: 60%
 			margin: 15px 0 15px 0
-		+mq($max-width: 1200px)
+		+mq($max-width: 1500px)
+			font-size: 32px
 			width: 100%
 		span
 			display: block
@@ -99,39 +99,42 @@
 			font-weight: 700
 			+mq($max-width: 1650px)
 				font-size: 32px
-			+mq($max-width: 1200px)
+			+mq($max-width: 1500px)
 				display: inline-block
 				width: auto
+				font-size: 26px
 	.video-link
 		margin: 0 0 0 20px
 		text-decoration: underline
 		color: #A8A8A8
+		+mq($max-width: 1500px)
+			font-size: 13px
 		&:hover
 			color: black
 			text-decoration: none
 	.entry-form
 		+mq($max-width: 1200px)
 			width: 100%
-		+mq($max-width: 1000px)
-			max-width: 600px
+		// +mq($max-width: 1000px)
+		// 	max-width: 600px
 		&.horizontal
 			.entry-form__btn
 				+mq($max-width: 1200px)
-					width: auto
-					padding: 18px 25px
+					// width: auto
+					// padding: 18px 25px
 					margin: 0 0 0 -10px
 				+mq($max-width: 575px)
 					width: 100%
 					margin: 0
 		&-label
-			+mq($max-width: 1200px)
-				width: 50%
+			// +mq($max-width: 1200px)
+			// 	width: 50%
 			+mq($max-width: 575px)
 				width: 100%
 		&__input
 			+mq($max-width: 1200px)
-				width: 100%
-				padding: 19.5px 30px 19.5px 60px
+				// width: 100%
+				// padding: 15px 30px 15px 60px
 			+mq($max-width: 575px)
 				padding: 19.5px 72px
 	.slick-dots
