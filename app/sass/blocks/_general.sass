@@ -202,12 +202,15 @@ body
 		+mq($max-width: 1200px)
 			padding: 10px 50px
 		+mq($max-width: 575px)
+			font-size: 15px
 			width: 100%
 			text-align: center
 		&::placeholder
 			font-family: 'UniBook', sans-serif
 			font-size: 18px
 			color: $brown
+			+mq($max-width: 575px)
+				font-size: 15px
 
 .arrow
 	background: $gray

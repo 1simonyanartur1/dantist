@@ -134,6 +134,8 @@
 	.entry-form
 		+mq($max-width: 1200px)
 			width: 100%
+		+mq($max-width: 575px)
+			width: 70%
 		&.horizontal
 			.entry-form__btn
 				+mq($max-width: 1200px)
@@ -148,10 +150,6 @@
 			// 	width: 50%
 			+mq($max-width: 575px)
 				width: 100%
-		&__input
-			+mq($max-width: 1200px)
-				// width: 100%
-				// padding: 15px 30px 15px 60px
 	.slick-dots
 		display: flex
 		justify-content: center
