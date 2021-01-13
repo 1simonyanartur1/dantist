@@ -43,7 +43,7 @@
 		border-radius: 10px 0 0 10px
 		+mq($max-width: 1650px)
 			max-width: 40%
-		+mq($max-width: 1200px)
+		+mq($max-width: 1000px)
 			display: none
 	.text-container
 		margin: 45px 50px
@@ -56,4 +56,15 @@
 			width: calc(60% - 60px)
 		+mq($max-width: 1200px)
 			width: 100%
-
+		+mq($max-width: 575px)
+			padding: 15px
+			margin: 0
+		img
+			display: none
+			width: 50%
+			+mq($max-width: 1000px)
+				display: block
+				float: left
+				margin: 0 15px 15px 0
+			+mq($max-width: 575px)
+				width: 100%

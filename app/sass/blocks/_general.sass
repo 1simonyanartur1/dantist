@@ -76,6 +76,8 @@ body
 	font-size: 21px
 	cursor: pointer
 	+trs
+	+mq($max-width: 1200px)
+		padding: 11px 27px
 	&:hover
 		background: black
 
@@ -132,6 +134,8 @@ body
 		width: 100%
 		+mq($max-width: 1500px)
 			max-width: 507px
+		+mq($max-width: 1200px)
+			max-width: 450px
 		.entry-form__btn
 			position: relative
 			z-index: 2
@@ -172,6 +176,8 @@ body
 			left: 25px
 			z-index: 2
 			transform: translate(0, -50%)
+			+mq($max-width: 1200px)
+				left: 15px
 			path
 				fill: $brown
 	&-row
@@ -179,7 +185,7 @@ body
 		+mq($max-width: 575px)
 			flex-wrap: wrap
 	&__input
-		background: rgba(255, 255, 255, .5)
+		background: white
 		padding: 19.5px 72px
 		border-radius: 6px
 		border: 3px solid $brown
@@ -190,13 +196,14 @@ body
 		+trs
 		&:hover,
 		&:focus
-			border-color: #000
+			border-color: $dark
 		+mq($max-width: 1450px)
 			width: 285px
+		+mq($max-width: 1200px)
+			padding: 10px 50px
 		+mq($max-width: 575px)
 			width: 100%
 			text-align: center
-			padding: 19.5px 50px
 		&::placeholder
 			font-family: 'UniBook', sans-serif
 			font-size: 18px

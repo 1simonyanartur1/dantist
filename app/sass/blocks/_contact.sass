@@ -15,12 +15,15 @@
 		+mq($max-width: 1200px)
 			width: 100%
 			padding: 30px 15px
-			+flex(column, null, end, nowrap)
+			text-align: center
+			+flex(column, null, center, nowrap)
 		+mq($max-width: 575px)
 			padding: 15px
 	.row
 		+flex(row, null, center, wrap)
 		margin: 0 0 27px 0
+		+mq($max-width: 575px)
+			flex-direction: column
 	#map
 		display: block
 		width: 100%
