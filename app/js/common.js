@@ -247,5 +247,68 @@
 			$(this).find('.spoiler__text').slideToggle();
 		});
 
+		$('.more-services .slider').slick({
+			dots: false,
+			prevArrow: $('.more-services .arrow-prev'),
+			nextArrow: $('.more-services .arrow-next'),
+			infinite: true,
+			speed: 300,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 2
+					}
+				},
+				{
+					breakpoint: 800,
+					settings: {
+						slidesToShow: 1
+					}
+				}
+			]
+		});
+
+		$('.prices-spoilers-item__list, .prices-spoilers-block .action').hide();
+		$('.prices-spoilers-item-row').on('click', function () {
+			$(this).parent('.prices-spoilers-item').toggleClass('active');
+			$(this).next('.prices-spoilers-item__list').slideToggle();
+			$(this).parents('.prices-spoilers-block').find('.action').slideToggle();
+		});
+
+		$('.stock-item-inner').hide();
+		$('.stock-item-row').on('click', function () {
+			$(this).parent('.stock-item').toggleClass('active');
+			$(this).next('.stock-item-inner').slideToggle();
+		});
+
+		function hideStockItem () {
+			var i = 0;
+			$('.stock-item').each(function () {
+				i++;
+				if(i <= 2) {
+					$(this).show();
+				} else if (i > 2) {
+					$(this).hide();
+				}
+			});
+		}
+		hideStockItem();
+		
+		$('.stock .action .submit').on('click', function (e) {
+			e.preventDefault();
+			$(this).toggleClass('active');
+			if($(this).hasClass('active')) {
+				$('.stock-item').show();
+				$(this).text('Скрыть');
+			} else {
+				$(this).text('Показать еще акции');
+				$('.stock-item').show();
+				hideStockItem();
+			}
+		});
+
 	});
 })(jQuery);

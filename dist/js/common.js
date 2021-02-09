@@ -247,5 +247,36 @@
 			$(this).find('.spoiler__text').slideToggle();
 		});
 
+		$('.more-services .slider').slick({
+			dots: false,
+			prevArrow: $('.more-services .arrow-prev'),
+			nextArrow: $('.more-services .arrow-next'),
+			infinite: true,
+			speed: 300,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 2
+					}
+				},
+				{
+					breakpoint: 800,
+					settings: {
+						slidesToShow: 1
+					}
+				}
+			]
+		});
+
+		$('.prices-spoilers-item__list, .prices-spoilers-block .action').hide();
+		$('.prices-spoilers-item-row').on('click', function () {
+			$(this).parent('.prices-spoilers-item').toggleClass('active');
+			$(this).next('.prices-spoilers-item__list').slideToggle();
+			$(this).parents('.prices-spoilers-block').find('.action').slideToggle();
+		});
+
 	});
 })(jQuery);

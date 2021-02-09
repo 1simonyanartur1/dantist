@@ -1,60 +1,79 @@
 .mainblock
 	overflow: hidde
-	+mq($max-width: 1200px)
-		background: white
 	.slide
+		background: $body-bg
 		position: relative
-		+flex(row, null, end, nowrap)
+		+flex(row, null, end, wrap)
 		overflow: hidden
+		+mq($max-width: 1200px)
+			padding: 0 0 20px 0
 		&__img
 			display: block
-			width: 60%
-			+mq($max-width: 1650px)
-				width: 50%
+			width: 100%
 			+mq($max-width: 1200px)
-				position: absolute
-				left: 0
-				bottom: 0
+				width: auto
 				height: 100%
-				width: auto
-			+mq($max-width: 1000px)
-				transform: translate(-30%, 0)
 			+mq($max-width: 700px)
-				transform: translate(50%, 0)
-				left: auto
-				right: 0
-		&-inner
-			display: block
-			width: 40%
-			margin: 0 0 0 auto
-			+flex(column, end, start, nowrap)
-			padding: 65px 41px
+				width: 100%
+				height: auto
+		&-left
+			width: 60%
 			position: relative
-			z-index: 2
-			+mq($max-width: 1850px)
-				padding: 50px 30px
-			+mq($max-width: 1650px)
-				padding: 10px 30px 30px
-				width: 50%
+			+mq($max-width: 1500px)
+				width: 55%
 			+mq($max-width: 1200px)
-				padding: 10px 15px 30px
 				width: auto
+				position: absolute
+				right: 0
+				bottom: 0
+				width: auto
+				height: 100%
+			+mq($max-width: 1000px)
+				transform: translate(40%, 0)
 			+mq($max-width: 700px)
-				margin: 0 auto 0 0
+				transform: translate(0, 0)
+				right: auto
+				left: auto
+				height: auto
+				width: 100%
+				position: static
 			&:before
 				content: ''
-				display: block
 				position: absolute
-				left: 0
+				z-index: 1
+				right: 0
+				top: 0
+				display: block
+				width: 410px
+				height: 100%
+				background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 81.98%)
+				+mq($max-width: 1200px)
+					display: none
+		&-right
+			display: block
+			width: 40%
+			padding: 40px
+			position: relative
+			+mq($max-width: 1500px)
+				width: 45%
+				padding: 15px
+			+mq($max-width: 1200px)
+				width: auto
+			&:before
+				content: ''
+				position: absolute
 				bottom: 0
+				left: 0
+				display: block
 				width: 100%
-				height: 411px
-				background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 81.98%)
-				z-index: -1
+				height: 440px
+				background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 81.98%)
 				+mq($max-width: 1200px)
 					display: none
 		&-list
 			margin: 0 0 40px 20px
+			position: relative
+			z-index: 3
 			+mq($max-width: 1650px)
 				margin: 0 0 15px 10px
 			li
@@ -84,24 +103,13 @@
 						width: 10px
 						height: 10px
 						top: 2px
-	.play-img
-		position: absolute
-		top: 0
-		left: 0
-		z-index: 0
-		z-index: -1
-		transform: translate(-50%, -10%)
-		+mq($max-width: 1650px)
-			width: 256px
-			height: 256px
-			transform: translate(-50%, 0%)
-		+mq($max-width: 1200px)
-			display: none
 	.block-title
 		font-size: 58px
 		max-width: 522px
 		width: 100%
 		margin: 30px 0 12px 0
+		position: relative
+		z-index: 3
 		+mq($max-width: 1650px)
 			font-size: 37px
 			width: 60%
@@ -122,15 +130,33 @@
 				display: inline-block
 				width: auto
 				font-size: 26px
+	.play-img
+		position: absolute
+		right: 0
+		top: 0
+		z-index: 2
+		display: block
+		transform: translate(35%, -5%)
+		+mq($max-width: 1700px)
+			width: 300px
+			height: auto
+		+mq($max-width: 1400px)
+			width: 220px
+			height: auto
+		+mq($max-width: 1200px)
+			display: none
 	.video-link
 		margin: 0 0 0 20px
 		text-decoration: underline
 		color: #A8A8A8
+		position: relative
+		z-index: 3
 		+mq($max-width: 1500px)
 			font-size: 13px
 		&:hover
 			color: black
 			text-decoration: none
+
 	.entry-form
 		+mq($max-width: 1200px)
 			width: 100%
@@ -139,15 +165,11 @@
 		&.horizontal
 			.entry-form__btn
 				+mq($max-width: 1200px)
-					// width: auto
-					// padding: 18px 25px
 					margin: 0 0 0 -10px
 				+mq($max-width: 575px)
 					width: 100%
 					margin: 0
 		&-label
-			// +mq($max-width: 1200px)
-			// 	width: 50%
 			+mq($max-width: 575px)
 				width: 100%
 	.slick-dots
@@ -178,3 +200,10 @@
 			background: white
 			&:hover
 				background: $dark
+
+	&.type2
+		.block-title
+			max-width: 100%
+		.block-text
+			padding: 15px 0
+
