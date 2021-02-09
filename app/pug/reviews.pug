@@ -1,0 +1,135 @@
+- var img = '../img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+
+			.circle1
+			.circle2
+
+			section.breadcrumbs
+				.container
+					ul.list
+						li
+							a(href="index.html") На главную
+						li
+							a(href="reviews.html") Отзывы
+
+			section.mainblock.type2
+				.slider
+					.slide
+						.slide-left
+							img.slide__img(src=img+"mainblock/reviews-img.jpg", alt="")
+						.slide-right
+							.block-title Отзывы наших пациентов
+							.block-text Ваши рекомендации - это лучшая награда за качественную работу <br> Спасибо, что выбрали нас!
+							ul.action
+								li
+									a.submit.popup-link(href="#") Оставить свой отзыв 
+
+			section.reviews-icons
+				.container
+					.item
+						.item-icon
+							img.item__icon(src=img+"icons/dentist.svg", alt="")
+						.item__title Опытные врачи
+						.item__text Стаж всех врачей от 8 до 20 лет
+					.item
+						.item-icon
+							img.item__icon(src=img+"icons/tooth-ok.svg", alt="")
+						.item__title Современные технологии
+						.item__text Передовые методы лечения <br> и высокоточная техника
+					.item
+						.item-icon
+							img.item__icon(src=img+"icons/certificate.svg", alt="")
+						.item__title Высокое качество
+						.item__text Клиника сертифицирована <br> по стандарту ISO 9001
+
+			section.reviews
+				.container
+					.item
+						.item-top
+							.item-img
+								img.item__img(src=img+"reviews/img.jpg", alt="")
+							.item-top-inner
+								.item__name Алина Евтушенко
+								.item__operation Имплантация зубов
+								.item__doc Врач: <span>Овсепян Карен Тигранович</span>
+						.item__text Карен Тигранович установил мне 2 импланта и 2 керамические коронки. Другие врачи не хотели браться за мой случай, а он очень помог. Всем рекомендую Карена Тиграновича, это врач по призванию!
+						.item-line
+							.item__date Дата отзыва: <span>24.11.2020</span>
+							a.item__videolink.popup-video(href="#") Видео отзыв
+					.item
+						.item-top
+							.item-img
+								img.item__img(src=img+"reviews/img.jpg", alt="")
+							.item-top-inner
+								.item__name Алина Евтушенко
+								.item__operation Имплантация зубов
+								.item__doc Врач: <span>Овсепян Карен Тигранович</span>
+						.item__text Карен Тигранович установил мне 2 импланта и 2 керамические коронки. Другие врачи не хотели браться за мой случай, а он очень помог. Всем рекомендую Карена Тиграновича, это врач по призванию!
+						.item-line
+							.item__date Дата отзыва: <span>24.11.2020</span>
+							a.item__videolink.popup-video(href="#") Видео отзыв
+					.item
+						.item-top
+							.item-img
+								img.item__img(src=img+"reviews/img.jpg", alt="")
+							.item-top-inner
+								.item__name Алина Евтушенко
+								.item__operation Имплантация зубов
+								.item__doc Врач: <span>Овсепян Карен Тигранович</span>
+						.item__text Карен Тигранович установил мне 2 импланта и 2 керамические коронки. Другие врачи не хотели браться за мой случай, а он очень помог. Всем рекомендую Карена Тиграновича, это врач по призванию!
+						.item-line
+							.item__date Дата отзыва: <span>24.11.2020</span>
+							a.item__videolink.popup-video(href="#") Видео отзыв
+					.item
+						.item-top
+							.item-img
+								img.item__img(src=img+"reviews/img.jpg", alt="")
+							.item-top-inner
+								.item__name Алина Евтушенко
+								.item__operation Имплантация зубов
+								.item__doc Врач: <span>Овсепян Карен Тигранович</span>
+						.item__text Карен Тигранович установил мне 2 импланта и 2 керамические коронки. Другие врачи не хотели браться за мой случай, а он очень помог. Всем рекомендую Карена Тиграновича, это врач по призванию!
+						.item-line
+							.item__date Дата отзыва: <span>24.11.2020</span>
+							a.item__videolink.popup-video(href="#") Видео отзыв
+					.item
+						.item-top
+							.item-img
+								img.item__img(src=img+"reviews/img.jpg", alt="")
+							.item-top-inner
+								.item__name Алина Евтушенко
+								.item__operation Имплантация зубов
+								.item__doc Врач: <span>Овсепян Карен Тигранович</span>
+						.item__text Карен Тигранович установил мне 2 импланта и 2 керамические коронки. Другие врачи не хотели браться за мой случай, а он очень помог. Всем рекомендую Карена Тиграновича, это врач по призванию!
+						.item-line
+							.item__date Дата отзыва: <span>24.11.2020</span>
+							a.item__videolink.popup-video(href="#") Видео отзыв
+					.item
+						.item-top
+							.item-img
+								img.item__img(src=img+"reviews/img.jpg", alt="")
+							.item-top-inner
+								.item__name Алина Евтушенко
+								.item__operation Имплантация зубов
+								.item__doc Врач: <span>Овсепян Карен Тигранович</span>
+						.item__text Карен Тигранович установил мне 2 импланта и 2 керамические коронки. Другие врачи не хотели браться за мой случай, а он очень помог. Всем рекомендую Карена Тиграновича, это врач по призванию!
+						.item-line
+							.item__date Дата отзыва: <span>24.11.2020</span>
+							a.item__videolink.popup-video(href="#") Видео отзыв
+
+			include blocks/security.pug
+			include blocks/more-services.pug
+
+			include blocks/seo.pug
+			include blocks/contact.pug
+
+		include blocks/footer.pug
+		include blocks/scripts.pug

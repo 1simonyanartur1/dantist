@@ -1,0 +1,82 @@
+.reviews
+	padding: 30px 0
+	.container
+		max-width: 1600px
+		padding: 0 15px
+		+flex(row, between, null, wrap)
+	.item
+		width: 48%
+		padding: 50px
+		border-radius: 8px
+		margin: 15px 1%
+		background: white
+		border: 1px solid #E9E9E9
+		&-top
+			+flex(row, start, start, wrap)
+			margin: 0 0 35px 0
+			&-inner
+				margin: 0 0 0 45px
+		&-line
+			+flex(row, between, center, wrap)
+		&-img
+			position: relative
+			box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.11)
+			border-radius: 100%
+			width: 140px
+			height: 140px
+			&:before
+				content: ''
+				border: 1px solid #E8E8E8
+				width: 175px
+				height: 175px
+				position: absolute
+				top: 50%
+				left: 50%
+				border-radius: 100%
+				transform: translate(-50%, -50%)
+		&__img
+			display: block
+			border-radius: 100%
+		&__name
+			font-weight: 700
+			font-size: 19px
+			color: $dark2
+		&__operation
+			display: inline-block
+			margin: 10px 0 20px 0
+			line-height: 1.8
+			padding: 0 35px
+			font-weight: 300
+			color: white
+			background: $yellow
+			border-radius: 25px
+			font-size: 14px
+		&__doc
+			font-size: 17px
+			span
+				font-weight: 500
+		&__text
+			font-size: 14px
+			line-height: 1.6
+			font-family: 'UniBook', sans-serif
+			font-size: 16px
+		&__date
+			margin: 30px 0 0 0
+			font-weight: 300
+			font-size: 15px
+		&__videolink
+			font-weight: 300
+			font-size: 15px
+			color: black
+			&:hover
+				color: $brown
+				&:after
+					width: 0
+			&:after
+				content: ''
+				display: block
+				width: 100%
+				height: 1px
+				+trs
+				background: #000
+

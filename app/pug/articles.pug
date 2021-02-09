@@ -1,0 +1,82 @@
+- var img = '../img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+
+			.circle1
+			.circle2
+
+			section.breadcrumbs
+				.container
+					ul.list
+						li
+							a(href="index.html") На главную
+						li
+							a(href="articles.html") Статьи
+
+			section.mainblock.type2
+				.slider
+					.slide
+						.slide-left
+							img.slide__img(src=img+"mainblock/articles-img.jpg", alt="")
+						.slide-right
+							.block-title База знаний
+							.block-text Узнайте самую важную и актуальную информацию <br> по стоматологии из статей наших специалистов
+							include blocks/_entry-form.pug
+
+			section.articles
+				.container
+					.inner
+						a.item(href="article.html")
+							img.item__img(src=img+"articles/img.jpg", alt="")
+							.item__title Рекомедации после имплантации
+							.item__text Что делать, чтобы заживление прошло быстро и без боли
+						a.item(href="article.html")
+							img.item__img(src=img+"articles/img.jpg", alt="")
+							.item__title Рекомедации после имплантации
+							.item__text Что делать, чтобы заживление прошло быстро и без боли 
+						a.item(href="article.html")
+							img.item__img(src=img+"articles/img.jpg", alt="")
+							.item__title Рекомедации после имплантации
+							.item__text Что делать, чтобы заживление прошло быстро и без боли
+						a.item(href="article.html")
+							img.item__img(src=img+"articles/img.jpg", alt="")
+							.item__title Рекомедации после имплантации
+							.item__text Что делать, чтобы заживление прошло быстро и без боли
+						a.item(href="article.html")
+							img.item__img(src=img+"articles/img.jpg", alt="")
+							.item__title Рекомедации после имплантации
+							.item__text Что делать, чтобы заживление прошло быстро и без боли 
+						a.item(href="article.html")
+							img.item__img(src=img+"articles/img.jpg", alt="")
+							.item__title Рекомедации после имплантации
+							.item__text Что делать, чтобы заживление прошло быстро и без боли
+						a.item(href="article.html")
+							img.item__img(src=img+"articles/img.jpg", alt="")
+							.item__title Рекомедации после имплантации
+							.item__text Что делать, чтобы заживление прошло быстро и без боли
+						a.item(href="article.html")
+							img.item__img(src=img+"articles/img.jpg", alt="")
+							.item__title Рекомедации после имплантации
+							.item__text Что делать, чтобы заживление прошло быстро и без боли 
+						a.item(href="article.html")
+							img.item__img(src=img+"articles/img.jpg", alt="")
+							.item__title Рекомедации после имплантации
+							.item__text Что делать, чтобы заживление прошло быстро и без боли
+					ul.action
+						li
+							a.submit(href="#") Показать еще 16 статей
+
+			include blocks/security.pug
+			include blocks/more-services.pug
+
+			include blocks/contact.pug
+
+		include blocks/footer.pug
+		include blocks/scripts.pug
