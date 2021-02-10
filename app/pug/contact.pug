@@ -1,0 +1,100 @@
+- var img = '../img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+
+			.circle2
+
+			section.breadcrumbs
+				.container
+					ul.list
+						li
+							a(href="index.html") На главную
+						li
+							a(href="reviews.html") Отзывы
+
+			section.mainblock.type2
+				.slider
+					.slide
+						.slide-left
+							img.slide__img(src=img+"mainblock/contact-img.jpg", alt="")
+						.slide-right
+							.block-title Контакты клиники
+							.block-text Будем рады видеть у нас в гостях!
+							include blocks/_entry-form.pug
+
+			section.advantages
+				.container
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/dentist.svg", alt="")
+						.item__title Опытные врачи
+						.item__text Стаж всех врачей от 8 до 20 лет
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/tooth-ok.svg", alt="")
+						.item__title Современные технологии
+						.item__text Передовые методы лечения <br> и высокоточная техника
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/certificate.svg", alt="")
+						.item__title Высокое качество
+						.item__text Клиника сертифицирована <br> по стандарту ISO 9001
+			
+			section.contacts
+				.container
+					.blocks
+						.block
+							.block-icon
+								img.block__icon(src=img+"icons/location.svg", alt="")
+							.block-inner
+								.block__text <b>Москва, ул. Народная 12</b> <br> (м. Таганская)
+						.block
+							.block-icon
+								img.block__icon(src=img+"icons/phone.svg", alt="")
+							.block-inner
+								ul.block-links
+									li
+										a(href="tel:84950000000") 8 (495) 000 00 00
+						.block
+							.block-icon
+								img.block__icon(src=img+"icons/mail.svg", alt="")
+							.block-inner
+								ul.block-links
+									li
+										a(href="mailto:allon4@mail.ru") allon4@mail.ru
+						.block
+							.block-icon
+								img.block__icon(src=img+"icons/time.svg", alt="")
+							.block-inner
+								.block__text <b>с 09-00 до 21-00</b><br> (воскресенье - выходной)
+					.block-title Мы в соцсетях
+					ul.social-links
+						li.social-links-item
+							a(href="#").social-links-link
+								img.social-links__img(src=img+"icons/facebook.png", alt="")
+						li.social-links-item
+							a(href="#").social-links-link
+								img.social-links__img(src=img+"icons/insta.png", alt="")
+						li.social-links-item
+							a(href="#").social-links-link
+								img.social-links__img(src=img+"icons/vk.png", alt="")
+						li.social-links-item
+							a(href="#").social-links-link
+								img.social-links__img(src=img+"icons/odnoklassniki.png", alt="")
+						li.social-links-item
+							a(href="#").social-links-link
+								img.social-links__img(src=img+"icons/youtube.png", alt="")
+				#map
+
+			include blocks/security.pug
+			include blocks/more-services.pug
+
+		include blocks/footer.pug
+		include blocks/scripts.pug
