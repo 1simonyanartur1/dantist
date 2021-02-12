@@ -3,8 +3,10 @@
 	.container
 		max-width: 1510px
 		padding: 0 15px
-	// .block-title
-	// 	margin: 0 0 0 25px
+		+mq($max-width: 1700px)
+			max-width: 1370px
+		+mq($max-width: 1550px)
+			max-width: 1170px
 	.slider
 		width: calc(100% + 30px)
 		margin: 35px 0 0 -15px
@@ -23,9 +25,13 @@
 		&__title
 			margin: 20px 0 0 0
 			font-size: 24px
+			+mq($max-width: 1550px)
+				font-size: 18px
 		&__text
 			font-family: 'UniBook', sans-serif
 			font-size: 18px
+			+mq($max-width: 1550px)
+				font-size: 14px
 	.arrows
 		+flex(row, end, center, wrap)
 		margin: 35px 0
@@ -35,8 +41,12 @@
 		transform: translate(0, -100%)
 		z-index: 3
 		&-prev
-			left: -70px
+			left: -60px
 			transform: translate(0, -100%) rotate(180deg)
 			margin: 0 20px 0 0
+			+mq($max-width: 1300px)
+				left: 0
 		&-next
-			right: -70px
+			right: -60px
+			+mq($max-width: 1300px)
+				right: 0

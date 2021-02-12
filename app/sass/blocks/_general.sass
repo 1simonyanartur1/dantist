@@ -122,10 +122,18 @@ body
 	font-size: 35px
 	color: black
 	line-height: 1
+	+mq($max-width: 800px)
+		font-size: 30px
+	+mq($max-width: 575px)
+		font-size: 24px
 	span
 		font-size: 38px
 		font-style: italic
 		font-family: 'PF', sans-serif
+		+mq($max-width: 800px)
+			font-size: 32px
+		+mq($max-width: 575px)
+			font-size: 24px
 
 .block-text
 	font-family: 'UniBook', sans-serif

@@ -11,9 +11,6 @@
 			display: block
 			width: 100%
 			+mq($max-width: 1200px)
-				width: auto
-				height: 100%
-			+mq($max-width: 700px)
 				width: 100%
 				height: auto
 		&-left
@@ -22,21 +19,17 @@
 			+mq($max-width: 1500px)
 				width: 55%
 			+mq($max-width: 1200px)
-				width: auto
-				position: absolute
-				right: 0
-				bottom: 0
-				width: auto
-				height: 100%
-			+mq($max-width: 1000px)
-				transform: translate(40%, 0)
-			+mq($max-width: 700px)
-				transform: translate(0, 0)
-				right: auto
-				left: auto
-				height: auto
 				width: 100%
-				position: static
+				height: auto
+			// +mq($max-width: 1000px)
+			// 	transform: translate(40%, 0)
+			// +mq($max-width: 700px)
+			// 	transform: translate(0, 0)
+			// 	right: auto
+			// 	left: auto
+			// 	height: auto
+			// 	width: 100%
+			// 	position: static
 			&:before
 				content: ''
 				position: absolute
@@ -108,6 +101,8 @@
 			z-index: 3
 			font-size: 14px
 			margin: 0 0 40px 0
+			+mq($max-width: 1550px)
+				margin: 0 0 20px 0
 	.block-title
 		font-size: 58px
 		max-width: 522px
@@ -120,8 +115,10 @@
 			width: 60%
 			margin: 15px 0 15px 0
 		+mq($max-width: 1500px)
-			font-size: 32px
+			font-size: 28px
 			width: 100%
+		+mq($max-width: 575px)
+			font-size: 24px
 		span
 			display: block
 			width: 100%
@@ -134,7 +131,9 @@
 			+mq($max-width: 1500px)
 				display: inline-block
 				width: auto
-				font-size: 26px
+				font-size: 24px
+			+mq($max-width: 575px)
+				font-size: 24px
 	.block-text
 		position: relative
 		z-index: 3
@@ -172,7 +171,7 @@
 		+mq($max-width: 1200px)
 			width: 100%
 		+mq($max-width: 575px)
-			width: 70%
+			width: 100%
 		&.horizontal
 			.entry-form__btn
 				+mq($max-width: 1200px)
@@ -215,6 +214,9 @@
 	&.type2
 		.block-title
 			max-width: 100%
+			width: 100%
 		.block-text
 			padding: 15px 0
+			+mq($max-width: 1500px)
+				padding: 0 0 15px 0
 
