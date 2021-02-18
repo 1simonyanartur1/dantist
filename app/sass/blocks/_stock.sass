@@ -1,12 +1,12 @@
 .stock
 	padding: 90px 0
-	+mq($max-width: 575px)
+	+mq($max-width: 1200px)
 		padding: 40px 0
 	.container
 		max-width: 1370px
 	&-item
 		margin: 0 0 50px 0
-		+mq($max-width: 575px)
+		+mq($max-width: 1550px)
 			margin: 0 0 25px 0
 		&::after
 			content: ''
@@ -29,17 +29,18 @@
 			min-height: 80px
 			+flex(row, null, center, wrap)
 			position: relative
+			+mq($max-width: 800px)
+				min-height: 50px
+				padding: 18px 60px
 			+mq($max-width: 575px)
-				padding: 18px 80px 18px 15px
-				text-align: left
-				min-height: 40px
+				padding: 18px 60px 18px 20px
 			&:hover
 				.stock-item__arrow
 					background: $brown
 		&-inner
 			padding: 45px 0
 			+mq($max-width: 1000px)
-				padding: 15px 0
+				padding: 25px 0
 		.text-container
 			padding: 50px 0 0 0
 			+mq($max-width: 1000px)
@@ -54,12 +55,17 @@
 				float: none !important
 				margin: 0
 		&__title
+			width: 100%
+			text-align: center
 			font-size: 29px
 			line-height: 1
 			+mq($max-width: 1650px)
 				font-size: 24px
+			+mq($max-width: 800px)
+				font-size: 18px
 			+mq($max-width: 575px)
-				font-size: 17px
+				font-size: 15px
+				text-align: left
 		&__arrow
 			cursor: pointer
 			width: 67px
@@ -72,14 +78,14 @@
 			background: #959595
 			+trs
 			+flex(row, center, center, nowrap)
-			+mq($max-width: 575px)
-				width: 37px
-				height: 37px
+			+mq($max-width: 800px)
+				width: 40px
+				height: 40px
 			svg
 				display: block
 				width: 24px
 				stroke: white
-				+mq($max-width: 575px)
+				+mq($max-width: 800px)
 					width: 16px
 
 	.action
