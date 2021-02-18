@@ -4,11 +4,15 @@
 		max-width: 1390px
 	&-block
 		margin: 0 0 70px 0
+		+mq($max-width: 1550px)
+			margin: 0 0 35px 0
 	&-item
 		margin: 0 0 50px 0
+		+mq($max-width: 1550px)
+			margin: 0 0 20px 0
 		&.active
 			.prices-spoilers-item__arrow
-				transform: rotate(180deg)
+				transform: rotate(180deg) translate(0, 50%)
 		&-row
 			background: #FDFDFD
 			border-radius: 80px
@@ -17,12 +21,28 @@
 			padding: 24px 80px
 			position: relative
 			cursor: pointer
+			min-height: 80px
+			+flex(row, center, center, nowrap)
+			+mq($max-width: 800px)
+				min-height: 50px
+				padding: 18px 60px
+			+mq($max-width: 575px)
+				padding: 18px 60px 18px 20px
+				text-align: left
 			&:hover
 				.prices-spoilers-item__arrow
 					background: $brown
 		&__title
 			font-size: 29px
 			line-height: 1
+			width: 100%
+			+mq($max-width: 1550px)
+				font-size: 22px
+			+mq($max-width: 800px)
+				font-size: 18px
+			+mq($max-width: 575px)
+				font-size: 15px
+				text-align: left
 		&__arrow
 			cursor: pointer
 			width: 67px
@@ -30,24 +50,40 @@
 			border-radius: 67px
 			position: absolute
 			right: 5px
-			top: 5px
+			top: 50%
+			transform: translate(0, -50%)
 			background: #959595
 			+trs
 			+flex(row, center, center, nowrap)
+			+mq($max-width: 800px)
+				width: 45px
+				height: 45px
 			svg
 				display: block
 				width: 24px
 				stroke: white
+				+mq($max-width: 800px)
+					width: 16px
 		&__list
 			margin: 40px 0 0 0
+			+mq($max-width: 1550px)
+				margin: 20px 0 0 0
 			li
 				padding: 15px 0 15px 15px
-				+flex(row, between, null, wrap)
+				+flex(row, between, null, nowrap)
 				border-bottom: 1px solid #D4D4D4
 				span
 					font-size: 24px
+					width: 80%
 					font-family: 'UniBook', sans-serif
+					+mq($max-width: 1550px)
+						font-size: 20px
+					+mq($max-width: 800px)
+						font-size: 16px
+					+mq($max-width: 575px)
+						font-size: 14px
 					&.see-info
+						padding: 0 10px 0 0
 						&:after
 							content: ''
 							vertical-align: middle
@@ -57,17 +93,27 @@
 							margin: 0 10px
 							+bg(null, null, 'icons/info-icon.svg', no-repeat, center, center, contain)
 				b
+					text-align: right
+					width: 20%
 					font-size: 19px
+					+mq($max-width: 800px)
+						font-size: 17px
+					+mq($max-width: 575px)
+						font-size: 15px
 	.action
 		text-align: center
+		+mq($max-width: 575px)
+			+flex(column, null, center, nowrap)
 		li
 			display: inline-block
 			margin: 0 30px
-			
+			+mq($max-width: 575px)
+				margin: 15px 0
 
 	.infolink
 		text-decoration: underline
 		color: black
+		position: relative
 		font-size: 17px
 		font-family: 'UniBook', sans-serif
 		&:hover
@@ -81,5 +127,8 @@
 			width: 20px
 			height: 20px
 			margin: 0 10px
+			position: absolute
+			top: 3px
+			left: -40px
 			filter: grayscale(1)
 			+bg(null, null, 'icons/info-icon.svg', no-repeat, center, center, contain)
