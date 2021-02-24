@@ -43,7 +43,8 @@
 		+mq($max-width: 700px)
 			justify-content: center
 	.card
-		min-width: 101px
+		width: 165px
+		height: 147px
 		background: white
 		box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15)
 		border-radius: 11px
@@ -52,6 +53,10 @@
 		line-height: 1
 		position: relative
 		margin: 7.5px
+		+flex(column, center, center, nowrap)
+		+mq($max-width: 575px)
+			width: 48%
+			margin: 1%
 		&:before
 			content: ''
 			display: block
@@ -62,13 +67,17 @@
 			right: 11px
 			bottom: 11px
 			left: 11px
-		&__title
-			font-size: 16px
-			margin: 0 0 14px 0
+		&-img
+			height: 36px
+			width: 100%
+			+flex(row, center, center, nowrap)
+		&__img
+			max-width: 100%
 		&__num
 			color: $brown
 			font-weight: 700
 			font-size: 27px
+			margin: 10px 0 0 0
 			span
 				font-size: 16px
 	.hand
