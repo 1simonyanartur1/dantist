@@ -16,7 +16,7 @@ html
 							img.slide__img(src=img+"mainblock/img.jpg", alt="")
 							img.play-img(src=img+"mainblock/play.png", alt="")
 						.slide-right
-							a.video-link(href="#") Смотрите видео <br> о нашей клинике
+							a.video-link.popup-video(href="https://www.youtube.com/watch?v=UBqT6BQMrIU") Смотрите видео <br> о нашей клинике
 							.block-title Консультация <span>бесплатно</span>
 							ul.slide-list
 								li Диагностика всей полости рта
@@ -28,7 +28,7 @@ html
 							img.slide__img(src=img+"mainblock/img.jpg", alt="")
 							img.play-img(src=img+"mainblock/play.png", alt="")
 						.slide-right
-							a.video-link(href="#") Смотрите видео <br> о нашей клинике
+							a.video-link.popup-video(href="https://www.youtube.com/watch?v=UBqT6BQMrIU") Смотрите видео <br> о нашей клинике
 							.block-title Консультация <span>бесплатно</span>
 							ul.slide-list
 								li Диагностика всей полости рта
@@ -615,6 +615,38 @@ html
 							.slide
 								img.slide__img(src=img+"recommend/img5.jpg", alt="")
 								.slide__name Мария
+
+			section.stocks
+				.container
+					.block-title <span>Заманчивые акции для вас</span> от нашей клиники
+					.slider
+						.slide
+							.slide-inner
+								img.slide__img(src=img+"stocks/img1.jpg", alt="")
+								.slide__title Восстановление зубов за 1 день по системе
+								.slide-price All on 4 от <span>149 900</span>
+							a.slide__link(href="#") Узнать подробнее
+						.slide
+							.slide-inner
+								img.slide__img(src=img+"stocks/img2.jpg", alt="")
+								.slide__title Имплантация зубов 
+								.slide-price за <span>15 900</span>
+								.slide__text <span>Всего за 1 день</span> челюстно-лицевым хирургом <b> с опытом более 15 лет</b>
+							a.slide__link(href="#") Узнать подробнее
+						.slide
+							.slide-inner
+								img.slide__img(src=img+"stocks/img3.jpg", alt="")
+								.slide__title Виниры за 1 приём 
+								.slide-price от <span>9 500</span>
+								.slide__text <b>С гарантией</b>по договору <b>15 лет</b>
+							a.slide__link(href="#") Узнать подробнее
+						.slide
+							.slide-inner
+								img.slide__img(src=img+"stocks/img1.jpg", alt="")
+								.slide__title Виниры за 1 приём 
+								.slide-price от <span>9 500</span>
+								.slide__text <b>С гарантией</b>по договору <b>15 лет</b>
+							a.slide__link(href="#") Узнать подробнее
 
 			include blocks/rating.pug
 			include blocks/seo.pug
