@@ -2,16 +2,7 @@
 	padding: 60px 0 30px 0
 	+mq($max-width: 575px)
 		padding: 25px 0
-	&.type2
-		.container
-			max-width: 1470px
-		.item
-			max-width: 24%
-			&__text
-				span
-					font-weight: 700
-					color: $yellow2
-	.inner
+	.container
 		+flex(row, around, start, wrap)
 	.item
 		+flex(column, null, center, nowrap)
@@ -38,7 +29,6 @@
 				margin: 10px 0
 				font-size: 15px
 		&__text
-			margin: 45px 0 0 0
 			font-size: 18px
 			+mq($max-width: 575px)
 				font-size: 13px
