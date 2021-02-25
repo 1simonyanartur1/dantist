@@ -81,6 +81,8 @@
 			slidesToShow: 1,
 			slidesToScroll: 1
 		});
+		$('.mainblock.type2 .slider').slick('destroy');
+		$('.mainblock.type3 .slider').slick('destroy');
 		$('.stocks .slider').slick({
 			dots: false,
 			infinite: true,
