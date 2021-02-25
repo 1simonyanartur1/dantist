@@ -9,9 +9,66 @@ html
 
 		main.page-container
 
+			section.mainblock.type3
+				.slider
+					.slide
+						.slide-left
+							img.slide__img(src=img+"mainblock/all-on-4-img.jpg", alt="")
+						.slide-right
+							.block-title <b>Восстановление зубов за 1 день</b> <br> по системе <span>All on 4</span> от 149 900 ₽.
+							.block-text Записаться <span>на бесплатную консультацию:</span>
+							include blocks/_entry-form.pug
+							ul.anchor-menu
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Описание
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Стоимость работ
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Примеры
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Врачи
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Акции
+
+			section.block-icons
+				.container
+					.block-title <span>Забудьте о проблемах</span> с зубами
+					.inner
+						.item
+							.img-wrap
+								img.item__img(src=img+"icons/clock.svg", alt="")
+							.item__text <span>Полное восстановление</span> утраченных зубов всего за несколько часов
+						.item
+							.img-wrap
+								img.item__img(src=img+"icons/cool.svg", alt="")
+							.item__text <span>Не нужно ждать — пациенту</span> сразу же  устанавливают эстетичный временный протез
+						.item
+							.img-wrap
+								img.item__img(src=img+"icons/wallet.svg", alt="")
+							.item__text <span>Восстановить зубы гораздо дешевле,</span> чем ставить несколько «одиночных» имплантов.
+						.item
+							.img-wrap
+								img.item__img(src=img+"icons/cool2.svg", alt="")
+							.item__text <span>Пожизненная гарантия</span> на имплантанты Nobel Biocare
+
+			//- section.category-about
+				.container
+					.category-about-left
+					.category-about-right
+						.bock-title Об имплантации <span>по методу All on 4</span>
+						.text-container
+							p Это современная технология протезирования при полном или почти полном отсутствии зубов.
+							p Технология также известна, как имплантация с моментальной нагрузкой или экспресс-имплантация. Вам установят 4 импланта, на них закрепят протез.
+							p Операция займет около часа, изготовление протеза около 12 часов. <br> Имплантат и коронка устанавливаются за один визит к стоматологу. Утром вы просто приходите в клинику, а вечером уходите уже с зубами.
+
+			section.teeth
+				.container
+					.block-title Поможет даже в сложных случаях
+
 			//- .circle1
 			//- .circle2
 
+			include blocks/doctors.pug
 			include blocks/security.pug
 			include blocks/stocks.pug
 			include blocks/rating.pug
