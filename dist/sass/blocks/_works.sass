@@ -1,0 +1,99 @@
+.works
+	padding: 68px 0 40px 0
+	+mq($max-width: 1650px)
+		padding: 30px 0
+	+mq($max-width: 1200px)
+		padding: 0 15px
+	.container
+		background: white
+		box-shadow: $container-shadow
+		padding: 59px 53px 63px 51px
+		+flex(row, between, end, wrap)
+		max-width: 1590px
+		+mq($max-width: 1650px)
+			max-width: 1170px
+			padding: 30px
+		+mq($max-width: 700px)
+			padding: 15px
+	.block-title
+		font-size: 46px
+		+mq($max-width: 1650px)
+			font-size: 38px
+		+mq($max-width: 575px)
+			font-size: 32px
+		span
+			font-size: 40px
+			+mq($max-width: 1650px)
+				font-size: 32px
+			+mq($max-width: 575px)
+				font-size: 30px
+	.block-text
+		font-size: 16px
+		margin: 17px 0 0 0
+		+mq($max-width: 1650px)
+			margin: 0
+	.slider-for
+		max-width: 609px
+		width: 100%
+		+mq($max-width: 1650px)
+			max-width: 440px
+		+mq($max-width: 1200px)
+			display: none
+	.inner
+		max-width: 826px
+		width: 100%
+		+mq($max-width: 1650px)
+			max-width: 660px
+		+mq($max-width: 1200px)
+			max-width: 100%
+		+mq($max-width: 700px)
+			margin: 0 0 80px
+	.slider-nav
+		position: relative
+		margin: 40px 0 0 0
+		+mq($max-width: 1650px)
+			margin: 20px 0 0
+			+mq($max-width: 1200px)
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			width: 120px
+			background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+			+mq($max-width: 700px)
+				display: none
+		.twentytwenty-wrapper
+			margin: 0 26px 0 0
+			width: 340px
+			+mq($max-width: 1650px)
+				width: 280px
+			+mq($max-width: 1200px)
+				width: 400px
+			+mq($max-width: 700px)
+				width: 100%
+				margin: 0
+	.arrow
+		position: absolute
+		top: -60%
+		+mq($max-width: 1200px)
+			top: -40%
+		&-prev
+			right: 90px
+			transform: translate(0, 0) rotate(180deg)
+			+mq($max-width: 700px)
+				left: 0
+				bottom: -75px
+				top: auto
+				right: auto
+		&-next
+			right: 20px
+			transform: translate(0, 0)
+			+mq($max-width: 700px)
+				left: 75px
+				bottom: -75px
+				top: auto
+				right: auto
+

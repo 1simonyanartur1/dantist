@@ -1,0 +1,118 @@
+- var img = '../img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+
+			.circle1
+			.circle2
+
+			section.breadcrumbs
+				.container
+					ul.list
+						li
+							a(href="index.html") На главную
+						li
+							a(href="stock.html") Акции
+
+			section.mainblock.type2
+				.slider
+					.slide
+						.slide-left
+							img.slide__img(src=img+"mainblock/stock-img.jpg", alt="")
+						.slide-right
+							.block-title Акции нашей клиники
+							.block-text Самые актуальные и интересные предложения
+							include blocks/_entry-form.pug
+
+			section.stock
+				.container
+					.stock-item
+						.stock-item-row
+							.stock-item__title Название акции 1
+							.stock-item__arrow
+								<svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L8.38889 8L15 1" stroke-width="2"/>
+								</svg>
+						.stock-item-inner
+							img.stock-item__img(src=img+"stock/img.jpg", alt="" style="float:left;")
+							.text-container
+								h3 Название
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+					.stock-item
+						.stock-item-row
+							.stock-item__title Название акции 1
+							.stock-item__arrow
+								<svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L8.38889 8L15 1" stroke-width="2"/>
+								</svg>
+						.stock-item-inner
+							img.stock-item__img(src=img+"stock/img.jpg", alt="" style="float:left;")
+							.text-container
+								h3 Название
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+					.stock-item
+						.stock-item-row
+							.stock-item__title Название акции 1
+							.stock-item__arrow
+								<svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L8.38889 8L15 1" stroke-width="2"/>
+								</svg>
+						.stock-item-inner
+							img.stock-item__img(src=img+"stock/img.jpg", alt="" style="float:left;")
+							.text-container
+								h3 Название
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+					.stock-item
+						.stock-item-row
+							.stock-item__title Название акции 2
+							.stock-item__arrow
+								<svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L8.38889 8L15 1" stroke-width="2"/>
+								</svg>
+						.stock-item-inner
+							img.stock-item__img(src=img+"stock/img.jpg", alt="" style="float:left;")
+							.text-container
+								h3 Название
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+					.stock-item
+						.stock-item-row
+							.stock-item__title Название акции 3
+							.stock-item__arrow
+								<svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L8.38889 8L15 1" stroke-width="2"/>
+								</svg>
+						.stock-item-inner
+							img.stock-item__img(src=img+"stock/img.jpg", alt="" style="float:left;")
+							.text-container
+								h3 Название
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+					.stock-item
+						.stock-item-row
+							.stock-item__title Название акции 4
+							.stock-item__arrow
+								<svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L8.38889 8L15 1" stroke-width="2"/>
+								</svg>
+						.stock-item-inner
+							img.stock-item__img(src=img+"stock/img.jpg", alt="" style="float:left;")
+							.text-container
+								h3 Название
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+					ul.action
+						li
+							a.submit(href="#") Показать еще акции
+
+			include blocks/security.pug
+			include blocks/more-services.pug
+
+			include blocks/seo.pug
+			include blocks/contact.pug
+
+		include blocks/footer.pug
+		include blocks/scripts.pug

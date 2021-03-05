@@ -1,0 +1,39 @@
+.block-icons
+	padding: 60px 0 30px 0
+	+mq($max-width: 575px)
+		padding: 25px 0
+	.container
+		max-width: 1470px
+	.block-title
+		text-align: center
+		margin: 0 0 50px 0
+	.inner
+		width: 100%
+		+flex(row, null, null, wrap)
+	.item
+		width: 23%
+		margin: 2% 1%
+		+flex(column, null, center, nowrap)
+		text-align: center
+		+mq($max-width: 575px)
+			max-width: 48%
+		+mq($max-width: 370px)
+			max-width: 100%
+		.img-wrap
+			width: 98px
+			height: 98px
+			border-radius: 100%
+			background: white
+			box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
+			+flex(row, center, center, nowrap)
+		&__text
+			margin: 45px 0 0 0
+			font-size: 18px
+			span
+				font-weight: 700
+				color: $yellow2
+
+			+mq($max-width: 575px)
+				font-size: 13px
+
+

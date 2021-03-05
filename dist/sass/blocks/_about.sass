@@ -1,0 +1,71 @@
+.about
+	padding: 45px 0 40px
+	color: $dark2
+	+mq($max-width: 1200px)
+		padding: 30px 15px
+	.container
+		background: white
+		max-width: 1510px
+		+flex(row, between, null, wrap)
+		border-radius: 10px
+		box-shadow: $container-shadow
+		position: relative
+		padding: 0
+		+mq($max-width: 1650px)
+			max-width: 1170px
+		+mq($max-width: 1200px)
+			max-width: 100%
+			padding: 0
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			border: 43px solid #FAFAFA
+			width: 431px
+			height: 431px
+			border-radius: 100%
+			right: 0
+			top: 0
+			z-index: -1
+			transform: translate(-10%, -40%)
+			+mq($max-width: 1650px)
+				width: 310px
+				height: 310px
+			+mq($max-width: 700px)
+				display: none
+	.block-title
+		margin: 0 0 37px 0
+		+mq($max-width: 1650px)
+			margin: 0 0 15px 0
+	&__img
+		display: block
+		max-width: 641px
+		width: auto
+		border-radius: 10px 0 0 10px
+		+mq($max-width: 1650px)
+			max-width: 40%
+		+mq($max-width: 1000px)
+			display: none
+	.text-container
+		margin: 45px 50px
+		width: calc( 100% - 741px )
+		overflow: auto
+		font-family: 'UniBook', sans-serif
+		line-height: 1.6
+		+mq($max-width: 1650px)
+			margin: 30px
+			width: calc(60% - 60px)
+		+mq($max-width: 1000px)
+			width: 100%
+		+mq($max-width: 575px)
+			padding: 15px
+			margin: 0
+		img
+			display: none
+			width: 50%
+			+mq($max-width: 1000px)
+				display: block
+				float: left
+				margin: 0 15px 15px 0
+			+mq($max-width: 575px)
+				width: 100%

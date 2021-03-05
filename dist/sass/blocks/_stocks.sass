@@ -1,0 +1,128 @@
+.stocks
+	padding: 35px 0
+	+mq($max-width: 1500px)
+		padding: 20px 0
+	.container
+		max-width: 1380px
+		+mq($max-width: 1500px)
+			max-width: 1170px
+		+mq($max-width: 1300px)
+			max-width: 1000px
+	.block-title
+		text-align: center
+		+mq($max-width: 1200px)
+			margin: 0 0 25px 0
+		span
+			font-family: 'Uni', sans-serif
+			color: $yellow
+			font-weight: 400
+			font-style: normal
+	.slider
+		position: relative
+		.slick-track
+			padding: 50px 0
+			+flex(row, null, null, nowrap)
+			+mq($max-width: 1200px)
+				padding: 0
+	.slide
+		background: white
+		border-radius: 10px
+		margin: 20px
+		height: auto
+		position: relative
+		+flex(row, null, null, wrap)
+		+mq($max-width: 1500px)
+			margin: 10px
+		+mq($min-width: 1200px)
+			&:hover
+				border-radius: 20px 20px 0 0 
+				.slide__link
+					display: block
+					opacity: 1
+		&-inner
+			+flex(column, null, start, nowrap)
+			padding: 20px
+			width: 100%
+			+mq($max-width: 1500px)
+				padding: 15px
+		&__img
+			display: block
+			width: 100%
+			height: auto
+		&__title
+			margin: 10px 0
+			font-size: 24px
+			font-family: 'UniBook', sans-serif
+			+mq($max-width: 1500px)
+				font-size: 20px
+			+mq($max-width: 1200px)
+				font-size: 18px
+		&-price
+			margin: auto 0 0 0
+			font-size: 24px
+			+mq($max-width: 1500px)
+				font-size: 16px
+			+mq($max-width: 1200px)
+				font-size: 15px
+			span
+				color: $brown
+				font-size: 28px
+				font-weight: 500
+				+mq($max-width: 1500px)
+					font-size: 22px
+		&__text
+			margin: auto 0 0 0
+		&__link
+			position: absolute
+			top: 100%
+			width: 100%
+			padding: 21px
+			background: linear-gradient(267.74deg, #CE9D20 -7.28%, #E6B433 93.42%)
+			border-radius: 0px 0px 10px 10px
+			text-align: center
+			color: white
+			font-weight: 700
+			font-size: 21px
+			display: none
+			line-height: 1
+			+mq($max-width: 1500px)
+				font-size: 18px
+				padding: 15px
+			+mq($max-width: 1200px)
+				position: static
+				display: block
+			+mq($max-width: 575px)
+				font-size: 16px
+	.arrow
+		position: absolute
+		z-index: 3
+		top: 50%
+		&-prev
+			left: 0
+			transform: rotate(180deg) translate(100%, 50%)
+			+mq($max-width: 1200px)
+				transform: rotate(180deg) translate(0, 50%)
+		&-next
+			transform: translate(100%, -50%)
+			right: 0
+			+mq($max-width: 1200px)
+				transform: translate(0, -50%)
+
+	.slick-dots
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 15px 0
+		li
+			margin: 0 5px
+			&.slick-active button
+				background: $brown
+		button
+			cursor: pointer
+			display: block
+			font-size: 0
+			border-radius: 100%
+			width: 12px
+			height: 12px
+			transition: all .3s ease-out
+			background: $gray

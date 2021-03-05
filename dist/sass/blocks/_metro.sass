@@ -1,0 +1,143 @@
+.metro
+	padding: 75px 0 68px 0
+	+mq($max-width: 1650px)
+		padding: 40px 0
+	.container
+		+flex(row, between, null, wrap)
+		max-width: 1620px
+		+mq($max-width: 1650px)
+			max-width: 1170px
+	&-left
+		background: white
+		border-radius: 10px
+		+flex(row, start, end, wrap)
+		box-shadow: $container-shadow
+		max-width: 1071px
+		width: 100%
+		padding: 29px 34px 43px 34px
+		+mq($max-width: 1650px)
+			max-width: 840px
+		+mq($max-width: 1200px)
+			max-width: 100%
+			margin: 0 0 20px 0
+		+mq($max-width: 700px)
+			padding: 15px
+			position: relative
+	.slider-for
+		max-width: 678px
+		width: 100%
+		+mq($max-width: 1650px)
+			max-width: 490px
+		+mq($max-width: 700px)
+			max-width: 100%
+		.slide
+			&__img
+				display: block
+				width: 100%
+	.slider-nav
+		max-width: 155px
+		width: 100%
+		margin: 0 15px -15px 0
+		+mq($max-width: 1650px)
+			max-width: 110px
+		+mq($max-width: 800px)
+			display: none
+		.slide
+			margin: 0 0 15px 0
+			+mq($max-width: 1650px)
+				margin: 0 0 13px 0
+			&__img
+				display: block
+				width: 100%
+	&-right
+		display: block
+		max-width: 500px
+		width: 100%
+		position: relative
+		+mq($max-width: 1650px)
+			max-width: 280px
+		+mq($max-width: 1200px)
+			margin: 0 auto
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			right: 0
+			top: 0
+			transform: translate(35%, -15%)
+			width: 1107px
+			height: 1107px
+			box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15)
+			background: #FCFCFC
+			z-index: -2
+			border-radius: 100%
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			right: 0
+			top: 0
+			transform: translate(38%, -23%)
+			width: 1466px
+			height: 1466px
+			box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15)
+			z-index: -3
+			border-radius: 100%
+	.card
+		border-radius: 10px
+		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15)
+		max-width: 328px
+		width: 100%
+	.map
+		position: absolute
+		bottom: 0
+		right: 0
+		width: 100%
+		display: block
+		height: auto
+		z-index: -1
+		+mq($max-width: 1200px)
+			display: none
+	
+	.slider-counter
+		font-family: 'PF', sans-serif
+		font-weight: 700
+		font-style: italic
+		line-height: .8
+		margin: 0 0 0 40px
+		+mq($max-width: 700px)
+			position: absolute
+			right: 30px
+			bottom: 20px
+		&__curr
+			display: inline-block
+			font-size: 67px
+			+mq($max-width: 575px)
+				font-size: 45px
+		&__all
+			vertical-align: top
+			display: inline-block
+			font-size: 20px
+
+	.arrow
+		top: 0
+		position: absolute
+		z-index: 2
+		+mq($max-width: 370px)
+			display: none  !important
+		&-prev
+			right: -90px
+			transform: translate(0, 0) rotate(180deg)
+			+mq($max-width: 700px)
+				right: 20px
+				top: 20px
+		&-next
+			right: -170px
+			transform: translate(0, 0)
+			+mq($max-width: 1000px)
+				right: -90px
+				top: 70px
+			+mq($max-width: 700px)
+				right: 20px
+				top: 90px
+

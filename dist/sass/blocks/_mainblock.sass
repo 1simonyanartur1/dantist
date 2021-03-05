@@ -1,0 +1,271 @@
+.mainblock
+	overflow: hidde
+	.slide
+		background: $body-bg
+		position: relative
+		+flex(row, null, end, wrap)
+		overflow: hidden
+		+mq($max-width: 1200px)
+			padding: 0 0 20px 0
+		&__img
+			display: block
+			width: 100%
+			+mq($max-width: 1200px)
+				width: 100%
+				height: auto
+		&-left
+			width: 60%
+			position: relative
+			+mq($max-width: 1500px)
+				width: 55%
+			+mq($max-width: 1200px)
+				width: 100%
+				height: auto
+			&:before
+				content: ''
+				position: absolute
+				z-index: 1
+				right: 0
+				top: 0
+				display: block
+				width: 410px
+				height: 100%
+				background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 81.98%)
+				+mq($max-width: 1200px)
+					display: none
+		&-right
+			display: block
+			width: 40%
+			padding: 40px
+			position: relative
+			+mq($max-width: 1500px)
+				width: 45%
+				padding: 15px
+			+mq($max-width: 1200px)
+				width: auto
+			&:before
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 0
+				display: block
+				width: 100%
+				height: 440px
+				background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 81.98%)
+				+mq($max-width: 1200px)
+					display: none
+		&-list
+			margin: 0 0 40px 20px
+			position: relative
+			z-index: 3
+			+mq($max-width: 1650px)
+				margin: 0 0 15px 10px
+			li
+				position: relative
+				margin: 0 0 25px 0
+				padding: 0 0 0 50px
+				+mq($max-width: 1650px)
+					margin: 0 0 15px 0
+					padding: 0 0 0 30px
+				+mq($max-width: 1200px)
+					padding: 0 0 0 25px
+				&::before
+					content: ''
+					display: block
+					width: 30px
+					height: 30px
+					border: 3px solid $brown
+					border-radius: 100%
+					position: absolute
+					left: 0
+					top: -5px
+					+mq($max-width: 1650px)
+						width: 20px
+						height: 20px
+						top: -2px
+					+mq($max-width: 1200px)
+						width: 10px
+						height: 10px
+						top: 2px
+		&__date
+			position: relative
+			z-index: 3
+			font-size: 14px
+			margin: 0 0 40px 0
+			+mq($max-width: 1550px)
+				margin: 0 0 20px 0
+	.block-title
+		font-size: 58px
+		max-width: 522px
+		width: 100%
+		margin: 30px 0 12px 0
+		position: relative
+		z-index: 3
+		+mq($max-width: 1650px)
+			font-size: 37px
+			width: 60%
+			margin: 15px 0 15px 0
+		+mq($max-width: 1500px)
+			font-size: 28px
+			width: 100%
+		+mq($max-width: 575px)
+			font-size: 24px
+		span
+			display: block
+			width: 100%
+			text-align: right
+			color: $yellow
+			font-size: 48px
+			font-weight: 700
+			+mq($max-width: 1650px)
+				font-size: 32px
+			+mq($max-width: 1500px)
+				display: inline-block
+				width: auto
+				font-size: 24px
+			+mq($max-width: 575px)
+				font-size: 24px
+	.block-text
+		position: relative
+		z-index: 3
+	.action
+		position: relative
+		z-index: 3
+	.play-img
+		position: absolute
+		right: -20px
+		top: 0
+		z-index: 2
+		display: block
+		transform: translate(50%, -5%)
+		+mq($max-width: 1700px)
+			width: 300px
+			height: auto
+		+mq($max-width: 1400px)
+			width: 220px
+			height: auto
+		+mq($max-width: 1200px)
+			display: none
+	.video-link
+		margin: 0 0 0 20px
+		text-decoration: underline
+		color: #A8A8A8
+		position: relative
+		z-index: 3
+		+mq($max-width: 1500px)
+			font-size: 13px
+		&:hover
+			color: black
+			text-decoration: none
+
+	.entry-form
+		+mq($max-width: 1200px)
+			width: 100%
+		+mq($max-width: 575px)
+			width: 100%
+		&.horizontal
+			.entry-form__btn
+				+mq($max-width: 1200px)
+					margin: 0 0 0 -10px
+				+mq($max-width: 575px)
+					width: 100%
+					margin: 0
+		&-label
+			+mq($max-width: 575px)
+				width: 100%
+	.slick-dots
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 15px 0
+		position: absolute
+		left: 0
+		bottom: 0
+		z-index: 2
+		width: 100%
+		+mq($max-width: 1650px)
+			padding: 8px 0
+		li
+			margin: 0 10px
+			&.slick-active button
+				width: 56px
+		button
+			box-shadow: 0 0 5px lighten($dark, 45%)
+			cursor: pointer
+			display: block
+			font-size: 0
+			border-radius: 12px
+			width: 12px
+			height: 12px
+			transition: all .3s ease-out
+			background: white
+			&:hover
+				background: $dark
+
+	&.type2
+		.block-title
+			max-width: 100%
+			width: 100%
+		.block-text
+			padding: 15px 0
+			+mq($max-width: 1500px)
+				padding: 0 0 15px 0
+	&.type3
+		.slide
+			&-left
+				width: 55%
+			&-right
+				width: 45%
+				padding-bottom: 0
+				&:before
+					display: none
+		.block-title
+			width: auto
+			max-width: 100%
+			font-size: 45px
+			line-height: 1.4
+			margin: 0 0 30px 0
+			b
+				font-weight: 500
+			span
+				font-size: inherit
+				width: auto
+				font-weight: 500
+				font-family: inherit
+				display: inline-block
+		.block-text
+			font-weight: 600
+			margin: 0 0 20px 0
+			span
+				color: $yellow2
+
+	.anchor-menu
+		width: 90%
+		margin: 30px 0 0 0
+		+flex(row, between, null, wrap)
+		&-item
+			+flex(row, center, center, wrap)
+		&__link
+			text-align: center
+			padding: 20px 0
+			font-size: 18px
+			color: $dark2
+			position: relative
+			&:after
+				content: ''
+				display: block
+				width: 0
+				+trs
+				height: 4px
+				background: $yellow2
+				position: absolute
+				left: 0
+				bottom: 0
+			&:hover
+				font-weight: 700
+				color: $yellow2
+				&:after
+					width: 100%
+
+
+

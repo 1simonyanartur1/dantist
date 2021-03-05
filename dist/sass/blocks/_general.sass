@@ -1,0 +1,292 @@
+// main page elements
+html
+	overflow-x: hidden
+	font-family: 'Uni', sans-serif
+body
+	font-size: 18px
+	color: black
+	font-family: 'Uni', sans-serif
+	font-weight: 400
+	background: $body-bg
+	overflow-x: hidden
+	+mq($max-width: 1600px)
+		font-size: 16px
+	+mq($max-width: 1200px)
+		font-size: 14px
+	// +scrollbar(10px, auto, $yellow, black, black, null)
+
+.page-container
+	max-width: 1920px
+	width: 100%
+	margin: 0 auto
+	position: relative
+	.circle1
+		display: block
+		position: absolute
+		width: 545px
+		height: 545px
+		border-radius: 100%
+		border: 74px solid #FCFCFC
+		right: 0
+		top: 20%
+		transform: translate(50%, 0)
+		z-index: -1
+	.circle2
+		position: absolute
+		transform: translate(50%, 0)
+		z-index: -1
+		bottom: 20%
+		right: 0
+		background: #FCFCFC
+		box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15)
+		width: 1000px
+		height: 1000px
+		border-radius: 100%
+		&::before
+			content: ''
+			display: block
+			border-radius: 100%
+			width: 150%
+			height: 150%
+			z-index: -1
+			top: 50%
+			left: 50%
+			position: absolute
+			transform: translate(-50%, -50%)
+			background: rgba(253, 253, 253, 0.2)
+			box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15)
+
+.container
+	max-width: 1170px
+	width: 100%
+	padding: 0 15px
+	margin: 0 auto
+	+mq($max-width: 1200px)
+		padding: 0 15px
+	+mq($max-width: 575px)
+		padding: 0 10px
+
+.no-page
+	margin: 150px 0
+	.action
+		max-width: 350px
+
+.btn-callback
+	font-weight: 700
+	border-radius: 43px
+	padding: 12px 32px
+	color: white
+	+flex(row, null, center, nowrap)
+	background: $btn-callback-gradient
+	cursor: pointer
+	+trs
+	&:hover
+		background: black
+	svg
+		margin: 0 12px 0 0
+		path
+			fill: white
+
+.btn-entry
+	font-weight: 700
+	border-radius: 43px
+	padding: 12px 32px
+	color: white
+	+flex(row, null, center, nowrap)
+	background: $btn-entry-gradient
+	cursor: pointer
+	+trs
+	&:hover
+		background: black
+	svg
+		margin: 0 12px 0 0
+		path
+			fill: white
+
+.submit
+	text-align: center
+	color: white
+	background: linear-gradient(267.89deg, #CD9B1C 0%, #E6B433 99.45%)
+	padding: 22.5px 55px
+	font-weight: 700
+	border-radius: 5px
+	font-size: 21px
+	cursor: pointer
+	+trs
+	+mq($max-width: 1200px)
+		padding: 11px 27px
+	+mq($max-width: 575px)
+		font-size: 18px
+	&:hover
+		background: linear-gradient(267.89deg, #CD9B1C 99.45%, #E6B433 0%)
+
+.block-title
+	font-weight: 100
+	font-size: 35px
+	color: black
+	line-height: 1
+	+mq($max-width: 800px)
+		font-size: 30px
+	+mq($max-width: 575px)
+		font-size: 24px
+	span
+		font-size: 38px
+		font-style: italic
+		font-family: 'PF', sans-serif
+		+mq($max-width: 800px)
+			font-size: 32px
+		+mq($max-width: 575px)
+			font-size: 24px
+	&.type2
+		span
+			font-style: normal
+			font-family: inherit
+			color: $yellow2
+			font-weight: 400
+
+.block-text
+	font-family: 'UniBook', sans-serif
+	line-height: 1.7
+
+.logo
+	+flex(row, null, center, wrap)
+	color: black
+	+mq($max-width: 700px)
+		flex-direction: column
+		align-items: flex-start
+	&:hover
+		.logo__img
+			opacity: .5
+	&__img
+		display: block
+		max-width: 141px
+		width: 100%
+		+trs
+		+mq($max-width: 1300px)
+			max-width: 121px
+	&__title
+		font-size: 24px
+		line-height: 1
+		text-transform: uppercase
+	&__text
+		font-size: 14px
+		padding: 0 0 0 16px
+		margin: 0 0 0 16px
+		border-left: 1px solid #000
+		+mq($max-width: 1300px)
+			margin: 0 0 0 5px
+			padding: 0 0 0 5px
+			font-size: 12px
+		+mq($max-width: 700px)
+			margin: 0
+			padding: 5px 0 0 0
+			border: none
+
+.entry-form
+	+mq($max-width: 575px)
+		width: 100%
+	&.horizontal
+		+flex(row, null, null, wrap)
+		max-width: 533px
+		width: 100%
+		+mq($max-width: 1500px)
+			max-width: 507px
+		+mq($max-width: 1200px)
+			max-width: 450px
+		.entry-form__btn
+			position: relative
+			z-index: 2
+			margin-left: -10px
+			+mq($max-width: 575px)
+				margin: 0
+				width: 100%
+		+mq($max-width: 575px)
+			flex-direction: column
+	&.vertical
+		width: 282px
+		+flex(column, null, null, nowrap)
+		.entry-form-label
+			margin: 0 0 12px 0
+			width: 100%
+		.entry-form__input
+			width: 100%
+		.entry-form__btn
+			width: 100%
+			margin: 0
+	&-label
+		position: relative
+		width: 100%
+		+mq($max-width: 575px)
+			width: 100%
+			margin: 0 0 10px 0
+		&.big
+			width: 100%
+			margin: 0 0 10px 0
+			.entry-form__input
+				text-align: center
+				width: 100%
+		svg
+			display: block
+			width: 23px
+			position: absolute
+			top: 50%
+			left: 25px
+			z-index: 2
+			transform: translate(0, -50%)
+			+mq($max-width: 1200px)
+				left: 15px
+			path
+				fill: $brown
+	&-row
+		+flex(row, null, null, nowrap)
+		+mq($max-width: 575px)
+			flex-wrap: wrap
+	&__input
+		background: white
+		padding: 19.5px 72px
+		border-radius: 6px
+		border: 3px solid $brown
+		width: 311px
+		font-family: 'UniBook', sans-serif
+		color: $brown
+		font-size: 18px
+		+trs
+		&:hover,
+		&:focus
+			border-color: $dark
+		+mq($max-width: 1450px)
+			width: 285px
+		+mq($max-width: 1200px)
+			padding: 10px 50px
+		+mq($max-width: 575px)
+			font-size: 15px
+			width: 100%
+			text-align: center
+		&::placeholder
+			font-family: 'UniBook', sans-serif
+			font-size: 18px
+			color: $brown
+			+mq($max-width: 575px)
+				font-size: 15px
+
+.arrow
+	background: $gray
+	border-radius: 100%
+	width: 60px
+	height: 60px
+	+flex(row, center, center, nowrap)
+	position: absolute
+	top: 50%
+	cursor: pointer
+	+trs
+	&:hover
+		background: $btn-callback-gradient
+		svg
+			width: 24px
+	svg
+		+trs
+		display: block
+		width: 16px
+		path
+			fill: white
+

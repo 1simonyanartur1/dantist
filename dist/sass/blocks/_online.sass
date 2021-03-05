@@ -1,0 +1,149 @@
+.online
+	padding: 120px 0 75px 0
+	+mq($max-width: 1650px)
+		padding: 50px 0
+	+mq($max-width: 700px)
+		padding: 30px 0
+	.container
+		position: relative
+		+mq($max-width: 700px)
+			+flex(column, null, center, nowrap)
+	.journal
+		position: absolute
+		left: 0
+		bottom: 0
+		display: block
+		z-index: -1
+		transform: translate(-35%, 5%)
+		+mq($max-width: 1000px)
+			display: none
+	&__img-text
+		margin: 0 auto 0 0
+		+mq($max-width: 700px)
+			display: none
+	.block-title
+		margin: 20px 0 29px 0
+		font-size: 55px
+		text-align: right
+		+mq($max-width: 700px)
+			font-size: 40px
+			text-align: center
+		+mq($max-width: 575px)
+			font-size: 34px
+		span
+			font-size: 43px
+			+mq($max-width: 700px)
+				font-size: 35px
+			+mq($max-width: 575px)
+				font-size: 30px
+	.inner
+		position: relative
+		margin: 0 0 124px auto
+		max-width: 540px
+		width: 100%
+		+flex(column, null, end, wrap)
+		+mq($max-width: 1000px)
+			margin: 0 0 50px auto
+		+mq($max-width: 700px)
+			margin: 0 auto 20px
+		+mq($max-width: 700px)
+			+flex(column, null, center, nowrap)
+		&:before
+			content: ''
+			display: block
+			width: 671px
+			height: 671px
+			position: absolute
+			z-index: -2
+			border-radius: 100%
+			border: 1px solid #BDCBD4
+			left: 0
+			bottom: 0
+			transform: translate(-81%, 42%)
+		&:after
+			content: ''
+			display: block
+			width: 906px
+			height: 906px
+			position: absolute
+			z-index: -2
+			border-radius: 100%
+			border: 1px solid #BDCBD4
+			left: 0
+			bottom: 0
+			transform: translate(-73%, 44%)
+	.see-link
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 203px
+		height: 203px
+		+flex(column, center, center, nowrap)
+		background: linear-gradient(52.09deg, #ECE6E6 13.69%, #FFFFFF 93.1%)
+		box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25)
+		border-radius: 100%
+		text-align: center
+		transform: translate(-150%, 20%)
+		&:hover
+			.see-link__text
+				color: $dark
+				text-decoration: none
+		+mq($max-width: 1000px)
+			transform: translate(-100%, 10%)
+		+mq($max-width: 700px)
+			position: static
+			transform: translate(0,0)
+			width: auto
+			height: auto
+			flex-direction: row
+			align-items: center
+			text-align: left
+			margin: 10px 0
+			background: none
+			box-shadow: none
+		&__icon
+			margin: 0 0 11px 0
+		&__text
+			+trs
+			color: $brown
+			font-size: 22px
+			text-decoration: underline
+			+mq($max-width: 700px)
+				font-size: 18px
+				margin: 0 0 0 15px
+	.items
+		max-width: 960px
+		width: 100%
+		+flex(row, end, start, wrap)
+		margin: 0 0 0 auto
+		+mq($max-width: 700px)
+			justify-content: center
+	.item
+		+flex(column, null, end, wrap)
+		max-width: 140px
+		text-align: right
+		+mq($max-width: 700px)
+			margin: 1%
+		+mq($max-width: 575px)
+			margin: 2%
+			text-align: center
+		&:not(:last-child)
+			margin: 0 63px 0 0
+			+mq($max-width: 1000px)
+				margin: 0 30px 0 0
+			+mq($max-width: 700px)
+				margin: 1%
+			+mq($max-width: 400px)
+				margin: 2%
+		&-icon
+			background: white
+			width: 98px
+			height: 98px
+			border-radius: 100%
+			box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
+			+flex(row, center, center, nowrap)
+		&__text
+			margin: 24px 0 0 0
+			+mq($max-width: 400px)
+				margin: 10px 0 0 0
+

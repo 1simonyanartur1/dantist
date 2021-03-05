@@ -1,0 +1,57 @@
+.money-economy
+	padding: 30px 0 50px 0
+	color: $dark
+	+bg(null, null, 'money-economy/bg.png', no-repeat, left 10%, center, contain)
+	.container
+		padding: 0
+		max-width: 1500px
+		+flex(row, between, start, wrap)
+	&-left
+		width: 48%
+	&-right
+		width: 48%
+	.block-text
+		margin: 10px 0 40px 0
+	.items
+		width: 100%
+	.item
+		width: calc( 100% - 50px )
+		background: white
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06)
+		border-radius: 10px
+		padding: 27px 32px 27px 72px
+		margin: 10px 0 10px auto
+		position: relative
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translate(-50%, -50%)
+			width: 82px
+			height: 82px
+			border-radius: 100%
+			z-index: 2
+			background: $body-bg
+		&:after
+			content: '+'
+			display: block
+			position: absolute
+			z-index: 3
+			left: 0
+			top: 50%
+			transform: translate(-50%, -50%)
+			width: 62px
+			height: 62px
+			border-radius: 100%
+			background: linear-gradient(218.13deg, #CC9A1B 17.16%, #EEB628 85.07%)
+			color: white
+			font-size: 24px
+			font-weight: 700
+			+flex(row, center, center, nowrap)
+		&__text
+			font-size: 18px
+			line-height: 1.6
+
+
