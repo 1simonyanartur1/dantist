@@ -1,0 +1,87 @@
+- var img = '../img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+
+			section.mainblock.type3
+				.slider
+					.slide
+						.slide-left
+							img.slide__img(src=img+"mainblock/vinirs-img.jpg", alt="")
+						.slide-right
+							.block-title Виниры <b>за 1 приём</b> от 9 500 ₽ <span>с гарантией по договору 15 лет!</span>
+							.block-text Записаться <span>на бесплатную консультацию:</span>
+							include blocks/_entry-form.pug
+							ul.anchor-menu
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Описание
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Стоимость работ
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Примеры
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Врачи
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Акции
+			
+			section.advantages.type2
+				.block-title.type2 <span>Верните</span> себе <span>красивую улыбку</span>
+				.container
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/dentist.svg", alt="")
+						.item__title Сделать лицо моложе
+						.item__text Зубы белые, красивые и здоровые, что даёт визуальный эффект омоложения. <br> Вы будете выглядеть на 10 лет моложе
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/tooth-ok.svg", alt="")
+						.item__title Придать естественную форму
+						.item__text Качественные правильно установленнные виниры повторяют анатомическую форму зубов и скрывают их недостатки
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/certificate.svg", alt="")
+						.item__title Защитить зубы
+						.item__text Накладки защищают от агрессивных внешних воздействий, благодаря чему зубы преобретают дополнительную прочность
+
+			section.category-about
+				.container
+					.category-about-left
+						img.category-about__img(src=img+"category-about/img1.jpg", alt="")
+					.category-about-right
+						.block-title.type2 Что такое виниры и зачем они нужны
+						.text-container
+							p Эстетический вид зубов может в любой момент нарушиться по самым разным причинам – из-за сколов и трещин эмали, изменения ее цвета, искривленных зубов.
+							p Виниры помогут быстро исправить такие недостатки и приобрести настоящую голливудскую улыбку.
+							p Они представляют собой сверхтонкие накладки на передние зубы, которые делаются из керамики или композитного материала и крепятся с помощью специального состава.
+							p Благодаря сверхтонкой конструкции, выглядят естественно как настоящие зубы.
+			
+			section.setting-indication
+				.container
+					.block-title
+					.inner
+						.item
+							img.item__img(src=img+"setting-indication/img1.jpg", alt="")
+							.item__title Нарушение формы зубов
+							.item__text в результате травмы <br> или стирания
+						.item
+							img.item__img(src=img+"setting-indication/img2.jpg", alt="")
+							.item__title Нарушение формы зубов
+							.item__text в результате травмы <br> или стирания
+						.item
+							img.item__img(src=img+"setting-indication/img3.jpg", alt="")
+							.item__title Нарушение формы зубов
+							.item__text в результате травмы <br> или стирания
+						.item
+							img.item__img(src=img+"setting-indication/img4.jpg", alt="")
+							.item__title Нарушение формы зубов
+							.item__text в результате травмы <br> или стирания
+
+
+		include blocks/footer.pug
+		include blocks/scripts.pug
