@@ -63,24 +63,89 @@ html
 			
 			section.setting-indication
 				.container
-					.block-title
+					.block-title.type2 <span>Показания к установке</span> виниров 
 					.inner
 						.item
 							img.item__img(src=img+"setting-indication/img1.jpg", alt="")
 							.item__title Нарушение формы зубов
-							.item__text в результате травмы <br> или стирания
+							.item__text в результате травмы или стирания
 						.item
 							img.item__img(src=img+"setting-indication/img2.jpg", alt="")
 							.item__title Нарушение формы зубов
-							.item__text в результате травмы <br> или стирания
+							.item__text пигментные пятна, трещины эмали  <br> зуба, возрастные изменения цвета
 						.item
 							img.item__img(src=img+"setting-indication/img3.jpg", alt="")
 							.item__title Нарушение формы зубов
-							.item__text в результате травмы <br> или стирания
+							.item__text промежутки между передними и <br> боковыми зубами
 						.item
 							img.item__img(src=img+"setting-indication/img4.jpg", alt="")
 							.item__title Нарушение формы зубов
-							.item__text в результате травмы <br> или стирания
+							.item__text при широкой улыбке видна значительная <br> часть десны на верхней челюсти
+
+			section.vinir-types
+				.container
+					.block-title.type2 <span>Виды виниров</span> и их отличия 
+					.inner
+						.item
+							img.type__img(src=img+"vinir-types/img1.jpg", alt="")
+							.item__title Керамические виниры
+							.item__text <b>Срок службы:</b> более 15 лет при правильном уходе
+							.item-price
+								.item-price__text Стоимость:
+								.item-price__num <span>от</span> 15 000 ₽
+							.item-line
+								a.item__infolink(href="#") Узнать больше
+								a.item__link.submit(href="#") Записаться на прём
+						.item
+							img.type__img(src=img+"vinir-types/img2.jpg", alt="")
+							.item__title Композитные виниры
+							.item__text <b>Срок службы:</b> более 15 лет при правильном уходе
+							.item-price
+								.item-price__text Стоимость:
+								.item-price__num <span>от</span> 9 500 ₽
+							.item-line
+								a.item__infolink(href="#") Узнать больше
+								a.item__link.submit(href="#") Записаться на прём
+						.item
+							img.type__img(src=img+"vinir-types/img2.jpg", alt="")
+							.item__title Циркониевые виниры
+							.item__text <b>Срок службы:</b> более 15 лет при правильном уходе
+							.item-price
+								.item-price__text Стоимость:
+								.item-price__num <span>от</span> 18 900 ₽
+							.item-line
+								a.item__infolink(href="#") Узнать больше
+								a.item__link.submit(href="#") Записаться на прём
+
+			section.text-info
+				.container
+					.text-info-left
+						.block-title Как правильно выбрать виниры?
+						.block-text Вид и цвет подбирается с учетом пожеланий пациента и <br> профессиональных рекомендаций стоматолога. <br> При выборе очень важно учеть множество факторов, которые могут <br> повлиять на срок службы виниров!
+						ul.action
+							li.action-item
+								a.action__link.submit(href="#") Записаться на консультацию
+					.text-info-right
+						img.text-info__img(src=img+"text-info/img.jpg", alt="")
+
+			include blocks/portfolio.pug
+
+			section.security
+				.container
+					.shield
+						img.shield__img(src=img+"icons/hand-coin.svg", alt="")
+					.inner
+						.block-title Рассрочка под 0% от банка
+						.block-text Помогаем с получением рассрочки даже в сложных случаях
+					a.submit(href="#") Узнать подробнее
+
+			include blocks/doctors.pug
+			include blocks/security.pug
+			include blocks/stocks.pug
+			include blocks/rating.pug
+			include blocks/seo.pug
+			include blocks/contact.pug
+
 
 
 		include blocks/footer.pug
