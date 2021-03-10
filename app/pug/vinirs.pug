@@ -52,7 +52,7 @@ html
 			section.category-about
 				.container
 					.category-about-left
-						img.category-about__img(src=img+"category-about/img1.jpg", alt="")
+						img.category-about__img(src=img+"category-about/img2.jpg", alt="")
 					.category-about-right
 						.block-title.type2 Что такое виниры и зачем они нужны
 						.text-container
@@ -141,6 +141,33 @@ html
 
 			include blocks/doctors.pug
 			include blocks/security.pug
+
+			section.material-cost
+				.container
+					.block-title Стоимость работ и материалов
+					.items
+						.item.info
+							.item__text Консультация с составлением плана лечения
+							.item__price 1 500 ₽
+						.item
+							.item__text Керамические виниры
+							.item__price от 15 570 ₽
+						.item
+							.item__text Из диоксида циркония
+							.item__price от 17 000 ₽
+						.item.info
+							.item__text Композитные виниры
+							.item__price от 17 050 ₽
+						.item
+							.item__text Керамические ультратонкие виниры
+							.item__price от 29 300 ₽
+					ul.action
+						li
+							a.infolink(href="#") Стоимость зависит от методики и системы
+						li
+							a.submit(href="#") Записаться
+						
+
 			include blocks/stocks.pug
 			include blocks/rating.pug
 			include blocks/seo.pug
