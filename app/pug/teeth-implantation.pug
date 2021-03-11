@@ -1,0 +1,127 @@
+- var img = '../img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+
+			section.breadcrumbs
+				.container
+					ul.list
+						li
+							a(href="index.html") На главную
+						li
+							a(href="teeth-implantation.html") Имплантация зубов
+
+			section.mainblock.type3
+				.slider
+					.slide
+						.slide-left
+							img.percent(src=img+"mainblock/percents.png", alt="")
+							img.slide__img(src=img+"mainblock/vinirs-img.jpg", alt="")
+						.slide-right
+							.block-title <b>Имплантация зубов от врача — кандидата медицинских наук!</b>
+							.price
+								.price-block
+									.price__text С пожизненной гарантией <br> на имплант и работу
+								.price-block
+									.price__text <span>15 990 ₽</span> за имплант и установку
+							.block-text Записаться <span>на бесплатную консультацию:</span>
+							include blocks/_entry-form.pug
+							ul.anchor-menu
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Описание
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Показания к установке
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Виды виниров
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Примеры
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Врачи
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Акции
+			
+			section.mini-cards
+				.container
+					.block-title.type2 <span>Верните себе</span> красивую улыбку
+					.inner
+						.card
+							img.card__img(src=img+"mini-cards/icon1.png", alt="")
+							.card-inner
+								.card__title 5 видов имплантации
+								.card__text От одномоментной установки <span>за 20 минут</span> до новейшей установик с применением лазера
+						.card
+							img.card__img(src=img+"mini-cards/icon2.png", alt="")
+							.card-inner
+								.card__title Без боли и отеков
+								.card__text На работе вам потребуется взять <span>лишь 1 отгул на день</span> приема стоматолога
+						.card
+							img.card__img(src=img+"mini-cards/icon3.png", alt="")
+							.card-inner
+								.card__title Стоимость известна заранее
+								.card__text На первичной консультации вы <span>получие поэтапный план</span> лечения
+
+			section.category-about
+				.container
+					.category-about-left
+						img.category-about__img(src=img+"category-about/img3.jpg", alt="")
+					.category-about-right
+						.block-title.type2 Об имплантации зубов
+						.text-container
+							p Имплантация зубов — наиболее эффективный, быстрый и безболезненный способ заменить потерянные зубы. При этом нет никакой необходимости тревожить соседние зубы и устанавливать съёмные протезы.
+							p Имплантация представляет собой вживление искусственной опоры (заменитель корня зуба), на чьей основе будет осуществляться дальнейшее протезирование.
+							p Каждый из предлагаемых нами имплантов зубов изготавливается из титанового сплава, поверхность которого проходит специальную обработку.
+
+			section.mini-cards.type2
+				.container
+					.block-title.type2 <span>Верните себе</span> красивую улыбку
+					.inner
+						.card
+							img.card__img(src=img+"mini-cards/icon3.png", alt="")
+							.card-inner
+								.card__title Выяснит противопоказания и состоние здоровья 
+						.card
+							img.card__img(src=img+"mini-cards/icon4.png", alt="")
+							.card-inner
+								.card__title Проведет компьютерное моделирование
+						.card
+							img.card__img(src=img+"mini-cards/icon5.png", alt="")
+							.card-inner
+								.card__title Создаст подробную зубную формулу полости рта
+
+			section.implantations-types
+				.container
+					.block-title.type2 <span>Виды</span> имплантации <span>в нашей клинике</span>
+					.inner
+						.card
+							.card-left
+								.card__title Если нет 1-2 зубов
+								ul.card-list
+									li <b>Одномоментная имплантация</b><br> в один нет 1-2 зубов пропадает удаление зуба, установку ипланта и коронки
+									li <b>Классическая имплантация</b><br> коронку фиксируют после полного приживления импланта
+								.card-item
+									.card-item-icon
+										img.card-item__icon(src=img+"", alt="")
+									.card-item__text Приживаемость имплантов 99,9% — один из лучших результатов в Москве.
+								.card-item
+									.card-item-icon
+										img.card-item__icon(src=img+"", alt="")
+									.card-item__text Самый надёжный метод, проверенный временем, применяемый во всём мире.
+								.card-cost
+									.card-cost__text Стоимость у нас в клинике
+									.card-cost__price от 15 000 ₽ 
+							.card-right
+								img.card__img(src=img+"implantations-types/img1.jpg", alt="")
+								ul.action
+									li
+										a.submit(href="#") Записаться
+
+
+
+		include blocks/footer.pug
+		include blocks/scripts.pug

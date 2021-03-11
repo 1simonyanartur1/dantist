@@ -1,0 +1,40 @@
+.mini-cards
+	padding: 40px 0
+	&.type2
+		.card
+			&-inner
+				width: 230px
+			&__img
+				width: 150px
+			&__title
+				color: #000
+	.container
+		max-width: 1510px
+	.block-title
+		text-align: center
+	.inner
+		margin: 40px 0 0 0
+		+flex(row, null, null, wrap)
+	.card
+		width: 31.3%
+		margin: 1%
+		+flex(row, between, center, nowrap)
+		padding: 20px 30px
+		background: #FFFFFF
+		border-radius: 10px
+		&-inner
+			width: calc( 100% - 130px )
+		&__img
+			display: block
+			width: 102px
+		&__title
+			font-size: 18px
+			font-weight: 700
+			color: $brown
+		&__text
+			margin: 25px 0 0
+			span
+				font-weight: 700
+				color: $brown
+
+
