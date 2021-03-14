@@ -1,6 +1,7 @@
 .book-text
-	padding: 150px 0
+	padding: 130px 0
 	position: relative
+	z-index: 2
 	.container
 		max-width: 1530px
 	&__img
@@ -8,7 +9,7 @@
 		left: 0
 		top: 50%
 		transform: translate(0, -50%)
-		width: 60%
+		width: 50%
 		z-index: -1
 	.block-title
 		margin: 0 0 60px 0
@@ -19,5 +20,5 @@
 	.action
 		margin: 60px 0 0 0
 
-
-	
+	&.type2
+		+bg(null, null, 'rating/bg.png', no-repeat, center, center, auto)

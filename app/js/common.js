@@ -217,13 +217,13 @@
 			after_label: 'После'
 		});
 
-		$(document).on('click', '.implantations-methods .tabs-list__link', function (e) {
+		$(document).on('click', '.tabs-list__link', function (e) {
 			e.preventDefault();
-			$('.implantations-methods .tabs-list__link').removeClass('active');
+			$('.tabs-list__link').removeClass('active');
 			$(this).addClass('active');
 			var priceId = $(this).data('tab');
 
-			$('.implantations-methods .tabs-card').each(function () {
+			$('.tabs-card').each(function () {
 				if ($(this).data('tab') == priceId) {
 					$(this).addClass('active');
 				} else {

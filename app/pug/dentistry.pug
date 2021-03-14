@@ -1,0 +1,292 @@
+- var img = '../img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+
+			section.breadcrumbs
+				.container
+					ul.list
+						li
+							a(href="index.html") На главную
+						li
+							a(href="dentistry.html") Лечение зубов
+
+			section.mainblock.type3
+				.slider
+					.slide
+						.slide-left
+							img.slide__img(src=img+"mainblock/dentistry-img.jpg", alt="")
+						.slide-right
+							.block-title Лечение зубов без боли <br> <span>с гарантией</span> результата!
+							.block-subtitle Лечение кариеса <span>от 4 000 ₽</span>
+							.block-text Записаться <span>на бесплатную консультацию:</span>
+							include blocks/_entry-form.pug
+							ul.anchor-menu
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Описание
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Симптомы
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Примеры
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Врачи
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Акции
+
+			section.advantages.type3
+				.block-title.type2 Почему стоит начать <span>лечение зубов в Fullclinicк</span>
+				.container
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/dentist-2.svg", alt="")
+						.item__title Специалисты
+						.item__text Опытные врачи-терапевты которые владеют всеми современными методиками лечения
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/tooth-2.svg", alt="")
+						.item__title Результат
+						.item__text Всегда стремимся спасти зуб и не навязываем ненужные услуги и процедуры
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/learning.svg", alt="")
+						.item__title Обучение
+						.item__text Все врачи ежегодно прохходят обучение <br> у лучших российских и европейских специалистов
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/wedding-cost.svg", alt="")
+						.item__title Стоимость
+						.item__text Наши цены доступны и приемлемы. <br> Мы предлагаем разные варианты, что бы вы смогли сделать осознанный выбор
+
+			section.category-about
+				.container
+					.category-about-left
+						img.category-about__img(src=img+"category-about/img4.jpg", alt="")
+					.category-about-right
+						.block-title.type2 Лечение зубов <span>по современным протоколам у проверенных врачей</span>
+						.text-container
+							p Решим любую стоматологическую проблему! <br> Посещайте регулярно кабинет стоматолога для профилактического осмотра, чтобы избежать неприятностей с зубами и деснами. <br> Чем раньше врач выявит проблему, тем проще и быстрее получится ее решить. Лечение заболеваний на ранних стадиях поможет сэкономить вам нервы и деньги.Мы используем самые прогрессивные и разнообразные способы лечения заболеваний зубов. 
+			
+			section.dental-symptoms
+				.container
+					.dental-symptoms-left
+						.block-title.type2 Симптомы заболеваний зубов
+						ul.dental-symptoms-list
+							li <b>Кариес</b> <br> Пятна на поверхности, появление полости, болезненность, неприятный запах изо рта
+							li <b>Пульпит и периодонтит</b> <br> Боль усиливающаяся при накусывании, реакция на холодное и горячее, отёк и припухлость дёсен
+							li <b>Киста зуба</b> <br> Отёк и припухлость десны, боль при надавливании и жевании, повышение температуры тела
+							li <b>Эстетические дефекты</b> <br> Сколы, трещины, неравномерный цвет эмали
+					.dental-symptoms-right
+						.dental-symptoms-right-top
+							.dental-symptoms-right__text Современное лечение зубов давно стало комфортной и безболезненной процедурой! Вместе мы найдём верное решение и сохраним вашу улыбку на долго. Жду вас на прием!
+							img.dental-symptoms__sign(src=img+"dental-symptoms/doc-sign.png", alt="")
+							img.dental-symptoms__doc(src=img+"dental-symptoms/doc.png", alt="")
+						.dental-symptoms-right-bottom
+							.dental-symptoms-right-bottom__text 12 лет <span>Стажа работы</span>
+							.dental-symptoms__name Ибрагимова Кристина Сергеевна <span>Стоматолог-терапевт</span>
+
+			section.book-text.type2
+				.container
+					img.book-text__img(src=img+"book-text/book2.png", alt="")
+					.inner
+						.block-title Не откладывайте лечение!
+						.text-container
+							p Если вы обнаружили один или несколько из этих симптомов, не откладывайте лечение и срочно обратитесь к специалисту
+						ul.action
+							li
+								a(href="#").submit Записаться на консультацию
+
+			section.frequent-problems
+				.container
+					.tabs
+						.tabs-card.active(data-tab="fp1")
+							img.tabs-card__img(src=img+"frequent-problems/img.jpg", alt="")
+							.block-title Самые частые <span>проблемы с зубами</span>
+							.frequent-problems-price
+								.frequent-problems-price__text от <b>8 000 ₽</b>
+								a.submit(href="#") Записаться к врачу
+							.text-container
+								p <b>Лечение кариеса</b>
+								p Основная причина кариеса – это бактерии, вырабатывающие кислоты, которые разрушают твердые ткани зуба. Потребление продуктов с высоким содержанием сахара в разы увеличивает риск развития этого заболевания.Бороться с кариесом следует сразу же, как только возникают первые признаки. Иначе заболевание переходит из начальной стадии в более серьезную, из-за чегозуб сложнее и дороже лечить
+								p <b>Как определяется стадия кариеса</b>
+								p 1. Остатки пищи образуют мягкий зубной налет, который затвердевает, если его не очистить в течение 72 часов. В нем размножаются бактерии, которыеперерабатывают углеводы и кислоты. Вследствие этого размягчается эмаль, образовывается кариозное пятно. Это первая стадия кариеса. 2. Если не начать лечение, далее процесс повреждения распространяется до основной ткани зуба – дентина. Болезнь переходит в среднюю стадию. Так как эмаль дентина более слабая, зуб стремительно разрушается, кариес разрастается вширь и вглубь.
+								p 3. Образование "дырки" говорит о наличии глубокого кариеса.
+								p <b>Лечение состоит из следующих этапов:</b>
+								ol
+									li Анестезия;
+									li Удаление пораженных болезнью тканей;
+									li Механическая обработка пораженной полости;
+									li Обработка лекарственными препаратами;
+									li Пломбирование.
+						.tabs-card(data-tab="fp2")
+							img.tabs-card__img(src=img+"frequent-problems/img.jpg", alt="")
+							.block-title Самые частые <span>проблемы с зубами</span>
+							.frequent-problems-price
+								.frequent-problems-price__text от <b>8 000 ₽</b>
+								a.submit(href="#") Записаться к врачу
+							.text-container
+								p 3. Образование "дырки" говорит о наличии глубокого кариеса.
+								p <b>Лечение состоит из следующих этапов:</b>
+								ol
+									li Анестезия;
+									li Удаление пораженных болезнью тканей;
+									li Механическая обработка пораженной полости;
+									li Обработка лекарственными препаратами;
+									li Пломбирование.
+						.tabs-card(data-tab="fp3")
+							img.tabs-card__img(src=img+"frequent-problems/img.jpg", alt="")
+							.block-title Самые частые <span>проблемы с зубами</span>
+							.frequent-problems-price
+								.frequent-problems-price__text от <b>8 000 ₽</b>
+								a.submit(href="#") Записаться к врачу
+							.text-container
+								p 1. Остатки пищи образуют мягкий зубной налет, который затвердевает, если его не очистить в течение 72 часов. В нем размножаются бактерии, которыеперерабатывают углеводы и кислоты. Вследствие этого размягчается эмаль, образовывается кариозное пятно. Это первая стадия кариеса. 2. Если не начать лечение, далее процесс повреждения распространяется до основной ткани зуба – дентина. Болезнь переходит в среднюю стадию. Так как эмаль дентина более слабая, зуб стремительно разрушается, кариес разрастается вширь и вглубь.
+								p 3. Образование "дырки" говорит о наличии глубокого кариеса.
+								p <b>Лечение состоит из следующих этапов:</b>
+								ol
+									li Анестезия;
+									li Удаление пораженных болезнью тканей;
+									li Механическая обработка пораженной полости;
+									li Обработка лекарственными препаратами;
+									li Пломбирование.
+						.tabs-card(data-tab="fp4")
+							img.tabs-card__img(src=img+"frequent-problems/img.jpg", alt="")
+							.block-title Самые частые <span>проблемы с зубами</span>
+							.frequent-problems-price
+								.frequent-problems-price__text от <b>8 000 ₽</b>
+								a.submit(href="#") Записаться к врачу
+							.text-container
+								p 3. Образование "дырки" говорит о наличии глубокого кариеса.
+								p <b>Лечение состоит из следующих этапов:</b>
+								ol
+									li Анестезия;
+									li Удаление пораженных болезнью тканей;
+									li Механическая обработка пораженной полости;
+									li Обработка лекарственными препаратами;
+									li Пломбирование.
+						ul.tabs-list
+							li.tabs-list-item
+								a.tabs-list__link.active(href="#" data-tab="fp1") Кариес
+							li.tabs-list-item
+								a.tabs-list__link(href="#" data-tab="fp2") Пульпит
+							li.tabs-list-item
+								a.tabs-list__link(href="#" data-tab="fp3") Периодонтит
+							li.tabs-list-item
+								a.tabs-list__link(href="#" data-tab="fp4") Реставрация
+
+			section.theraphy-features
+				.container
+					.block-title.type2 <span>Особенности лечения</span> в нашей клинике
+					.inner
+						.item
+							.item-icon
+								img.item__icon(src=img+"icons/smile.svg", alt="")
+							.item__title Абсолютно без боли
+							.item__text Устанавливается всего 4 или 6 имплантов, а не 8 или 12 как при классической имплантации зубов
+						.item
+							.item-icon
+								img.item__icon(src=img+"icons/dentistry.svg", alt="")
+							.item__title Качественная диагностика
+							.item__text От правильно поставленного диагноза зависит наиболее подходящий способ имплантации и результат лечения
+						.item
+							.item-icon
+								img.item__icon(src=img+"icons/checked.svg", alt="")
+							.item__title Быстрое приживление имплантов
+							.item__text Мастерство наших врачей, а также качество систем имплантации и расходных материалов, гарантируют быстрое и успешное приживление
+						.item
+							.item-icon
+								img.item__icon(src=img+"icons/dental.svg", alt="")
+							.item__title Индивидуальный план лечения
+							.item__text Для каждого пациента разрабатывается поэтапный план лечения, который учитывает состояние и особенности десен и зубного ряда
+
+			section.our-priority
+				.container
+					.our-priority-left
+						.block-title Наш приоритет - <span>спасение вашего зуба</span>
+						.block-text Мы всегда стремимся спасти больной зуб, а не навязать ненужные процедуры и услуги
+						ul.action
+							li.action-item
+								a.action__link.submit(href="#") Записаться на осмотр
+					.our-priority-right
+						img.our-priority__img(src=img+"our-priority/img.jpg", alt="")
+
+			section.portfolio
+				.container
+					.block-title.type2 Избавили от проблем с зубами сотни пациентов
+					.slider
+						.slide
+							.slide-top
+								.slide-top-left
+									.slide__name Надежда
+									.slide__text Протезирование для верхней челюсти
+									.slide__text <b>Проблема:</b> <br> Пациентка обратилась в клинику с жалобами на отсутствие жевательных зубов, неудовлетворительное состояние старых ортопедических конструкций и неудовлетворительную эстетику зоны улыбки.
+									.slide__text <b>Решение:</b> <br> Последовательно были проведены остеопластика в области 47-го зуба, затем полное протезирование безметалловыми коронками из диоксида циркония.
+								.slide-top-right
+									img.slide__img(src=img+"works/before.jpg", alt="")
+									img.slide__img(src=img+"works/after.jpg", alt="")
+							.slide-bottom
+									.slide__doc Врач: <span>Овсепян Карен Тигранович</span>
+									a.submit(href="#") Смотреть кейс полностью
+						.slide
+							.slide-top
+								.slide-top-left
+									.slide__name Надежда
+									.slide__text Протезирование для верхней челюсти
+									.slide__text <b>Проблема:</b> <br> Пациентка обратилась в клинику с жалобами на отсутствие жевательных зубов, неудовлетворительное состояние старых ортопедических конструкций и неудовлетворительную эстетику зоны улыбки.
+									.slide__text <b>Решение:</b> <br> Последовательно были проведены остеопластика в области 47-го зуба, затем полное протезирование безметалловыми коронками из диоксида циркония.
+								.slide-top-right
+									img.slide__img(src=img+"works/before.jpg", alt="")
+									img.slide__img(src=img+"works/after.jpg", alt="")
+							.slide-bottom
+									.slide__doc Врач: <span>Овсепян Карен Тигранович</span>
+									a.submit(href="#") Смотреть кейс полностью
+
+			section.security
+				.container
+					.shield
+						img.shield__img(src=img+"icons/hand-coin.svg", alt="")
+					.inner
+						.block-title Рассрочка под 0% от банка
+						.block-text Помогаем с получением рассрочки даже в сложных случаях
+					a.submit(href="#") Узнать подробнее
+
+			include blocks/doctors.pug
+			include blocks/security.pug
+
+			section.material-cost
+				.container
+					.block-title Стоимость лечения и работ
+					.items
+						.item.info
+							.item__text Консультация с составлением плана лечения
+							.item__price 1 500 ₽
+						.item
+							.item__text Лечение кариеса c пломбой световой полимеризации
+							.item__price 8 000 ₽
+						.item
+							.item__text Лечение пульпита, 1 канал
+							.item__price 8 000 ₽
+						.item
+							.item__text Реставрация зубов
+							.item__price 8 000 ₽
+						.item
+							.item__text Лечение периодонтита
+							.item__price 8 000 ₽
+					ul.action
+						li
+							a.infolink(href="#") Стоимость зависит от методики и системы
+						li
+							a.submit(href="#") Записаться
+
+			include blocks/stocks.pug
+			include blocks/rating.pug
+			include blocks/seo.pug
+			include blocks/contact.pug
+
+		include blocks/footer.pug
+		include blocks/scripts.pug

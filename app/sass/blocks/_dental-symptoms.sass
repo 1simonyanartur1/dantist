@@ -1,0 +1,82 @@
+.dental-symptoms
+	padding: 40px 0
+	.container
+		max-width: 1470px
+		+flex(row, between, start, wrap)
+	.block-title
+		margin: 0 0 40px 0
+	&-left
+		width: 38%
+	&-right
+		width: 48%
+		background: white
+		border-radius: 10px
+		&-top
+			position: relative
+			min-height: 400px
+			padding: 105px 40px 0
+		&-bottom
+			padding: 25px 40px
+			box-shadow: 0px -5px 15px -2px rgba(0, 0, 0, 0.14)
+			color: $dark2
+			+flex(row, between, center, nowrap)
+			&__text
+				font-family: 'PF', serif
+				color: $brown
+				font-style: italic
+				font-size: 45px
+				line-height: 1
+				font-weight: 500
+				text-align: center
+				span
+					font-family: 'Uni', sans-serif
+					color: $dark2
+					font-style: normal
+					display: block
+					font-size: 20px
+		&__text
+			line-height: 1.6
+			font-size: 18px
+			font-family: 'UniBook', sans-serif
+			max-width: 400px
+			width: 100%
+			margin: 0 0 40px 0
+	&__doc
+		position: absolute
+		bottom: 0
+		right: 5%
+		display: block
+		width: 250px
+	&__sign
+		display: block
+		width: 260px
+	&-list
+		padding: 0 0 0 30px
+		li
+			position: relative
+			margin: 0 0 35px 0
+			font-size: 18px
+			font-family: 'UniBook', sans-serif
+			line-height: 1.6
+			b
+				font-size: 24px
+			&:before
+				content: ''
+				display: block
+				width: 14px
+				height: 14px
+				border-radius: 100%
+				background: $brown
+				position: absolute
+				left: -30px
+				top: 12px
+	&__name
+		font-size: 24px
+		line-height: 1.4
+		text-align: right
+		span
+			font-size: 19px
+			font-family: 'UniBook', sans-serif
+			display: block
+
+

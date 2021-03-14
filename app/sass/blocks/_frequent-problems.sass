@@ -1,0 +1,66 @@
+.frequent-problems
+	padding: 80px 0 40px 0
+	.container
+		max-width: 1460px
+	&-price
+		text-align: right
+		margin: 0 0 20px 0
+		&__text
+			font-size: 20px
+			margin: 0 0 10px 0
+			color: $yellow2
+			b
+				font-size: 32px
+	.tabs
+		+flex(row, between, start, wrap)
+		&-card
+			padding: 40px
+			width: 82%
+			background: #FFFFFF
+			box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15)
+			border-radius: 10px
+			position: relative
+			z-index: 2
+			display: none
+			&.active
+				display: block
+			&::after
+				content: ''
+				clear: both
+			&__img
+				display: block
+				max-width: 480px
+				width: 100%
+				margin: 0 28px 28px 0
+				float: left
+		&-list
+			padding: 50px 0 0 0
+			width: 18%
+			position: relative
+			z-index: 1
+			&-item
+				margin: 15px 0
+			&__link
+				background: #FFFFFF
+				box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15)
+				border-radius: 0 10px 10px 0
+				min-height: 70px
+				padding: 0 20px
+				+flex(row, null, center, nowrap)
+				color: #A3A9B0
+				font-weight: 500
+				font-size: 20px
+				&.active
+					color: $brown
+					text-decoration: underline
+				+mq($min-width: 1200px)
+					&:hover
+						color: $brown
+						text-decoration: underline
+	.block-title
+		margin: 0 0 30px 0
+		span
+			color: $brown
+	.text-container
+		ol
+			column-count: 2
