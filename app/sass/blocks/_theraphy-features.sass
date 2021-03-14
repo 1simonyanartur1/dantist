@@ -1,25 +1,55 @@
 .theraphy-features
-	padding: 50px 0
+	padding: 65px 0
 	.container
 		max-width: 1400px
 	.inner
 		margin: 32px 0 0 0
 		+flex(row, between, null, wrap)
+	.block-title
+		text-align: center
+	.inner
+		margin: 30px 0 0 0
 	.item
 		position: relative
-		width: 49%
+		width: 47%
 		background: white
 		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06)
 		border-radius: 10px
+		padding: 30px 70px
+		margin: 20px 0
+		font-size: 18px
 		&-icon
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translate(-50%, -50%)
 			+flex(row, center, center, wrap)
 			background: linear-gradient(218.13deg, #CC9A1B 17.16%, #EEB628 85.07%)
-			width: 62px
-			height: 62px
+			width: 92px
+			height: 92px
 			border-radius: 100%
+			border: 10px solid $body-bg
 		&__icon
 			display: block
 			max-height: 70%
 			max-width: 70%
 		&__title
+			font-weight: 700
+			margin: 0 0 20px 0
 		&__text
+			font-family: 'UniBook', sans-serif
+			line-height: 1.6
+
+	&.type2
+		padding: 30px 0
+		.item-icon
+			&:before
+				content: '+'
+				font-weight: 700
+				font-size: 24px
+				color: white
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+

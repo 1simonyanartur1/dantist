@@ -1,0 +1,124 @@
+.implantations-cost-key
+	padding: 65px 0
+	.container
+		max-width: 1600px
+	.block-title
+		text-align: center
+	.block-text
+		text-align: center
+		margin: 15px 0 0 0
+	.slider
+		margin: 15px 0
+		position: relative
+	.slide
+		background: white
+		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15)
+		border-radius: 10px
+		margin: 30px 15px
+		padding: 10px 40px 40px
+		&-header
+			+flex(row, between, center, nowrap)
+			padding: 0 0 15px 0
+			&__title
+				font-size: 24px
+				color: $brown
+				line-height: 1.2
+				span
+					font-weight: 800
+					color: $dark
+					font-size: 18px
+					display: block
+			&__img
+				display: block
+				height: 80px
+				width: auto
+		&-line
+			+flex(row, between, center, nowrap)
+			min-height: 65px
+			position: relative
+			z-index: 2
+			&:before
+				content: ''
+				display: block
+				+trs
+				position: absolute
+				left: -40px
+				right: -40px
+				height: 100%
+				background: #F6F6F7
+				z-index: -1
+			&__text
+				font-size: 16px
+				font-family: 'UniBook', sans-serif
+		&-price
+			padding: 26px 0
+			+flex(row, between, end, nowrap)
+			&__text
+				font-weight: 700
+				font-size: 16px
+				line-height: 1
+			&__old
+				line-height: 1
+				color: #565656
+				font-size: 19px
+				margin: 0 15px 0 auto
+				text-decoration: line-through
+			&__current
+				line-height: 1
+				font-weight: 700
+				font-size: 28px
+				color: $brown
+		.action
+			width: 100%
+			text-align: center
+
+	.arrow
+		position: absolute
+		z-index: 3
+		top: 50%
+		&-prev
+			left: -80px
+			transform: rotate(180deg) translate(0, 50%)
+			+mq($max-width: 1200px)
+				transform: rotate(180deg) translate(0, 50%)
+		&-next
+			transform: translate(0, -50%)
+			right: -80px
+			+mq($max-width: 1200px)
+				transform: translate(0, -50%)
+
+	.slick-dots
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 15px 0
+		li
+			margin: 0 5px
+			&.slick-active button
+				background: $brown
+		button
+			cursor: pointer
+			display: block
+			font-size: 0
+			border-radius: 100%
+			width: 12px
+			height: 12px
+			transition: all .3s ease-out
+			background: $gray
+
+
+	.slide-line
+		&:nth-child(even)
+			&:before
+				display: none
+		&:nth-child(odd)
+			&:hover
+				color: white
+				&:before
+					background: linear-gradient(90.88deg, #D1A022 10.61%, #EABA3F 53.12%, #DBAA2A 97.44%)
+		&:first-child,
+		&:last-child,
+		&:nth-child(2)
+			.slide-line__text
+				&:last-child
+					font-weight: 800
