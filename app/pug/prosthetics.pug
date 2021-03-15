@@ -1,0 +1,287 @@
+- var img = '../img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+
+			section.breadcrumbs
+				.container
+					ul.list
+						li
+							a(href="index.html") На главную
+						li
+							a(href="prosthetics.html") Протезирование зубов
+
+			section.mainblock.type3
+				.slider
+					.slide
+						.slide-left
+							img.slide__img(src=img+"mainblock/prosthetics-img.jpg", alt="")
+						.slide-right
+							.block-title Протезирование зубов <span>с гарантией до 15 лет!</span> 
+							.block-subtitle Брекет-системы на любой бюджет!
+							.block-text Записаться <span>на бесплатную консультацию:</span>
+							include blocks/_entry-form.pug
+							ul.anchor-menu
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Описание
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Методы протезирования
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Примеры
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Врачи
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Стоимость работ
+			
+			section.advantages.type3
+				.block-title.type2 Верните себе красивую улыбку
+				.container
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/braces.svg", alt="")
+						.item__title Комплексный подход <br> к здоровью зубов
+						.item__text Мы компенсируем различные виды протезов, а не зацикливаемся на чем то одном и решаем вопросы по здоровью полости рта в целом
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/dentist-3.svg", alt="")
+						.item__title Результаты и опыт <br> более 15 лет
+						.item__text За время работы мы установили более 11 500 имплантатов, из которых прижились 98,7%, сделали 13 700 различных сьемных протезов, коронок , мостов и других конструкций
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/wedding-cost.svg", alt="")
+						.item__title Гарантия на все виды <br> работ до 5 лет
+						.item__text Если в течение этого срока какая-либо конструкция выйдет из строя, мы все заменим бесплатно, при условии соблюдений рекомендаций лечащего врача
+
+			section.category-about
+				.container
+					.category-about-left
+						img.category-about__img(src=img+"category-about/img5.jpg", alt="")
+					.category-about-right
+						.block-title.type2 Протезирование зубов: варианты и цены
+						.text-container
+							p Протезирование – самый распространенный и оптимальный вариант восстановления частично поврежденных или полностью разрушенных зубов.
+							p Современная стоматология представляет десятки различных зубных протезов, как по эстетике и долговечности, так и по стоимости. Наши ортопеды проводят подбор моделей протезов вместе с пациентами для достижения наилучшего результата лечения.
+
+			section.correct-ways
+				.container
+					.block-title.type2 Все <span>виды протезирования зубов</span> в Full Clinic прикуса 
+					.inner
+						.card
+							.card__title Несьемное
+							.card__subtitle При частичной и полной адентии
+							.card-img
+								img.card__img(src=img+"correct-ways/img4.png", alt="")
+							.card__price от <span>18 000 ₽</span>
+							.card-list
+								li.okey Хорошо фиксируется в полости рта
+								li.okey Комфортны в эксплуатации
+								li.okey Отличаются высокой эстетикой
+								li.error Имеются противопоказания
+								li.error Может понадобится наращивание костной ткани
+						.card
+							.card__title Сьемное
+							.card__subtitle При частичной и полной адентии
+							.card-img
+								img.card__img(src=img+"correct-ways/img5.png", alt="")
+							.card__price от <span>35 000 ₽</span>
+							.card-list
+								li.okey Быстрое восстановление зубов
+								li.okey Не имеют противопоказаний
+								li.okey Невысокая стоимость
+								li.error недостаточная фиксация в полости рта
+								li.error Могут нарушить дикцию и вкусовое восприятие
+						.card
+							.card__title Эстетическое
+							.card__subtitle При дефектах зубного ряда
+							.card-img
+								img.card__img(src=img+"correct-ways/img6.png", alt="")
+							.card__price от <span>18 000 ₽</span>
+							.card-list
+								li.okey Естественно вяглядит в полости рта
+								li.okey Быстро восстанавливают эстетику 
+								li.okey При бережном уходе служат много лет
+								li.error Необходима обточка эмали
+								li.error Может потребоваться депульпирование зуба
+
+			section.mini-cards.type2
+				.container
+					.block-title.type2 <span>Запишитесь на бесплатную первичную консультацию</span> , в ходе которой <br> ведущий врач клиники
+					.inner
+						.card
+							img.card__img(src=img+"mini-cards/icon3.png", alt="")
+							.card-inner
+								.card__title Выяснит противопоказания и состоние здоровья 
+						.card
+							img.card__img(src=img+"mini-cards/icon4.png", alt="")
+							.card-inner
+								.card__title Проведет компьютерное моделирование
+						.card
+							img.card__img(src=img+"mini-cards/icon5.png", alt="")
+							.card-inner
+								.card__title Создаст подробную зубную формулу полости рта
+
+			section.doctor-quote
+				.container
+					.doctor-quote-left
+						.doctor-quote__quote "
+						.block-title При правильном уходе <br> <span>конструкции прослужат вам много лет!</span>
+						.block-text Я гарантирую индивидуальный подход к изготовлению протезов. <br> Мы предлагаем недорогое протезирование зубов с гарантией и несём ответственность за качество работы.
+						.doctor-quote__name Овсепян Карен Тигранович
+						img.doctor-quote__sign(src=img+"doctor-quote/sign.png", alt="")
+					.doctor-quote-right
+						img.doctor-quote__img(src=img+"doctor-quote/img.jpg", alt="")
+
+			section.choose-prosthetics
+				.container
+					.block-title.type2 <span>Какое</span> протезирование <span>подойдёт вам</span>
+					.inner
+						.card.card_big
+							.card__title Нет зубов или их мало
+							.card__text Вам может подойти
+							ul.card-list
+								li Протез Акри-Фри
+								li Протез без неба
+								li Акриловый протез
+								li Все зубы за 1 день «Все на 4х»
+								li Покрывной протез на имплантах
+								li Бюгельный протез
+						.card.card_small
+							.card__title Нет 1-2 зубов
+							.card__text Вам может подойти
+							ul.card-list
+								li Имплантация
+								li Мостовидный протез
+								li Адгезивный протез
+						.card.card_middle
+							.card__title Разрушен зуб / плохая эстетика
+							.card__text Вам может подойти
+							ul.card-list
+								li Коронки
+								li Виниры
+
+			section.book-text
+				.container
+					img.book-text__img(src=img+"book-text/book4.png", alt="")
+					.inner
+						.block-title Как выбрать метод коррекции?
+						.text-container
+							p Вид системы коррекции прикуса подбирается с учетом пожеланий пациента и профессиональных рекомендаций ортодонта. <br> При выборе очень важно учеть множество факторов, которые могут повлиять на сроки выравнивания прикуса!
+						ul.action
+							li
+								a(href="#").submit Записаться на консультацию
+
+			section.theraphy-features
+				.container
+					.block-title.type2 <span>Особенности лечения</span> в нашей клинике
+					.inner
+						.item
+							.item-icon
+								img.item__icon(src=img+"icons/smile.svg", alt="")
+							.item__title Абсолютно без боли
+							.item__text Устанавливается всего 4 или 6 имплантов, а не 8 или 12 как при классической имплантации зубов
+						.item
+							.item-icon
+								img.item__icon(src=img+"icons/dentistry.svg", alt="")
+							.item__title Качественная диагностика
+							.item__text От правильно поставленного диагноза зависит наиболее подходящий способ имплантации и результат лечения
+						.item
+							.item-icon
+								img.item__icon(src=img+"icons/checked.svg", alt="")
+							.item__title Быстрое приживление имплантов
+							.item__text Мастерство наших врачей, а также качество систем имплантации и расходных материалов, гарантируют быстрое и успешное приживление
+						.item
+							.item-icon
+								img.item__icon(src=img+"icons/dental.svg", alt="")
+							.item__title Индивидуальный план лечения
+							.item__text Для каждого пациента разрабатывается поэтапный план лечения, который учитывает состояние и особенности десен и зубного ряда
+
+			section.portfolio
+				.container
+					.block-title.type2 Примеры  протезирования
+					.slider
+						.slide
+							.slide-top
+								.slide-top-left
+									.slide__name Надежда
+									.slide__text Протезирование для верхней челюсти
+									.slide__text <b>Проблема:</b> <br> Пациентка обратилась в клинику с жалобами на отсутствие жевательных зубов, неудовлетворительное состояние старых ортопедических конструкций и неудовлетворительную эстетику зоны улыбки.
+									.slide__text <b>Решение:</b> <br> Последовательно были проведены остеопластика в области 47-го зуба, затем полное протезирование безметалловыми коронками из диоксида циркония.
+								.slide-top-right
+									img.slide__img(src=img+"works/before.jpg", alt="")
+									img.slide__img(src=img+"works/after.jpg", alt="")
+							.slide-bottom
+									.slide__doc Врач: <span>Овсепян Карен Тигранович</span>
+									a.submit(href="#") Смотреть кейс полностью
+						.slide
+							.slide-top
+								.slide-top-left
+									.slide__name Надежда
+									.slide__text Протезирование для верхней челюсти
+									.slide__text <b>Проблема:</b> <br> Пациентка обратилась в клинику с жалобами на отсутствие жевательных зубов, неудовлетворительное состояние старых ортопедических конструкций и неудовлетворительную эстетику зоны улыбки.
+									.slide__text <b>Решение:</b> <br> Последовательно были проведены остеопластика в области 47-го зуба, затем полное протезирование безметалловыми коронками из диоксида циркония.
+								.slide-top-right
+									img.slide__img(src=img+"works/before.jpg", alt="")
+									img.slide__img(src=img+"works/after.jpg", alt="")
+							.slide-bottom
+									.slide__doc Врач: <span>Овсепян Карен Тигранович</span>
+									a.submit(href="#") Смотреть кейс полностью
+
+			section.security
+				.container
+					.shield
+						img.shield__img(src=img+"icons/hand-coin.svg", alt="")
+					.inner
+						.block-title Рассрочка под 0% от банка
+						.block-text Помогаем с получением рассрочки даже в сложных случаях
+					a.submit(href="#") Узнать подробнее
+
+			include blocks/doctors.pug
+			include blocks/security.pug
+
+			section.material-cost
+				.container
+					.block-title Стоимость работ и материалов
+					.items
+						.item.info
+							.item__text Консультация с составлением плана лечения
+							.item__price 1 500 ₽
+						.item
+							.item__text Постоянный абатмент
+							.item__price от 15 570 ₽
+						.item
+							.item__text Индивидуальный абатмент
+							.item__price от 17 000 ₽
+						.item.info
+							.item__text Система Nobel Biocare + циркониевая коронка
+							.item__price 55 050 ₽
+						.item
+							.item__text Формирователь десны
+							.item__price от 9 300 ₽
+						.item
+							.item__text Коронка на имплантат
+							.item__price от 25 850 ₽
+						.item
+							.item__text Безметалловая керамическая коронка с каркасом на основе диоксида циркония
+							.item__price от 48 200 ₽
+						.item
+							.item__text Индивидуальный абатмент
+							.item__price от 17 050 ₽
+					ul.action
+						li
+							a.infolink(href="#") Стоимость зависит от методики и системы
+						li
+							a.submit(href="#") Записаться
+
+			include blocks/stocks.pug
+			include blocks/rating.pug
+			include blocks/seo.pug
+			include blocks/contact.pug
+
+		include blocks/footer.pug
+		include blocks/scripts.pug

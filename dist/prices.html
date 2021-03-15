@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="fonts/UniNeue/stylesheet.css">
+  <link rel="stylesheet" href="fonts/PFRegalDisplayPro/stylesheet.css">
+  <link rel="stylesheet" href="css/libs.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* inlined critical CSS */
+  </style>
+  <title></title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="../img/logo.svg" alt="">
+        <div class="logo__text">клиника стоматологии и
+          <br> ичелюстно-лицевой хирургии
+        </div>
+      </a>
+      <nav class="main-nav">
+        <input id="main-menu-state" type="checkbox">
+        <label class="main-menu-btn" for="main-menu-state">
+          <span class="main-menu-btn-icon"></span>
+        </label>
+        <ul class="sm sm-clean" id="main-menu">
+          <li>
+            <a href="#">Услуги</a>
+            <ul>
+              <li>
+                <a href="#">All on 4</a>
+              </li>
+              <li>
+                <a href="#">Виниры</a>
+              </li>
+              <li>
+                <a href="#">Имплантация</a>
+              </li>
+              <li>
+                <a href="#">Лечение</a>
+              </li>
+              <li>
+                <a href="#">Ортодонтия</a>
+              </li>
+              <li>
+                <a href="#">Протезирование</a>
+              </li>
+              <li>
+                <a href="#">Эстетический уход</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">О нас</a>
+          </li>
+          <li>
+            <a href="#">Портфолио</a>
+          </li>
+          <li>
+            <a href="reviews.html">Отзывы</a>
+          </li>
+          <li>
+            <a href="prices.html">Цены</a>
+          </li>
+          <li>
+            <a href="articles.html">Статьи</a>
+          </li>
+          <li>
+            <a href="contact.html">Контакты</a>
+          </li>
+          <li>
+            <a href="stock.html">Акции</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="choose-tel">
+        <div class="city">
+          <div class="city__curr">Москва</div>
+          <div class="city-list">
+            <li class="active" data-city="Москва">Москва</li>
+            <li data-city="Россия">Россия</li>
+          </div>
+        </div>
+        <div class="phone">
+          <a class="phone__curr" href="tel:+84953005656">8 (495) <span>300 56 56</span>
+          </a>
+          <div class="phone-list">
+            <li class="active" data-city="Москва">8 (495) <span>300 56 56</span>
+            </li>
+            <li data-city="Россия">8 (495) <span>000 00 00</span>
+            </li>
+          </div>
+        </div>
+      </div>
+      <a class="btn-entry" href="#">
+        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.209 10.7422C17.209 10.2028 16.7718 9.76562 16.2324 9.76562H6.17383C5.63447 9.76562 5.19727 10.2028 5.19727 10.7422C5.19727 11.2815 5.63447 11.7188 6.17383 11.7188H16.2324C16.7718 11.7188 17.209 11.2815 17.209 10.7422Z" fill="white" />
+          <path d="M6.17383 13.6719C5.63447 13.6719 5.19727 14.1091 5.19727 14.6484C5.19727 15.1878 5.63447 15.625 6.17383 15.625H12.2828C12.8221 15.625 13.2593 15.1878 13.2593 14.6484C13.2593 14.1091 12.8221 13.6719 12.2828 13.6719H6.17383Z" fill="white" />
+          <path d="M8.46919 23.0469H5.20312C4.12617 23.0469 3.25 22.1707 3.25 21.0938V3.90625C3.25 2.8293 4.12617 1.95312 5.20312 1.95312H17.2094C18.2864 1.95312 19.1625 2.8293 19.1625 3.90625V9.91211C19.1625 10.4515 19.5998 10.8887 20.1391 10.8887C20.6785 10.8887 21.1157 10.4515 21.1157 9.91211V3.90625C21.1157 1.75234 19.3633 0 17.2094 0H5.20312C3.04922 0 1.29688 1.75234 1.29688 3.90625V21.0938C1.29688 23.2477 3.04922 25 5.20312 25H8.46919C9.00854 25 9.44575 24.5628 9.44575 24.0234C9.44575 23.4841 9.00854 23.0469 8.46919 23.0469Z" fill="white" />
+          <path d="M22.8451 14.1391C21.7028 12.9968 19.8442 12.9967 18.7026 14.1383L13.3412 19.4879C13.2273 19.6015 13.1433 19.7414 13.0965 19.8954L11.9289 23.7393C11.8254 24.0802 11.9156 24.4502 12.1643 24.7052C12.3506 24.8961 12.6038 24.9998 12.8634 24.9998C12.9502 24.9998 13.0379 24.9882 13.124 24.9643L17.0657 23.8725C17.2279 23.8275 17.3757 23.7414 17.4949 23.6225L22.8451 18.2823C23.9874 17.14 23.9874 15.2814 22.8451 14.1391ZM16.2968 22.0588L14.3138 22.6081L14.8941 20.6975L18.5118 17.0879L19.8931 18.4692L16.2968 22.0588ZM21.4647 16.9007L21.2755 17.0895L19.8944 15.7084L20.083 15.5202C20.4638 15.1394 21.0833 15.1394 21.4641 15.5202C21.8448 15.901 21.8448 16.5205 21.4647 16.9007Z" fill="white" />
+          <path d="M16.2324 5.85938H6.17383C5.63447 5.85938 5.19727 6.29658 5.19727 6.83594C5.19727 7.37529 5.63447 7.8125 6.17383 7.8125H16.2324C16.7718 7.8125 17.209 7.37529 17.209 6.83594C17.209 6.29658 16.7718 5.85938 16.2324 5.85938Z" fill="white" />
+        </svg>
+        <span>Запись на приём</span>
+      </a>
+    </div>
+  </header>
+  <main class="page-container">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <section class="breadcrumbs">
+      <div class="container">
+        <ul class="list">
+          <li>
+            <a href="index.html">На главную</a>
+          </li>
+          <li>
+            <a href="prices.html">Цены</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="mainblock type2">
+      <div class="slider">
+        <div class="slide">
+          <div class="slide-left">
+            <img class="slide__img" src="../img/mainblock/prices-img.jpg" alt="">
+          </div>
+          <div class="slide-right">
+            <div class="block-title">Цены на наши услуги</div>
+            <div class="block-text">У нас нет скрытых платежей - все цены фиксируются в договоре
+              <br> и в дальнейшем не меняются.
+              <br> Качественная работа по приемлемым ценам!
+            </div>
+            <form class="entry-form horizontal" action="#" method="post">
+              <div class="entry-form-label big">
+                <svg viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.99" fill-rule="evenodd" clip-rule="evenodd" d="M12.1034 2.42067C10.098 2.42067 8.47235 4.04633 8.47235 6.05168C8.47235 8.05703 10.098 9.68269 12.1034 9.68269C14.1087 9.68269 15.7344 8.05703 15.7344 6.05168C15.7344 4.04633 14.1087 2.42067 12.1034 2.42067ZM6.05168 6.05168C6.05168 2.70943 8.76111 0 12.1034 0C15.4456 0 18.155 2.70943 18.155 6.05168C18.155 9.39393 15.4456 12.1034 12.1034 12.1034C8.76111 12.1034 6.05168 9.39393 6.05168 6.05168ZM0 25.4171C0 18.7326 5.41888 13.3137 12.1034 13.3137C18.7879 13.3137 24.2067 18.7326 24.2067 25.4171C24.2067 26.0855 23.6648 26.6274 22.9964 26.6274C22.3279 26.6274 21.7861 26.0855 21.7861 25.4171C21.7861 20.0695 17.451 15.7344 12.1034 15.7344C6.75578 15.7344 2.42067 20.0695 2.42067 25.4171C2.42067 26.0855 1.87879 26.6274 1.21034 26.6274C0.541886 26.6274 0 26.0855 0 25.4171Z" fill="url(#paint0_linear)" fill-opacity="0.65" />
+                  <defs>
+                    <linearGradient id="paint0_linear" x1="12.1034" y1="0" x2="12.1034" y2="26.6274" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#CE9D20" />
+                      <stop offset="0.583333" stop-color="#D6A526" />
+                      <stop offset="1" stop-color="#DFAD2D" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <input class="entry-form__input" type="text" name="entry-form-name" placeholder="Как вас зовут?">
+              </div>
+              <div class="entry-form-row">
+                <div class="entry-form-label">
+                  <svg width="21" height="25" viewBox="0 0 21 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.99" fill-rule="evenodd" clip-rule="evenodd" d="M0.579102 2.8605C0.579102 1.65553 1.55592 0.678711 2.76089 0.678711L18.0334 0.678711C19.2384 0.678711 20.2152 1.65554 20.2152 2.8605V22.4966C20.2152 23.7016 19.2384 24.6784 18.0334 24.6784H2.76089C1.55593 24.6784 0.579102 23.7016 0.579102 22.4966L0.579102 2.8605ZM18.0334 2.8605L2.76089 2.8605V14.8603H18.0334V2.8605ZM18.0334 17.0421H2.76089V22.4966H18.0334V17.0421ZM8.21537 19.7694C8.21537 19.1669 8.70378 18.6785 9.30626 18.6785H11.4881C12.0905 18.6785 12.5789 19.1669 12.5789 19.7694C12.5789 20.3719 12.0905 20.8603 11.4881 20.8603H9.30626C8.70378 20.8603 8.21537 20.3719 8.21537 19.7694Z" fill="url(#paint0_linear)" fill-opacity="0.65" />
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="10.3972" y1="0.678711" x2="10.3972" y2="24.6784" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#CE9D20" />
+                        <stop offset="0.583333" stop-color="#D6A526" />
+                        <stop offset="1" stop-color="#DFAD2D" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <input class="entry-form__input" type="tel" name="entry-form-tel" placeholder="Введите номер">
+                </div>
+                <button class="entry-form__btn submit" type="submit">Записаться</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <div class="item">
+          <div class="img-wrap">
+            <img class="item__img" src="../img/icons/tag.svg" alt="">
+          </div>
+          <div class="item__title">Честные цены</div>
+          <div class="item__text">Действует прозрачный расчёт на итоговую стоимость</div>
+        </div>
+        <div class="item">
+          <div class="img-wrap">
+            <img class="item__img" src="../img/icons/available.svg" alt="">
+          </div>
+          <div class="item__title">Доступно</div>
+          <div class="item__text">Можно лечить зубы в рассрочку</div>
+        </div>
+        <div class="item">
+          <div class="img-wrap">
+            <img class="item__img" src="../img/icons/favourite.svg" alt="">
+          </div>
+          <div class="item__title">Гарантированно</div>
+          <div class="item__text">Пожизненная гарантия на импланты</div>
+        </div>
+      </div>
+    </section>
+    <section class="prices-spoilers">
+      <div class="container">
+        <div class="prices-spoilers-block">
+          <div class="prices-spoilers-item">
+            <div class="prices-spoilers-item-row">
+              <div class="prices-spoilers-item__title">Диагностика и консультация</div>
+              <div class="prices-spoilers-item__arrow">
+                <svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8.38889 8L15 1" stroke-width="2" />
+                </svg>
+              </div>
+            </div>
+            <ul class="prices-spoilers-item__list">
+              <li>
+                <span class="see-info">Прицельный снимок 1 зуба</span>
+                <b>400 ₽</b>
+              </li>
+              <li>
+                <span class="see-info">Панорамный снимок (ОРТО)</span>
+                <b>1 000 ₽</b>
+              </li>
+            </ul>
+          </div>
+          <ul class="action">
+            <li>
+              <a class="submit" href="#">Записаться</a>
+            </li>
+          </ul>
+        </div>
+        <div class="prices-spoilers-block">
+          <div class="prices-spoilers-item">
+            <div class="prices-spoilers-item-row">
+              <div class="prices-spoilers-item__title">Лечение зубов</div>
+              <div class="prices-spoilers-item__arrow">
+                <svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8.38889 8L15 1" stroke-width="2" />
+                </svg>
+              </div>
+            </div>
+            <ul class="prices-spoilers-item__list">
+              <li>
+                <span class="see-info">Консультация с составлением плана лечения</span>
+                <b>400 ₽</b>
+              </li>
+              <li>
+                <span>Эстетическое восстановление коронковой части зуба</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса методом Icon</span>
+                <b>11 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (1-канальный зуб)</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (2-канальный зуб)</span>
+                <b>21 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (3-канальный зуб)</span>
+                <b>221 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение периодонтита</span>
+                <b>400 ₽</b>
+              </li>
+            </ul>
+          </div>
+          <ul class="action">
+            <li>
+              <a class="infolink" href="#">Подробнее на странице услуги</a>
+            </li>
+            <li>
+              <a class="submit" href="#">Записаться</a>
+            </li>
+          </ul>
+        </div>
+        <div class="prices-spoilers-block">
+          <div class="prices-spoilers-item">
+            <div class="prices-spoilers-item-row">
+              <div class="prices-spoilers-item__title">Удаление зубов</div>
+              <div class="prices-spoilers-item__arrow">
+                <svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8.38889 8L15 1" stroke-width="2" />
+                </svg>
+              </div>
+            </div>
+            <ul class="prices-spoilers-item__list">
+              <li>
+                <span class="see-info">Консультация с составлением плана лечения</span>
+                <b>400 ₽</b>
+              </li>
+              <li>
+                <span>Эстетическое восстановление коронковой части зуба</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса методом Icon</span>
+                <b>11 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (1-канальный зуб)</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (2-канальный зуб)</span>
+                <b>21 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (3-канальный зуб)</span>
+                <b>221 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение периодонтита</span>
+                <b>400 ₽</b>
+              </li>
+            </ul>
+          </div>
+          <ul class="action">
+            <li>
+              <a class="infolink" href="#">Подробнее на странице услуги</a>
+            </li>
+            <li>
+              <a class="submit" href="#">Записаться</a>
+            </li>
+          </ul>
+        </div>
+        <div class="prices-spoilers-block">
+          <div class="prices-spoilers-item">
+            <div class="prices-spoilers-item-row">
+              <div class="prices-spoilers-item__title">Гигиена и отбеливание</div>
+              <div class="prices-spoilers-item__arrow">
+                <svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8.38889 8L15 1" stroke-width="2" />
+                </svg>
+              </div>
+            </div>
+            <ul class="prices-spoilers-item__list">
+              <li>
+                <span class="see-info">Консультация с составлением плана лечения</span>
+                <b>400 ₽</b>
+              </li>
+              <li>
+                <span>Эстетическое восстановление коронковой части зуба</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса методом Icon</span>
+                <b>11 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (1-канальный зуб)</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (2-канальный зуб)</span>
+                <b>21 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (3-канальный зуб)</span>
+                <b>221 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение периодонтита</span>
+                <b>400 ₽</b>
+              </li>
+            </ul>
+          </div>
+          <ul class="action">
+            <li>
+              <a class="infolink" href="#">Подробнее на странице услуги</a>
+            </li>
+            <li>
+              <a class="submit" href="#">Записаться</a>
+            </li>
+          </ul>
+        </div>
+        <div class="prices-spoilers-block">
+          <div class="prices-spoilers-item">
+            <div class="prices-spoilers-item-row">
+              <div class="prices-spoilers-item__title">Протезирование</div>
+              <div class="prices-spoilers-item__arrow">
+                <svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8.38889 8L15 1" stroke-width="2" />
+                </svg>
+              </div>
+            </div>
+            <ul class="prices-spoilers-item__list">
+              <li>
+                <span class="see-info">Консультация с составлением плана лечения</span>
+                <b>400 ₽</b>
+              </li>
+              <li>
+                <span>Эстетическое восстановление коронковой части зуба</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса методом Icon</span>
+                <b>11 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (1-канальный зуб)</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (2-канальный зуб)</span>
+                <b>21 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (3-канальный зуб)</span>
+                <b>221 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение периодонтита</span>
+                <b>400 ₽</b>
+              </li>
+            </ul>
+          </div>
+          <ul class="action">
+            <li>
+              <a class="infolink" href="#">Подробнее на странице услуги</a>
+            </li>
+            <li>
+              <a class="submit" href="#">Записаться</a>
+            </li>
+          </ul>
+        </div>
+        <div class="prices-spoilers-block">
+          <div class="prices-spoilers-item">
+            <div class="prices-spoilers-item-row">
+              <div class="prices-spoilers-item__title">Имплантация</div>
+              <div class="prices-spoilers-item__arrow">
+                <svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8.38889 8L15 1" stroke-width="2" />
+                </svg>
+              </div>
+            </div>
+            <ul class="prices-spoilers-item__list">
+              <li>
+                <span class="see-info">Консультация с составлением плана лечения</span>
+                <b>400 ₽</b>
+              </li>
+              <li>
+                <span>Эстетическое восстановление коронковой части зуба</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса методом Icon</span>
+                <b>11 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (1-канальный зуб)</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (2-канальный зуб)</span>
+                <b>21 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (3-канальный зуб)</span>
+                <b>221 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение периодонтита</span>
+                <b>400 ₽</b>
+              </li>
+            </ul>
+          </div>
+          <ul class="action">
+            <li>
+              <a class="infolink" href="#">Подробнее на странице услуги</a>
+            </li>
+            <li>
+              <a class="submit" href="#">Записаться</a>
+            </li>
+          </ul>
+        </div>
+        <div class="prices-spoilers-block">
+          <div class="prices-spoilers-item">
+            <div class="prices-spoilers-item-row">
+              <div class="prices-spoilers-item__title">Прием у ортодонта</div>
+              <div class="prices-spoilers-item__arrow">
+                <svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8.38889 8L15 1" stroke-width="2" />
+                </svg>
+              </div>
+            </div>
+            <ul class="prices-spoilers-item__list">
+              <li>
+                <span class="see-info">Консультация с составлением плана лечения</span>
+                <b>400 ₽</b>
+              </li>
+              <li>
+                <span>Эстетическое восстановление коронковой части зуба</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса методом Icon</span>
+                <b>11 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (1-канальный зуб)</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (2-канальный зуб)</span>
+                <b>21 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (3-канальный зуб)</span>
+                <b>221 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение периодонтита</span>
+                <b>400 ₽</b>
+              </li>
+            </ul>
+          </div>
+          <ul class="action">
+            <li>
+              <a class="infolink" href="#">Подробнее на странице услуги</a>
+            </li>
+            <li>
+              <a class="submit" href="#">Записаться</a>
+            </li>
+          </ul>
+        </div>
+        <div class="prices-spoilers-block">
+          <div class="prices-spoilers-item">
+            <div class="prices-spoilers-item-row">
+              <div class="prices-spoilers-item__title">Пародонтология</div>
+              <div class="prices-spoilers-item__arrow">
+                <svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8.38889 8L15 1" stroke-width="2" />
+                </svg>
+              </div>
+            </div>
+            <ul class="prices-spoilers-item__list">
+              <li>
+                <span class="see-info">Консультация с составлением плана лечения</span>
+                <b>400 ₽</b>
+              </li>
+              <li>
+                <span>Эстетическое восстановление коронковой части зуба</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса методом Icon</span>
+                <b>11 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (1-канальный зуб)</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (2-канальный зуб)</span>
+                <b>21 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (3-канальный зуб)</span>
+                <b>221 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение периодонтита</span>
+                <b>400 ₽</b>
+              </li>
+            </ul>
+          </div>
+          <ul class="action">
+            <li>
+              <a class="infolink" href="#">Подробнее на странице услуги</a>
+            </li>
+            <li>
+              <a class="submit" href="#">Записаться</a>
+            </li>
+          </ul>
+        </div>
+        <div class="prices-spoilers-block">
+          <div class="prices-spoilers-item">
+            <div class="prices-spoilers-item-row">
+              <div class="prices-spoilers-item__title">Виниры</div>
+              <div class="prices-spoilers-item__arrow">
+                <svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8.38889 8L15 1" stroke-width="2" />
+                </svg>
+              </div>
+            </div>
+            <ul class="prices-spoilers-item__list">
+              <li>
+                <span class="see-info">Консультация с составлением плана лечения</span>
+                <b>400 ₽</b>
+              </li>
+              <li>
+                <span>Эстетическое восстановление коронковой части зуба</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса методом Icon</span>
+                <b>11 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (1-канальный зуб)</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (2-канальный зуб)</span>
+                <b>21 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (3-канальный зуб)</span>
+                <b>221 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение периодонтита</span>
+                <b>400 ₽</b>
+              </li>
+            </ul>
+          </div>
+          <ul class="action">
+            <li>
+              <a class="infolink" href="#">Подробнее на странице услуги</a>
+            </li>
+            <li>
+              <a class="submit" href="#">Записаться</a>
+            </li>
+          </ul>
+        </div>
+        <div class="prices-spoilers-block">
+          <div class="prices-spoilers-item">
+            <div class="prices-spoilers-item-row">
+              <div class="prices-spoilers-item__title">Имплантация all-on-4</div>
+              <div class="prices-spoilers-item__arrow">
+                <svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8.38889 8L15 1" stroke-width="2" />
+                </svg>
+              </div>
+            </div>
+            <ul class="prices-spoilers-item__list">
+              <li>
+                <span class="see-info">Консультация с составлением плана лечения</span>
+                <b>400 ₽</b>
+              </li>
+              <li>
+                <span>Эстетическое восстановление коронковой части зуба</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса методом Icon</span>
+                <b>11 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (1-канальный зуб)</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (2-канальный зуб)</span>
+                <b>21 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (3-канальный зуб)</span>
+                <b>221 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение периодонтита</span>
+                <b>400 ₽</b>
+              </li>
+            </ul>
+          </div>
+          <ul class="action">
+            <li>
+              <a class="infolink" href="#">Подробнее на странице услуги</a>
+            </li>
+            <li>
+              <a class="submit" href="#">Записаться</a>
+            </li>
+          </ul>
+        </div>
+        <div class="prices-spoilers-block">
+          <div class="prices-spoilers-item">
+            <div class="prices-spoilers-item-row">
+              <div class="prices-spoilers-item__title">Костная пластика</div>
+              <div class="prices-spoilers-item__arrow">
+                <svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8.38889 8L15 1" stroke-width="2" />
+                </svg>
+              </div>
+            </div>
+            <ul class="prices-spoilers-item__list">
+              <li>
+                <span class="see-info">Консультация с составлением плана лечения</span>
+                <b>400 ₽</b>
+              </li>
+              <li>
+                <span>Эстетическое восстановление коронковой части зуба</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса методом Icon</span>
+                <b>11 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (1-канальный зуб)</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (2-канальный зуб)</span>
+                <b>21 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (3-канальный зуб)</span>
+                <b>221 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение периодонтита</span>
+                <b>400 ₽</b>
+              </li>
+            </ul>
+          </div>
+          <ul class="action">
+            <li>
+              <a class="infolink" href="#">Подробнее на странице услуги</a>
+            </li>
+            <li>
+              <a class="submit" href="#">Записаться</a>
+            </li>
+          </ul>
+        </div>
+        <div class="prices-spoilers-block">
+          <div class="prices-spoilers-item">
+            <div class="prices-spoilers-item-row">
+              <div class="prices-spoilers-item__title">Лечение пациентов с заболеваниями сердца</div>
+              <div class="prices-spoilers-item__arrow">
+                <svg viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8.38889 8L15 1" stroke-width="2" />
+                </svg>
+              </div>
+            </div>
+            <ul class="prices-spoilers-item__list">
+              <li>
+                <span class="see-info">Консультация с составлением плана лечения</span>
+                <b>400 ₽</b>
+              </li>
+              <li>
+                <span>Эстетическое восстановление коронковой части зуба</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса методом Icon</span>
+                <b>11 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение кариеса</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (1-канальный зуб)</span>
+                <b>1 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (2-канальный зуб)</span>
+                <b>21 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение пульпита (3-канальный зуб)</span>
+                <b>221 000 ₽</b>
+              </li>
+              <li>
+                <span>Лечение периодонтита</span>
+                <b>400 ₽</b>
+              </li>
+            </ul>
+          </div>
+          <ul class="action">
+            <li>
+              <a class="infolink" href="#">Подробнее на странице услуги</a>
+            </li>
+            <li>
+              <a class="submit" href="#">Записаться</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="more-services">
+      <div class="container">
+        <div class="block-title">Подробнее об услугах</div>
+        <div class="slider">
+          <div class="slide">
+            <a class="slide-link" href="#">
+              <div class="slide__text">Профгигиена полости рта</div>
+            </a>
+          </div>
+          <div class="slide">
+            <a class="slide-link" href="#">
+              <div class="slide__text">Профгигиена полости рта</div>
+            </a>
+          </div>
+          <div class="slide">
+            <a class="slide-link" href="#">
+              <div class="slide__text">Профгигиена полости рта</div>
+            </a>
+          </div>
+          <div class="slide">
+            <a class="slide-link" href="#">
+              <div class="slide__text">Профгигиена полости рта</div>
+            </a>
+          </div>
+        </div>
+        <div class="arrows">
+          <div class="arrow arrow-prev">
+            <svg viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.2929L14.3431 0.928933C13.9526 0.538409 13.3195 0.538409 12.9289 0.928933C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM-8.74228e-08 9L20 9L20 7L8.74228e-08 7L-8.74228e-08 9Z" />
+            </svg>
+          </div>
+          <div class="arrow arrow-next">
+            <svg viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.2929L14.3431 0.928933C13.9526 0.538409 13.3195 0.538409 12.9289 0.928933C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM-8.74228e-08 9L20 9L20 7L8.74228e-08 7L-8.74228e-08 9Z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rating">
+      <div class="container">
+        <img class="hand" src="../img/rating/hand.png" alt="">
+        <div class="inner">
+          <div class="block-title">Независимые <span>рейтинги</span>
+          </div>
+          <div class="block-text">Репутация клиники и стоматологов - важный критерий при выборе места лечения. Нам нечего
+            <br> скрывать! Узнайте, что думают пациенты о Expert Dentist на популярных интернет-порталах
+          </div>
+          <div class="cards">
+            <div class="card">
+              <div class="card-img">
+                <img class="card__img" src="../img/rating/yandex.png" alt="">
+              </div>
+              <div class="card__num">4<span>/5</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img class="card__img" src="../img/rating/32top.png" alt="">
+              </div>
+              <div class="card__num">4.93 <span>/5</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img class="card__img" src="../img/rating/kleos.png" alt="">
+              </div>
+              <div class="card__num">4 <span>/5</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img class="card__img" src="../img/rating/zoon.png" alt="">
+              </div>
+              <div class="card__num">4 <span>/5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="security">
+      <div class="container">
+        <div class="shield">
+          <img class="shield__img" src="../img/icons/shield.svg" alt="">
+        </div>
+        <div class="inner">
+          <div class="security__title">
+            <span>Усиленные меры безопасности</span> в клинике FullClinic
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="seo">
+      <div class="container">
+        <div class="block-title">СЕО-текст</div>
+        <div class="spoiler">
+          <div class="spoiler__title">Спойлер 1</div>
+          <div class="spoiler__text">Равным образом консультация с широким активом позволяет оценить значение направлений прогрессивного развития. Равным образом постоянный количественный рост и сфера нашей активности требуют от нас анализа дальнейших направлений развития. Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке модели развития.
+            <br>
+            <br> Товарищи! рамки и место обучения кадров требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Товарищи! сложившаяся структура организации в значительной степени обуславливает создание дальнейших направлений развития. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
+          </div>
+        </div>
+        <div class="spoiler">
+          <div class="spoiler__title">Спойлер 2</div>
+          <div class="spoiler__text">Равным образом консультация с широким активом позволяет оценить значение направлений прогрессивного развития. Равным образом постоянный количественный рост и сфера нашей активности требуют от нас анализа дальнейших направлений развития. Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке модели развития.
+            <br>
+            <br> Товарищи! рамки и место обучения кадров требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Товарищи! сложившаяся структура организации в значительной степени обуславливает создание дальнейших направлений развития. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
+          </div>
+        </div>
+        <div class="spoiler">
+          <div class="spoiler__title">Спойлер 3</div>
+          <div class="spoiler__text">Равным образом консультация с широким активом позволяет оценить значение направлений прогрессивного развития. Равным образом постоянный количественный рост и сфера нашей активности требуют от нас анализа дальнейших направлений развития. Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке модели развития.
+            <br>
+            <br> Товарищи! рамки и место обучения кадров требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Товарищи! сложившаяся структура организации в значительной степени обуславливает создание дальнейших направлений развития. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
+          </div>
+        </div>
+        <div class="spoiler">
+          <div class="spoiler__title">Спойлер 4</div>
+          <div class="spoiler__text">Равным образом консультация с широким активом позволяет оценить значение направлений прогрессивного развития. Равным образом постоянный количественный рост и сфера нашей активности требуют от нас анализа дальнейших направлений развития. Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке модели развития.
+            <br>
+            <br> Товарищи! рамки и место обучения кадров требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Товарищи! сложившаяся структура организации в значительной степени обуславливает создание дальнейших направлений развития. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="contact-left">
+        <div id="map"></div>
+      </div>
+      <div class="contact-right">
+        <div class="row">
+          <div class="block-title">Запишитесь
+            <br>
+            <span>прямо сейчас!</span>
+          </div>
+          <img class="contact__label" src="../img/contact/label.png" alt="">
+        </div>
+        <div class="block-text">Дадим грамотную консультацию и поможем определиться с
+          <br> лечением
+        </div>
+        <form class="entry-form horizontal" action="#" method="post">
+          <div class="entry-form-label big">
+            <svg viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.99" fill-rule="evenodd" clip-rule="evenodd" d="M12.1034 2.42067C10.098 2.42067 8.47235 4.04633 8.47235 6.05168C8.47235 8.05703 10.098 9.68269 12.1034 9.68269C14.1087 9.68269 15.7344 8.05703 15.7344 6.05168C15.7344 4.04633 14.1087 2.42067 12.1034 2.42067ZM6.05168 6.05168C6.05168 2.70943 8.76111 0 12.1034 0C15.4456 0 18.155 2.70943 18.155 6.05168C18.155 9.39393 15.4456 12.1034 12.1034 12.1034C8.76111 12.1034 6.05168 9.39393 6.05168 6.05168ZM0 25.4171C0 18.7326 5.41888 13.3137 12.1034 13.3137C18.7879 13.3137 24.2067 18.7326 24.2067 25.4171C24.2067 26.0855 23.6648 26.6274 22.9964 26.6274C22.3279 26.6274 21.7861 26.0855 21.7861 25.4171C21.7861 20.0695 17.451 15.7344 12.1034 15.7344C6.75578 15.7344 2.42067 20.0695 2.42067 25.4171C2.42067 26.0855 1.87879 26.6274 1.21034 26.6274C0.541886 26.6274 0 26.0855 0 25.4171Z" fill="url(#paint0_linear)" fill-opacity="0.65" />
+              <defs>
+                <linearGradient id="paint0_linear" x1="12.1034" y1="0" x2="12.1034" y2="26.6274" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#CE9D20" />
+                  <stop offset="0.583333" stop-color="#D6A526" />
+                  <stop offset="1" stop-color="#DFAD2D" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <input class="entry-form__input" type="text" name="entry-form-name" placeholder="Как вас зовут?">
+          </div>
+          <div class="entry-form-row">
+            <div class="entry-form-label">
+              <svg width="21" height="25" viewBox="0 0 21 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.99" fill-rule="evenodd" clip-rule="evenodd" d="M0.579102 2.8605C0.579102 1.65553 1.55592 0.678711 2.76089 0.678711L18.0334 0.678711C19.2384 0.678711 20.2152 1.65554 20.2152 2.8605V22.4966C20.2152 23.7016 19.2384 24.6784 18.0334 24.6784H2.76089C1.55593 24.6784 0.579102 23.7016 0.579102 22.4966L0.579102 2.8605ZM18.0334 2.8605L2.76089 2.8605V14.8603H18.0334V2.8605ZM18.0334 17.0421H2.76089V22.4966H18.0334V17.0421ZM8.21537 19.7694C8.21537 19.1669 8.70378 18.6785 9.30626 18.6785H11.4881C12.0905 18.6785 12.5789 19.1669 12.5789 19.7694C12.5789 20.3719 12.0905 20.8603 11.4881 20.8603H9.30626C8.70378 20.8603 8.21537 20.3719 8.21537 19.7694Z" fill="url(#paint0_linear)" fill-opacity="0.65" />
+                <defs>
+                  <linearGradient id="paint0_linear" x1="10.3972" y1="0.678711" x2="10.3972" y2="24.6784" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#CE9D20" />
+                    <stop offset="0.583333" stop-color="#D6A526" />
+                    <stop offset="1" stop-color="#DFAD2D" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <input class="entry-form__input" type="tel" name="entry-form-tel" placeholder="Введите номер">
+            </div>
+            <button class="entry-form__btn submit" type="submit">Записаться</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-left">
+      <nav class="menu">
+        <div class="menu-block">
+          <div class="menu-block__title">Услуги</div>
+          <ul class="menu-block-list">
+            <li>
+              <a href="#">Имплантация зубов</a>
+            </li>
+            <li>
+              <a href="#">Лечение</a>
+            </li>
+            <li>
+              <a href="#">Все зубы за 1 день</a>
+            </li>
+            <li>
+              <a href="#">Ортодонтия</a>
+            </li>
+            <li>
+              <a href="#">Протезирование зубов</a>
+            </li>
+            <li>
+              <a href="#">Эстетический уход</a>
+            </li>
+            <li>
+              <a href="#">Челюстно-лицевая хирургия</a>
+            </li>
+            <li>
+              <a href="#">Виниры</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row">
+        <a class="logo" href="index.html">
+          <div class="logo__title">full <b>clinic</b>
+          </div>
+          <div class="logo__text">клиника стоматологии и
+            <br> ичелюстно-лицевой хирургии
+          </div>
+        </a>
+        <div class="footer__text">Работаем для вас
+          <br> с 10:00 до 21:00 <b>без выходных</b>
+        </div>
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="row">
+        <div class="phone">
+          <ul class="phone-list">
+            <li>
+              <a href="tel:+74953005656">8 (495) <b>300 56 56</b>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+74950000000">8 (495) <span>000 00 00</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="action">
+          <li>
+            <a class="btn-callback" href="#">
+              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.055 16.8657L16.305 13.604C15.7571 12.9568 14.7706 12.8929 14.1064 13.4628L12.7427 14.6321C12.5891 14.7638 12.3665 14.7773 12.1991 14.6636V14.6636C11.2907 14.0533 10.0474 13.2171 8.78742 11.7217C7.52359 10.223 6.90443 8.84897 6.45161 7.84589V7.84589C6.37016 7.66466 6.41711 7.45041 6.56802 7.32117L7.40222 6.60677L7.93796 6.14669C8.60322 5.57596 8.69812 4.58393 8.15171 3.9351L5.40175 0.672982C4.85527 0.0249922 3.86838 -0.038944 3.20313 0.531794L2.30766 1.30431C2.30039 1.31057 2.29954 1.32153 2.30576 1.32884V1.32884C2.31145 1.33555 2.31128 1.34544 2.30536 1.35195C1.99905 1.68925 1.734 2.08456 1.52543 2.5169C1.32993 2.93351 1.19703 3.33554 1.11873 3.74295C0.465799 7.00799 1.72327 10.1464 5.45659 14.5741C10.6172 20.6941 15.1667 20.6432 15.3632 20.6386C15.7915 20.6228 16.2062 20.5544 16.6321 20.4269C17.086 20.2901 17.5161 20.0894 17.8959 19.8383C17.9016 19.8345 17.9091 19.8354 17.9137 19.8403V19.8403C17.9188 19.8456 17.9272 19.8461 17.9328 19.8414L18.8414 19.0785C19.5054 18.5078 19.6011 17.5155 19.055 16.8657Z" />
+              </svg>
+              <span>Обратный звонк</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="row-block">
+          <div class="social">
+            <div class="social__title">Всегда с вами в сетях:</div>
+            <div class="social-list">
+              <a class="social__item" href="http://" target="_blank" rel="noopener noreferrer">
+                <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.9975 3.985H12.1885V0.169C11.8105 0.117 10.5105 0 8.9965 0C5.8375 0 3.6735 1.987 3.6735 5.639V9H0.1875V13.266H3.6735V24H7.9475V13.267H11.2925L11.8235 9.001H7.9465V6.062C7.9475 4.829 8.2795 3.985 9.9975 3.985V3.985Z" />
+                </svg>
+              </a>
+              <a class="social__item" href="http://" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.5034 0H6.49657C2.9143 0 0 2.9143 0 6.49657V17.5036C0 21.0857 2.9143 24 6.49657 24H17.5036C21.0857 24 24 21.0857 24 17.5036V6.49657C24 2.9143 21.0857 0 17.5034 0V0ZM12 18.5623C8.38145 18.5623 5.43767 15.6185 5.43767 12C5.43767 8.38145 8.38145 5.43767 12 5.43767C15.6185 5.43767 18.5623 8.38145 18.5623 12C18.5623 15.6185 15.6185 18.5623 12 18.5623V18.5623ZM18.7192 6.98528C17.6499 6.98528 16.7801 6.11553 16.7801 5.04619C16.7801 3.97686 17.6499 3.10693 18.7192 3.10693C19.7885 3.10693 20.6585 3.97686 20.6585 5.04619C20.6585 6.11553 19.7885 6.98528 18.7192 6.98528Z" />
+                  <path d="M11.9991 6.84473C9.15655 6.84473 6.84375 9.15734 6.84375 12.0001C6.84375 14.8426 9.15655 17.1554 11.9991 17.1554C14.8418 17.1554 17.1544 14.8426 17.1544 12.0001C17.1544 9.15734 14.8418 6.84473 11.9991 6.84473V6.84473Z" />
+                  <path d="M18.7196 4.5141C18.4263 4.5141 18.1875 4.75287 18.1875 5.0462C18.1875 5.33954 18.4263 5.57831 18.7196 5.57831C19.0131 5.57831 19.2519 5.33972 19.2519 5.0462C19.2519 4.75269 19.0131 4.5141 18.7196 4.5141Z" />
+                </svg>
+              </a>
+              <a class="social__item" href="http://" target="_blank" rel="noopener noreferrer">
+                <svg width="30" height="19" viewBox="0 0 30 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M29.7326 16.4325C29.652 16.293 29.1532 15.173 26.753 12.8711C24.2403 10.4607 24.5779 10.8521 27.6043 6.68418C29.4476 4.14587 30.1845 2.59575 29.9539 1.93308C29.7345 1.30141 28.3788 1.46804 28.3788 1.46804L23.8709 1.49517C23.8709 1.49517 23.5372 1.44867 23.2878 1.60174C23.0459 1.75288 22.8902 2.10165 22.8902 2.10165C22.8902 2.10165 22.1758 4.06642 21.2232 5.73667C19.215 9.26125 18.4105 9.44726 18.0824 9.22831C17.3192 8.71871 17.5105 7.17828 17.5105 6.08545C17.5105 2.66938 18.0111 1.24521 16.5335 0.877061C16.0422 0.75499 15.6822 0.673609 14.4277 0.660045C12.8189 0.642606 11.4556 0.665858 10.685 1.05532C10.1712 1.31497 9.77552 1.89433 10.0174 1.92727C10.3156 1.96796 10.9906 2.11522 11.3488 2.619C11.8119 3.26811 11.795 4.7291 11.795 4.7291C11.795 4.7291 12.0613 8.74971 11.1744 9.24962C10.5649 9.59259 9.73051 8.8931 7.93975 5.69405C7.02281 4.05674 6.32901 2.24504 6.32901 2.24504C6.32901 2.24504 6.19588 1.90789 5.95773 1.72769C5.66896 1.50873 5.26393 1.43898 5.26393 1.43898L0.977366 1.46611C0.977366 1.46611 0.334193 1.48548 0.0979258 1.77419C-0.11209 2.0319 0.0810496 2.56281 0.0810496 2.56281C0.0810496 2.56281 3.43755 10.6757 7.23658 14.7661C10.7225 18.5154 14.679 18.2694 14.679 18.2694H16.4716C16.4716 18.2694 17.0136 18.2074 17.2892 17.8993C17.5442 17.6164 17.5348 17.0855 17.5348 17.0855C17.5348 17.0855 17.4992 14.5995 18.6168 14.2332C19.7175 13.8728 21.1314 16.6359 22.6296 17.6997C23.7622 18.5038 24.6229 18.3275 24.6229 18.3275L28.63 18.2694C28.63 18.2694 30.7264 18.1357 29.7326 16.4325Z" />
+                </svg>
+              </a>
+              <a class="social__item" href="http://" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path d="M4.72098 12.881C4.10798 14.086 4.80398 14.662 6.39198 15.646C7.74198 16.48 9.60698 16.785 10.805 16.907C10.314 17.379 12.564 15.215 6.08398 21.448C4.70998 22.765 6.92198 24.878 8.29498 23.589L12.012 20.004C13.435 21.373 14.799 22.685 15.729 23.594C17.103 24.888 19.314 22.793 17.955 21.453C17.853 21.356 12.918 16.622 13.219 16.912C14.432 16.79 16.269 16.467 17.603 15.651L17.602 15.65C19.19 14.661 19.886 14.086 19.282 12.881C18.917 12.197 17.933 11.625 16.623 12.614C16.623 12.614 14.854 13.969 12.001 13.969C9.14698 13.969 7.37898 12.614 7.37898 12.614C6.06998 11.62 5.08198 12.197 4.72098 12.881V12.881Z" />
+                    <path d="M11.9987 12.142C15.4767 12.142 18.3167 9.424 18.3167 6.078C18.3167 2.718 15.4767 0 11.9987 0C8.51969 0 5.67969 2.718 5.67969 6.078C5.67969 9.424 8.51969 12.142 11.9987 12.142ZM11.9987 3.079C13.7077 3.079 15.1017 4.42 15.1017 6.078C15.1017 7.722 13.7077 9.063 11.9987 9.063C10.2897 9.063 8.89569 7.722 8.89569 6.078C8.89469 4.419 10.2887 3.079 11.9987 3.079V3.079Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="24" height="24" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a class="social__item" href="http://" target="_blank" rel="noopener noreferrer">
+                <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M27.5179 3.70456C27.2046 2.53983 26.2863 1.62169 25.1217 1.30807C22.9942 0.725952 14.484 0.725952 14.484 0.725952C14.484 0.725952 5.97418 0.725952 3.84667 1.286C2.70451 1.59929 1.7638 2.54 1.4505 3.70456C0.890625 5.83191 0.890625 10.2437 0.890625 10.2437C0.890625 10.2437 0.890625 14.6778 1.4505 16.7829C1.76413 17.9475 2.68211 18.8656 3.84683 19.1792C5.99658 19.7615 14.4844 19.7615 14.4844 19.7615C14.4844 19.7615 22.9942 19.7615 25.1217 19.2015C26.2865 18.888 27.2046 17.9699 27.5182 16.8053C28.078 14.6778 28.078 10.2661 28.078 10.2661C28.078 10.2661 28.1004 5.83191 27.5179 3.70456V3.70456ZM11.7746 14.3195V6.16793L18.8512 10.2437L11.7746 14.3195Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="#">Написать руководству</a>
+            </li>
+            <li>
+              <a href="#">Политика конфедициальности</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__text">Разработано студией MNOGOLAND</div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery/dist/jquery.min.js"></script>
+  <script src="js/libs.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgqz4HeLO_AGHaQrJ3LkI-svcBqnpqL-4" defer></script>
+  <script src="js/map.js" defer></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>
