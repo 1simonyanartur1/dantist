@@ -1,0 +1,226 @@
+- var img = '../img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+
+			section.breadcrumbs
+				.container
+					ul.list
+						li
+							a(href="index.html") На главную
+						li
+							a(href="orthodontics.html") Ортодонтия
+
+			section.mainblock.type3
+				.slider
+					.slide
+						.slide-left
+							img.slide__img(src=img+"mainblock/orthodontics-img.jpg", alt="")
+						.slide-right
+							.block-title Врачи-ортодонты <br> <span>с опытом более 8 лет!</span>
+							.block-subtitle Брекет-системы на любой бюджет!
+							.block-text Записаться <span>на бесплатную консультацию:</span>
+							include blocks/_entry-form.pug
+							ul.anchor-menu
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Описание
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Показания к установке
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Методики
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Примеры
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Врачи
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Цены
+			
+			section.advantages.type3
+				.block-title.type2 Получите идеальную улыбку
+				.container
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/braces.svg", alt="")
+						.item__title Все современные методы исправления прикуса
+						.item__text Мы применяем только самые эффективные и проверенные методики лечения, дающие гарантированный результат
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/dentist-3.svg", alt="")
+						.item__title Тщательная диагностика и планирование результата
+						.item__text Мы заранее уверены в результате будещего лечения благодаря современной и точной диагностике
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/wedding-cost.svg", alt="")
+						.item__title Цены
+						.item__text Гибкий и честный подход к ценообразованию. Никаких скрытых доплат. Возможны кредит и расрочка
+
+			section.correct-ways
+				.container
+					.block-title.type2 <span>Способы исправления</span> прикуса <span>в «FULL clinic»</span>
+					.inner
+						.card
+							.card__title Классические брекеты
+							.card__subtitle 100% результат и <b>надёжное качество</b>
+							.card-img
+								img.card__img(src=img+"correct-ways/img1.png", alt="")
+							.card__price от <span>18 000 ₽</span>
+							.card-list
+								li.okey Самые надёжные и прочные, практичные с точки зрения ухода
+								li.okey Подходят для исправления самых сложных патологий прикуса
+								li.okey Доступнее, чем керамические и сапфировые
+								li.error Не подходит при аллергии на металл
+						.card
+							.card__title Эстетические брекеты
+							.card__subtitle <b>Комфортное</b> ношение и <b>аккуратный</b> вид
+							.card-img
+								img.card__img(src=img+"correct-ways/img2.png", alt="")
+							.card__price от <span>35 000 ₽</span>
+							.card-list
+								li.okey Мало заметны окружающим
+								li.okey Не изменяют дикцию и не окрашиваются при приёме пищи
+								li.okey Подбираются под цвет эмали или изготавливаются индивидуально
+								li.error Высокая стоимость в сравнении с металлическими брекетами
+						.card
+							.card__title Капы и пластинки
+							.card__subtitle <b>Простая гигиена и удобство</b> при ношении
+							.card-img
+								img.card__img(src=img+"correct-ways/img3.png", alt="")
+							.card__price от <span>18 000 ₽</span>
+							.card-list
+								li.okey Возможность снять изделие в любое время в любом месте
+								li.okey Исправление патологии прикуса на начальном этапе
+								li.okey Атравматичны, удобны в уходе и гигиене
+								li.error Вероятность потери или повреждения изделия
+
+			section.category-guarantees
+				.container
+					.block-title.type2 Ровные зубы и красивая улыбка <span>без лишних <br> утомительных визитов</span> в клинику
+					.inner
+						.category-guarantees-left
+							.text-container
+								p <b>Диагностика с точностью до микрон</b> <br> Работа по цифровому протоколу и инновационные технологии позволяют исключать ошибки и проводить обследование за считанные минуты.
+								p <b>Никаких лишних визитов</b> <br> Мы точно знаем, сколько визитов в клинику необходимо для достижения желаемого результата. лишних посещений врача не потребуется.
+								p <b>Гарантия идеальной улыбки </b> <br> Мы уверены в своих врачах-ортодонтах и даём 100% гарантию результата — вы не узнаете свою улыбку!
+								p *Доступны все виды ортодонтического лечения. Современные методики позволяют подобрать комфортный способ лечения и спрогнозировать будущий результат
+						.category-guarantees-right
+							img.category-guarantees__img(src=img+"category-guarantees/img1.jpg", alt="")
+
+			section.orthodontics-stages
+				.container
+					.block-title.type2 Чаще всего <span>пациентов интересует вопрос</span> — как долго продлится <br> лечение после установки брекетов
+					.block-text Существует <b>3 основных этапа ортодонтического лечения</b>
+					.inner
+						.card
+							.card__title 1 этап
+							.card__subtitle В 12 месяцев
+							img.card__img(src=img+"orthodontics-stages/img1.jpg", alt="")
+							.card__title Выравнивание зубов
+							.card__text Это основной и как правило самый продолжительный этап лечения на брекет системах.  В этот период происходит самые заметные изменения с зубами
+							.card__text.card__text_small Сократить этап лечения позволяет очень точная фиксация брекетов
+						.card
+							.card__title 1 этап
+							.card__subtitle В 12 месяцев
+							img.card__img(src=img+"orthodontics-stages/img2.jpg", alt="")
+							.card__title Выравнивание зубов
+							.card__text Это основной и как правило самый продолжительный этап лечения на брекет системах.  В этот период происходит самые заметные изменения с зубами
+							.card__text.card__text_small Сократить этап лечения позволяет очень точная фиксация брекетов
+						.card
+							.card__title 1 этап
+							.card__subtitle В 12 месяцев
+							img.card__img(src=img+"orthodontics-stages/img3.jpg", alt="")
+							.card__title Выравнивание зубов
+							.card__text Это основной и как правило самый продолжительный этап лечения на брекет системах.  В этот период происходит самые заметные изменения с зубами
+							.card__text.card__text_small Сократить этап лечения позволяет очень точная фиксация брекетов
+
+			section.book-text.type2
+				.container
+					img.book-text__img(src=img+"book-text/book3.png", alt="")
+					.inner
+						.block-title Как выбрать метод коррекции?
+						.text-container
+							p Вид системы коррекции прикуса подбирается с учетом пожеланий пациента и профессиональных рекомендаций ортодонта. <br> При выборе очень важно учеть множество факторов, которые могут повлиять на сроки выравнивания прикуса!
+						ul.action
+							li
+								a(href="#").submit Записаться на консультацию
+
+			section.portfolio
+				.container
+					.block-title.type2 Примеры выравнивания прикуса
+					.slider
+						.slide
+							.slide-top
+								.slide-top-left
+									.slide__name Надежда
+									.slide__text Протезирование для верхней челюсти
+									.slide__text <b>Проблема:</b> <br> Пациентка обратилась в клинику с жалобами на отсутствие жевательных зубов, неудовлетворительное состояние старых ортопедических конструкций и неудовлетворительную эстетику зоны улыбки.
+									.slide__text <b>Решение:</b> <br> Последовательно были проведены остеопластика в области 47-го зуба, затем полное протезирование безметалловыми коронками из диоксида циркония.
+								.slide-top-right
+									img.slide__img(src=img+"works/before.jpg", alt="")
+									img.slide__img(src=img+"works/after.jpg", alt="")
+							.slide-bottom
+									.slide__doc Врач: <span>Овсепян Карен Тигранович</span>
+									a.submit(href="#") Смотреть кейс полностью
+						.slide
+							.slide-top
+								.slide-top-left
+									.slide__name Надежда
+									.slide__text Протезирование для верхней челюсти
+									.slide__text <b>Проблема:</b> <br> Пациентка обратилась в клинику с жалобами на отсутствие жевательных зубов, неудовлетворительное состояние старых ортопедических конструкций и неудовлетворительную эстетику зоны улыбки.
+									.slide__text <b>Решение:</b> <br> Последовательно были проведены остеопластика в области 47-го зуба, затем полное протезирование безметалловыми коронками из диоксида циркония.
+								.slide-top-right
+									img.slide__img(src=img+"works/before.jpg", alt="")
+									img.slide__img(src=img+"works/after.jpg", alt="")
+							.slide-bottom
+									.slide__doc Врач: <span>Овсепян Карен Тигранович</span>
+									a.submit(href="#") Смотреть кейс полностью
+
+			section.security
+				.container
+					.shield
+						img.shield__img(src=img+"icons/hand-coin.svg", alt="")
+					.inner
+						.block-title Рассрочка под 0% от банка
+						.block-text Помогаем с получением рассрочки даже в сложных случаях
+					a.submit(href="#") Узнать подробнее
+
+			include blocks/doctors.pug
+			include blocks/security.pug
+
+			section.material-cost
+				.container
+					.block-title Стоимость лечения и работ
+					.items
+						.item.info
+							.item__text Консультация с составлением плана лечения
+							.item__price 1 500 ₽
+						.item
+							.item__text Металлическая брекет-система под ключ (на год)
+							.item__price 177 000 ₽
+						.item
+							.item__text Металлическая самолигирующаяся система на две челюсти (на год)
+							.item__price 177 000 ₽
+						.item
+							.item__text Керамическая брекет-система на две челюсти (на год)
+							.item__price 177 000 ₽
+						.item
+							.item__text Ортодонтическое лечение на элайнерах (без брекетов)
+							.item__price 177 000 ₽
+					ul.action
+						li
+							a.infolink(href="#") Стоимость зависит от методики и системы
+						li
+							a.submit(href="#") Записаться
+
+			include blocks/stocks.pug
+			include blocks/rating.pug
+			include blocks/seo.pug
+			include blocks/contact.pug
+
+		include blocks/footer.pug
+		include blocks/scripts.pug

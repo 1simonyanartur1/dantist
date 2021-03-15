@@ -1,0 +1,69 @@
+.correct-ways
+	padding: 45px 0
+	.container
+		max-width: 1500px
+	.block-title
+		text-align: center
+	.inner
+		+flex(row, null, null, wrap)
+		margin: 40px 0 0 0
+	.card
+		color: $dark2
+		padding: 40px
+		background: #FFFFFF
+		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15)
+		border-radius: 10px
+		width: 31.3%
+		margin: 1%
+		&__title
+			text-align: center
+			font-weight: 700
+			font-size: 24px
+		&__subtitle
+			text-align: center
+			font-weight: 500
+			font-size: 17px
+			margin: 10px 0 0 0
+			b
+				color: $brown
+		&-img
+			margin: 20px 0
+			width: 100%
+			height: 200px
+		&__img
+			width: 100%
+			height: 100%
+			object-fit: contain
+		&__price
+			font-size: 17px
+			line-height: 1
+			color: $brown
+			text-align: center
+			margin: 15px 0
+			span
+				font-weight: 700
+				font-size: 38px
+		&-list
+			li
+				font-size: 17px
+				padding: 0 0 0 30px
+				margin: 20px 0
+				list-style-type: none
+				position: relative
+				&:before
+					content: '+'
+					font-weight: 700
+					line-height: 1
+					font-size: 24px
+					display: block
+					left: 0
+					top: 0
+					position: absolute
+				&.error
+					&:before
+						color: $red
+						transform: rotate(45deg)
+				&.okey
+					&:before
+						color: $brown
+					
