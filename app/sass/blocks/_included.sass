@@ -3,8 +3,12 @@
 	text-align: center
 	color: $dark
 	+bg(null, null, 'included/tape.png', no-repeat, center, center, contain)
+	+mq($max-width: 1600px)
+		padding: 50px 0
 	.container
 		max-width: 1390px
+		+mq($max-width: 1600px)
+			max-width: 1170px
 	.inner
 		margin: 30px 0 0 0
 		+flex(row, null, null, wrap)
@@ -17,6 +21,10 @@
 		width: 31.3%
 		margin: 1%
 		padding: 56px 40px
+		+mq($max-width: 1000px)
+			width: 48%
+		+mq($max-width: 700px)
+			padding: 40px 20px
 		&::before
 			content: ''
 			border-radius: 10px
@@ -26,12 +34,24 @@
 			bottom: 20px
 			border: 1px solid #CCCCCC
 			position: absolute
+			+mq($max-width: 700px)
+				left: 10px
+				right: 10px
+				bottom: 10px
+				top: 10px
 		&__title
 			font-family: 'PF', serif
 			padding: 0 0 0 20px
 			font-weight: 500
 			font-style: italic
 			font-size: 25px
+			+mq($max-width: 1600px)
+				padding: 0
+			+mq($max-width: 700px)
+				font-size: 20px
 		&__text
 			margin: 20px 0 0 0
 			font: 18px/1.6 'UniBook', sans-serif
+			+mq($max-width: 700px)
+				margin: 15px 0 0 0
+				font-size: 14px

@@ -1,8 +1,12 @@
 .portfolio
 	padding: 75px 0
 	color: $dark2
+	+mq($max-width: 1600px)
+		padding: 50px 0
 	.container
 		max-width: 1460px
+		+mq($max-width: 1600px)
+			max-width: 1170px
 	.slider
 		background: #FFFFFF
 		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15)
@@ -13,20 +17,32 @@
 		margin: 35px 0 0 0
 	.twentytwenty-wrapper
 		width: 40%
-		height: 345px
+		+mq($max-width: 1000px)
+			width: 60%
+			margin: 0 0 15px
+		+mq($max-width: 700px)
+			width: 100%
 	.slide
 		padding: 55px
+		+mq($max-width: 700px)
+			padding: 20px 20px 50px 20px
 		&-top
 			width: 100%
 			+flex(row, between, start, nowrap)
+			+mq($max-width: 1000px)
+				flex-wrap: wrap
 			&-left
 				width: 60%
 				padding: 0 20px 0 0
+				+mq($max-width: 1000px)
+					width: 100%
 			&-right
 				width: 100%
 		&-bottom
 			width: 100%
 			+flex(row, between, center, nowrap)
+			+mq($max-width: 700px)
+				flex-wrap: wrap
 		&__name
 			font: 500 32px/1 'PF', sans-serif
 			width: 100%
@@ -35,11 +51,15 @@
 			width: 100%
 			margin: 0 0 25px 0
 			font: 400 18px/1.6 'UniBook', sans-serif
+			+mq($max-width: 1600px)
+				font-size: 15px
 		&__doc
 			font: 400 16px/1 'UniBook', sans-serif
+			+mq($max-width: 700px)
+				margin: 0 0 10px 0
 			span
 				display: inline-block
-				margin: 0 0 0 
+				margin: 0
 				font: 500 20px/1 'PF', sans-serif
 
 	.arrow
@@ -47,14 +67,22 @@
 		top: 50%
 		z-index: 2
 		+mq($max-width: 1200px)
-			top: -40%
+			display: flex
 		&-prev
 			left: 0
 			transform: translate(-50%, -50%) rotate(180deg)
-			+mq($max-width: 700px)
+			+mq($max-width: 1200px)
+				transform: translate(0, 0) rotate(180deg)
+				top: auto
+				bottom: 5px
+				left: 5px
 		&-next
 			right: 0
 			transform: translate(50%, -50%)
-			+mq($max-width: 700px)
+			+mq($max-width: 1200px)
+				transform: translate(0, 0)
+				top: auto
+				bottom: 5px
+				right: 5px
 
 

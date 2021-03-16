@@ -1,5 +1,5 @@
 .mainblock
-	overflow: hidde
+	overflow: hidden
 	.slide
 		background: $body-bg
 		position: relative
@@ -95,7 +95,7 @@
 			+mq($max-width: 1550px)
 				margin: 0 0 20px 0
 	.block-title
-		font-size: 58px
+		font-size: 45px
 		max-width: 522px
 		width: 100%
 		margin: 30px 0 12px 0
@@ -243,15 +243,18 @@
 			overflow: visible
 			&-left
 				width: 55%
+				+mq($max-width: 1200px)
+					width: 100%
 			&-right
 				width: 45%
 				padding-bottom: 0
+				+mq($max-width: 1200px)
+					width: 100%
 				&:before
 					display: none
 		.block-title
 			width: auto
 			max-width: 100%
-			font-size: 45px
 			line-height: 1.2
 			margin: 0 0 20px 0
 			font-style: normal
@@ -277,14 +280,22 @@
 		width: 90%
 		margin: 30px 0 0 0
 		+flex(row, between, null, wrap)
+		+mq($max-width: 1200px)
+			width: 100%
+			margin: 15px 0
 		&-item
 			+flex(row, center, center, wrap)
+			+mq($max-width: 575px)
+				width: 50%
 		&__link
 			text-align: center
 			padding: 20px 0
 			font-size: 18px
 			color: $dark2
 			position: relative
+			+mq($max-width: 575px)
+				padding: 10px 0
+				width: 100%
 			&:after
 				content: ''
 				display: block

@@ -3,10 +3,21 @@
 	.container
 		max-width: 1520px
 		+flex(row, between, center, wrap)
+		+mq($max-width: 1600px)
+			max-width: 1170px
+		+mq($max-width: 1000px)
+			flex-wrap: wrap-reverse
 	&__img
 		display: block
 		width: 49%
+		+mq($max-width: 1000px)
+			width: 100%
 	.inner
 		width: 49%
+		+mq($max-width: 1000px)
+			width: 100%
+			margin: 0 0 25px 0
 	.block-text
 		margin: 40px 0
+		+mq($max-width: 1600px)
+			margin: 20px 0

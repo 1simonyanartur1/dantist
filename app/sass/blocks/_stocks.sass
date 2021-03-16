@@ -24,6 +24,7 @@
 			+flex(row, null, null, nowrap)
 			+mq($max-width: 1200px)
 				padding: 0
+				display: block
 	.slide
 		background: white
 		border-radius: 10px
@@ -108,21 +109,21 @@
 			+mq($max-width: 1200px)
 				transform: translate(0, -50%)
 
-	.slick-dots
-		display: flex
-		justify-content: center
-		align-items: center
-		margin: 15px 0
-		li
-			margin: 0 5px
-			&.slick-active button
-				background: $brown
-		button
-			cursor: pointer
-			display: block
-			font-size: 0
-			border-radius: 100%
-			width: 12px
-			height: 12px
-			transition: all .3s ease-out
-			background: $gray
+	// .slick-dots
+	// 	display: flex
+	// 	justify-content: center
+	// 	align-items: center
+	// 	margin: 15px 0
+	// 	li
+	// 		margin: 0 5px
+	// 		&.slick-active button
+	// 			background: $brown
+	// 	button
+	// 		cursor: pointer
+	// 		display: block
+	// 		font-size: 0
+	// 		border-radius: 100%
+	// 		width: 12px
+	// 		height: 12px
+	// 		transition: all .3s ease-out
+	// 		background: $gray

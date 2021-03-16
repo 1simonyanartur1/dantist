@@ -4,9 +4,13 @@
 	color: $dark
 	.container
 		max-width: 1390px
+		+mq($max-width: 1600px)
+			max-width: 1170px
 	.inner
 		margin: 60px 0 0 0
 		+flex(row, null, null, wrap)
+		+mq($max-width: 1200px)
+			margin: 25px 0 0 0
 	.item
 		background: white
 		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06)
@@ -16,6 +20,12 @@
 		width: 31.3%
 		margin: 1%
 		padding: 56px 40px
+		+mq($max-width: 1000px)
+			width: 48%
+		+mq($max-width: 700px)
+			padding: 40px 20px
+		+mq($max-width: 400px)
+			width: 100%
 		&::before
 			content: ''
 			border-radius: 10px
@@ -25,6 +35,11 @@
 			bottom: 20px
 			border: 1px solid #CCCCCC
 			position: absolute
+			+mq($max-width: 700px)
+				left: 10px
+				top: 10px
+				right: 10px
+				bottom: 10px
 		&__circle
 			width: 62px
 			height: 62px
@@ -34,6 +49,14 @@
 			font-style: italic
 			color: white
 			border-radius: 100%
+			+mq($max-width: 1200px)
+				font-size: 24px
+				width: 40px
+				height: 40px
+				position: absolute
+				left: 0
+				top: 0
+				border-radius: 10px 50% 50%
 		&-title
 			+flex(row, null, center, wrap)
 		&__title
@@ -44,9 +67,16 @@
 			font-style: italic
 			font-size: 25px
 			width: calc( 100% - 82px )
+			+mq($max-width: 1200px)
+				width: 100%
+				padding: 0
+				font-size: 20px
 		&__text
 			margin: 20px 0 0 0
 			font: 18px/1.6 'UniBook', sans-serif
+			+mq($max-width: 700px)
+				margin: 10px 0 0 0
+				font-size: 14px
 
 
 

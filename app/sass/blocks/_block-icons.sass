@@ -4,6 +4,8 @@
 		padding: 25px 0
 	.container
 		max-width: 1470px
+		+mq($max-width: 1600px)
+			max-width: 1170px
 	.block-title
 		text-align: center
 		margin: 0 0 50px 0
@@ -15,8 +17,8 @@
 		margin: 2% 1%
 		+flex(column, null, center, nowrap)
 		text-align: center
-		+mq($max-width: 575px)
-			max-width: 48%
+		+mq($max-width: 1000px)
+			width: 48%
 		+mq($max-width: 370px)
 			max-width: 100%
 		.img-wrap

@@ -11,10 +11,13 @@
 		margin: 15px 0 0 0
 		+mq($max-width: 1200px)
 			text-align: center
+	.container
+		+mq($max-width: 1650px)
+			max-width: 1000px
 	.slider
 		margin: 50px 0 0 -12px
 		width: calc( 100% + 21px )
-		+mq($max-width: 1200px)
+		+mq($max-width: 1600px)
 			margin: 20px 0 0 -12px
 	.slide
 		margin: 12px
@@ -95,9 +98,9 @@
 			left: -80px
 			transform: translate(0, -50%) rotate(180deg)
 			+mq($max-width: 1650px)
-				left: 0
+				left: -60px
 		&-next
 			right: -80px
 			transform: translate(0, -50%)
 			+mq($max-width: 1650px)
-				right: 0
+				right: -60px

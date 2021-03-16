@@ -2,16 +2,36 @@
 	padding: 30px 0 50px 0
 	color: $dark
 	+bg(null, null, 'money-economy/bg.png', no-repeat, left 10%, center, contain)
+	+mq($max-width: 1600px)
+		padding: 35px 0
+	+mq($max-width: 1200px)
+		background: none
+	.block-title
+		+mq($max-width: 1200px)
+			text-align: center
+	.block-text
+		+mq($max-width: 1200px)
+			text-align: center
 	.container
 		padding: 0
 		max-width: 1500px
 		+flex(row, between, start, wrap)
+		+mq($max-width: 1600px)
+			max-width: 1170px
+		+mq($max-width: 1200px)
+			padding: 0 15px
 	&-left
 		width: 48%
+		+mq($max-width: 1200px)
+			display: none
 	&-right
 		width: 48%
+		+mq($max-width: 1200px)
+			width: 100%
 	.block-text
 		margin: 10px 0 40px 0
+		+mq($max-width: 1600px)
+			margin: 10px 0 20px 0
 	.items
 		width: 100%
 	.item
@@ -53,5 +73,7 @@
 		&__text
 			font-size: 18px
 			line-height: 1.6
+			+mq($max-width: 1600px)
+				font-size: 15px
 
 

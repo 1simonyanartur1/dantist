@@ -1,12 +1,16 @@
 .security
 	background: linear-gradient(90.04deg, #E8E8E8 4.42%, #FDFDFD 55.5%, #FEFDFD 100.57%)
 	margin: 20px 0 80px
+	+mq($max-width: 1600px)
+		margin: 20px 0 50px
 	+mq($max-width: 1200px)
-		margin: 0
+		margin: 25px 0
 	.container
 		max-width: 1450px
 		+flex(row, center, center, wrap)
 		padding: 27px 15px
+		+mq($max-width: 1600px)
+			max-width: 1170px
 		+mq($max-width: 1200px)
 			flex-direction: column
 			align-items: center
@@ -23,7 +27,11 @@
 			margin: 0
 	.inner
 		margin: 0 50px
+		width: calc( 100% - 520px )
+		+mq($max-width: 1600px)
+			margin: 0 30px
 		+mq($max-width: 1200px)
+			width: 100%
 			margin: 25px 0
 	&__title
 		font-size: 32px
@@ -35,3 +43,5 @@
 
 	.submit
 		margin: 0 0 0 auto
+		+mq($max-width: 1200px)
+			margin: 0 auto
