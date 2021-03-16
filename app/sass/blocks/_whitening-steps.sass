@@ -1,0 +1,41 @@
+.whitening-steps
+	padding: 45px 0 85px
+	.container
+		max-width: 1710px
+	.block-title
+		text-align: center
+	.inner
+		margin: 45px 0 0 0
+		+flex(row, null, null, wrap)
+		list-style: none
+		counter-reset: my-awesome-counter
+	.item
+		position: relative
+		background: #FFFFFF
+		border-radius: 10px
+		padding: 20px 20px 45px
+		width: 23%
+		margin: 1%
+		counter-increment: my-awesome-counter
+		&:before
+			content: counter(my-awesome-counter)
+			width: 62px
+			height: 62px
+			border-radius: 100%
+			background: linear-gradient(218.13deg, #CC9A1B 17.16%, #EEB628 85.07%)
+			+flex(row, center, center, wrap)
+			text-align: center
+			color: white
+			font: italic 700 32px/1 'PF', sans-serif
+			position: absolute
+			left: 50%
+			bottom: 0
+			transform: translate(-50%, 50%)
+		&__img
+			display: block
+			width: 100%
+			height: auto
+		&__text
+			margin: 20px 0 0 0
+			line-height: 1.4
+			font-size: 18px

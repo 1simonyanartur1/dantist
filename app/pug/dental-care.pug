@@ -1,0 +1,255 @@
+- var img = '../img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+
+			section.breadcrumbs
+				.container
+					ul.list
+						li
+							a(href="index.html") На главную
+						li
+							a(href="dental-care.html") Уход за зубами
+			
+			section.mainblock.type3
+				.slider
+					.slide
+						.slide-left
+							img.slide__img(src=img+"mainblock/prosthetics-img.jpg", alt="")
+						.slide-right
+							.block-title <span>Профессиональная чистка</span><br> и отбеливание зубов!
+							.block-subtitle Безупречная улыбка и профилактика<br> заболеваний полости рта <b><span>от 3 900 ₽</span></b> 
+							.block-text Записаться <span>на бесплатную консультацию:</span>
+							include blocks/_entry-form.pug
+							ul.anchor-menu
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Описание
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Методы протезирования
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Примеры
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Врачи
+								li.anchor-menu-item
+									a.anchor-menu__link.anchor(href="#") Стоимость работ
+			
+			section.advantages.type2
+				.block-title.type2 Белоснежная улыбка <span>это легко!</span>
+				.container
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/hands.svg", alt="")
+						.item__title Результат надолго
+						.item__text Благодаря новейшему оборудованию
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/dentist-3.svg", alt="")
+						.item__title Опытные врачи
+						.item__text Со стажем от 9 до 16 лет
+					.item
+						.img-wrap
+							img.item__img(src=img+"icons/braces.svg", alt="")
+						.item__title Качественные материалы
+						.item__text Лучших мировых производителей
+
+			section.category-about
+				.container
+					.category-about-left
+						img.category-about__img(src=img+"category-about/img4.jpg", alt="")
+					.category-about-right
+						.text-container
+							p К образованию зубного налета приводит множество факторов.
+							p Например, плохая гигиена, курение или постоянное употребления кофе и чая.
+							p С течением времени этот налет становится камнем и начинает накапливаться не только на зубах зубов, но и проникать под десны.
+							p Зубной налет и камень не только портят улыбку, но и приводят ко множеству заболеваний. Зубы темнеют, становятся блеклыми или даже желтыми.
+							p Рекомендуем регулярно делать комплексную профессиональную гигиену полости рта, чтобы сохранить красивую улыбку и здоровье зубов. 
+			
+			section.proffesional-icons
+				.container
+					.block-title.type2 <span>Профессиональная чистка зубов</span> в FullClinic
+					.inner
+						.item
+							.img-wrap
+								img.item__img(src=img+"icons/bad-breath.svg", alt="")
+							.item__title Избавляет от неприятного <br> запаха изо рта
+						.item
+							.img-wrap
+								img.item__img(src=img+"icons/tooth-shining.svg", alt="")
+							.item__title Убирает желтизну зубов
+						.item
+							.img-wrap
+								img.item__img(src=img+"icons/gums.svg", alt="")
+							.item__title Устраняет <br> кровоточивость десен
+						.item
+							.img-wrap
+								img.item__img(src=img+"icons/caries.svg", alt="")
+							.item__title Снижает риск развития <br> кариеса
+						.item
+							.img-wrap
+								img.item__img(src=img+"icons/gum.svg", alt="")
+							.item__title Сокращает частоту заболеваний десен
+
+			section.security
+				.container
+					.shield
+						img.shield__img(src=img+"icons/hand-coin.svg", alt="")
+					.inner
+						.block-text Важно! Для поддержания здоровья зубов и десен
+						.block-title комплексную гигиену нужно проводить 1 раз в 6 месяцев
+					a.submit(href="#") Узнать подробнее
+
+			section.service-consists
+				.container
+					.block-title.type2 <span>Из чего состоит</span> услуга
+					.text-container
+						img(src=img+"service-consists/img.jpg", alt="")
+						ul
+							li Консультация стоматолога и первичный осмотр
+							li Снятие твёрдых и мягких зубных отложений ультразвуковым методом
+							li Очищение эмали методом Air Flow
+							li Полировка специальными средствами 
+							li Обработка эмали для уменьшения чувствительности
+
+			section.category-guarantees
+				.container
+					.block-title.type2 Как <span>сохранить зубы красивыми</span> и надолго
+					.inner
+						.category-guarantees-left
+							.text-container
+								p <b>Исключите окрашивающие продукты и напитки после процедуры: </b> <br> неосветленные соки, морковь, свекла, черный чай, кофе, красное вино.
+								p <b>Употребляйте твердую пищу:</b> <br> овощи и фрукты.
+								p <b>Поменяйте щетку:</b> <br> подберите подходящую пасту.
+								p <b>Чистите зубы:</b> <br> Идеально—после каждого приема пищи, минимум 2 раза в день.
+								p <b>Пользуйтесь зубными нитями</b> <br> и ёршиками
+								p <b>Приходите к врачу</b> <br> раз в полгода, а если стоят брекеты — раз в 3 месяца
+						.category-guarantees-right
+							img.category-guarantees__img(src=img+"category-guarantees/img2.jpg", alt="")
+
+			section.modern-equipment
+				.container
+					.block-title.type2 Самое совершенное и <span>безопасное оборудование</span> <br> для отбеливая зубов!
+					.inner
+						.col
+							.item
+								img.item__img(src=img+"modern-equipment/img1.jpg", alt="")
+								ul.item-list
+									li Пониженная концентрация перекиси водорода (25 %) не повреждает эмаль.
+									li Лампа холодного света предотвращает перегрев пульпы.
+									li Фосфат кальция, добавленный в состав геля, способствует укреплению тканей зуба.
+									li Усовершенствованный протокол процедуры сокращает время отбеливания до одного часа.
+									li Гель на основе нитрата и фторида калия Relief ACP снижает чувствительность зубов.
+						.col
+							.item
+								.item__title <b>Преимущества</b> ZOOM 4
+								.item__text Новая версия технологии отбеливания ZOOM 4 моментально обрела популярность за счет внесенных изменений и доработок, существенно влияющих на качество процедуры.
+								img.item__img(src=img+"modern-equipment/img2.jpg", alt="")
+
+			section.whitening-steps
+				.container
+					.block-title.type2 <span>Как проходит отбеливание</span>
+					.inner
+						.item
+							img.item__img(src=img+"whitening-steps/img1.jpg", alt="")
+							.item__text <b>Проводим профессиональную гигиену</b> снимается налёт и твёрдые отложения
+						.item
+							img.item__img(src=img+"whitening-steps/img2.jpg", alt="")
+							.item__text <b>Изолируем ваши дёсны специальным материалом,</b> на глаза надеваем защитные очки
+						.item
+							img.item__img(src=img+"whitening-steps/img3.jpg", alt="")
+							.item__text <b>Аккуратно покрываем эмаль осветляющим гелем</b> и подсвечиваем его лампой
+						.item
+							img.item__img(src=img+"whitening-steps/img4.jpg", alt="")
+							.item__text <b>Смываем препарат</b> и после вы оцениваете результат
+
+			section.book-text
+				.container
+					img.book-text__img(src=img+"book-text/book5.png", alt="")
+					.inner
+						.block-title Заботимся о тех, кто заботится <br> о своих зубах!
+						.text-container
+							p Профессиональная чистка  + отбеливание <span>всего за <b>20 000 ₽</b></span>
+						ul.action
+							li
+								a(href="#").submit Записаться на консультацию
+
+			section.portfolio
+				.container
+					.block-title.type2 Примеры  протезирования
+					.slider
+						.slide
+							.slide-top
+								.slide-top-left
+									.slide__name Надежда
+									.slide__text Протезирование для верхней челюсти
+									.slide__text <b>Проблема:</b> <br> Пациентка обратилась в клинику с жалобами на отсутствие жевательных зубов, неудовлетворительное состояние старых ортопедических конструкций и неудовлетворительную эстетику зоны улыбки.
+									.slide__text <b>Решение:</b> <br> Последовательно были проведены остеопластика в области 47-го зуба, затем полное протезирование безметалловыми коронками из диоксида циркония.
+								.slide-top-right
+									img.slide__img(src=img+"works/before.jpg", alt="")
+									img.slide__img(src=img+"works/after.jpg", alt="")
+							.slide-bottom
+									.slide__doc Врач: <span>Овсепян Карен Тигранович</span>
+									a.submit(href="#") Смотреть кейс полностью
+						.slide
+							.slide-top
+								.slide-top-left
+									.slide__name Надежда
+									.slide__text Протезирование для верхней челюсти
+									.slide__text <b>Проблема:</b> <br> Пациентка обратилась в клинику с жалобами на отсутствие жевательных зубов, неудовлетворительное состояние старых ортопедических конструкций и неудовлетворительную эстетику зоны улыбки.
+									.slide__text <b>Решение:</b> <br> Последовательно были проведены остеопластика в области 47-го зуба, затем полное протезирование безметалловыми коронками из диоксида циркония.
+								.slide-top-right
+									img.slide__img(src=img+"works/before.jpg", alt="")
+									img.slide__img(src=img+"works/after.jpg", alt="")
+							.slide-bottom
+									.slide__doc Врач: <span>Овсепян Карен Тигранович</span>
+									a.submit(href="#") Смотреть кейс полностью
+
+			section.security
+				.container
+					.shield
+						img.shield__img(src=img+"icons/hand-coin.svg", alt="")
+					.inner
+						.block-title Рассрочка под 0% от банка
+						.block-text Помогаем с получением рассрочки даже в сложных случаях
+					a.submit(href="#") Узнать подробнее
+
+			include blocks/doctors.pug
+			include blocks/security.pug
+
+			section.material-cost
+				.container
+					.block-title Стоимость работ и материалов
+					.items
+						.item.info
+							.item__text Консультация с составлением плана лечения
+							.item__price 1 500 ₽
+						.item
+							.item__text Полная гигиеническая чистка зубов
+							.item__price 7 000 ₽
+						.item
+							.item__text УЗ-чистка зубов
+							.item__price 4 000 ₽
+						.item
+							.item__text Air Flow
+							.item__price 4 000 ₽
+						.item
+							.item__text Отбеливание ZOOM-4
+							.item__price 17 000 ₽
+					ul.action
+						li
+							a.infolink(href="#") Стоимость зависит от методики и системы
+						li
+							a.submit(href="#") Записаться
+
+			include blocks/stocks.pug
+			include blocks/rating.pug
+			include blocks/seo.pug
+			include blocks/contact.pug
+
+		include blocks/footer.pug
+		include blocks/scripts.pug
