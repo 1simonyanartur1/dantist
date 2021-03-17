@@ -283,10 +283,13 @@
 		+mq($max-width: 1200px)
 			width: 100%
 			margin: 15px 0
+			flex-wrap: nowrap
+			overflow-x: scroll
+			+scrollbar(auto, 4px, $yellow, $gray, black, null)
 		&-item
 			+flex(row, center, center, wrap)
 			+mq($max-width: 575px)
-				width: 50%
+				min-width: 35%
 		&__link
 			text-align: center
 			padding: 20px 0
@@ -296,6 +299,8 @@
 			+mq($max-width: 575px)
 				padding: 10px 0
 				width: 100%
+				text-align: center
+				font-size: 14px
 			&:after
 				content: ''
 				display: block

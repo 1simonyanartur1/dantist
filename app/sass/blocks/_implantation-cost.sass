@@ -11,7 +11,7 @@
 		+flex(row, between, null, wrap)
 	.card
 		width: 49%
-		background: #FFFFFF;
+		background: #FFFFFF
 		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15)
 		border-radius: 10px
 		padding: 50px
@@ -20,13 +20,19 @@
 			width: 100%
 			padding: 25px
 			margin: 1% 0
+		+mq($max-width: 575px)
+			padding: 15px
 		&-inner
 			+flex(row, between, null, wrap)
 		&-col
 			width: 48%
+			+mq($max-width: 575px)
+				width: 100%
 		&-country
 			padding: 0 20px
 			+flex(row, between, center, wrap)
+			+mq($max-width: 575px)
+				padding: 10px
 			&__text
 				font-size: 24px
 				+mq($max-width: 1600px)
@@ -43,6 +49,8 @@
 			margin: 0 0 35px 0
 			+mq($max-width: 1600px)
 				font-size: 20px
+			+mq($max-width: 575px)
+				margin: 0 0 10px 0
 			span
 				background: $brown
 				color: white
@@ -64,6 +72,8 @@
 			margin: 15px 0 0 0
 			+mq($max-width: 1600px)
 				padding: 10px
+			+mq($max-width: 575px)
+				margin: 0
 			&-item
 				+flex(row, null, start, wrap)
 				&:not(:last-child)
@@ -84,23 +94,33 @@
 					line-height: 1.6
 					+mq($max-width: 1600px)
 						font-size: 14px
+					+mq($max-width: 575px)
+						font-size: 12px
 		&__text
 			font-family: 'UniBook', sans-serif
 			line-height: 1.6
 			font-size: 18px
 			+mq($max-width: 1600px)
 				font-size: 15px
+			+mq($max-width: 575px)
+				font-size: 14px
 		&__text2
 			margin: 20px 0
 			font-weight: 700
+			+mq($max-width: 575px)
+				margin: 10px 0
 			span
 				color: $brown
 		&-price
 			width: 100%
 			margin: 24px 0 16px 0
+			+mq($max-width: 575px)
+				margin: 10px 0
 			&__text
 				font-family: 'UniBook', sans-serif
 				display: inline-block
+				+mq($max-width: 575px)
+					font-size: 14px
 			&__num
 				margin: 0 0 0 10px
 				text-align: right
@@ -110,6 +130,8 @@
 				font-weight: 700
 				+mq($max-width: 1600px)
 					font-size: 24px
+				+mq($max-width: 575px)
+					font-size: 20px
 		.submit
 			width: 100%
 			min-width: 100px
@@ -123,9 +145,13 @@
 			width: 100%
 			+mq($max-width: 1600px)
 				margin: 25px 0
+			+mq($max-width: 575px)
+				font-size: 12px
 			&__item
 				padding: 0 0 10px 50px
 				position: relative
+				+mq($max-width: 575px)
+					padding: 0 0 10px 30px
 				&:before
 					content: ''
 					display: block
@@ -135,10 +161,15 @@
 					left: 0
 					top: 0
 					+bg(null, null, 'icons/card-ok.svg', no-repeat, center, center, contain)
+					+mq($max-width: 575px)
+						width: 20px
+						height: 20px
 		&__infotext
 			text-align: center
 			font-weight: 400
 			font-family: 'UniBook', sans-serif
+			+mq($max-width: 575px)
+				font-size: 12px
 			b
 				font-family: 'Uni', sans-serif
 				font-weight: 500

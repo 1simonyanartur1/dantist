@@ -5,6 +5,8 @@
 	+bg(null, null, 'included/tape.png', no-repeat, center, center, contain)
 	+mq($max-width: 1600px)
 		padding: 50px 0
+	+mq($max-width: 575px)
+		padding: 25px 0
 	.container
 		max-width: 1390px
 		+mq($max-width: 1600px)
@@ -25,6 +27,8 @@
 			width: 48%
 		+mq($max-width: 700px)
 			padding: 40px 20px
+		+mq($max-width: 400px)
+			width: 100%
 		&::before
 			content: ''
 			border-radius: 10px
