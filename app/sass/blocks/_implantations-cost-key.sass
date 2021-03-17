@@ -1,7 +1,13 @@
 .implantations-cost-key
 	padding: 65px 0
+	+mq($max-width: 1600px)
+		padding: 40px 0
 	.container
 		max-width: 1600px
+		+mq($max-width: 1700px)
+			max-width: 1400px
+		+mq($max-width: 1600px)
+			max-width: 1100px
 	.block-title
 		text-align: center
 	.block-text
@@ -16,6 +22,8 @@
 		border-radius: 10px
 		margin: 30px 15px
 		padding: 10px 40px 40px
+		+mq($max-width: 1600px)
+			padding: 10px 20px 20px
 		&-header
 			+flex(row, between, center, nowrap)
 			padding: 0 0 15px 0
@@ -23,20 +31,28 @@
 				font-size: 24px
 				color: $brown
 				line-height: 1.2
+				+mq($max-width: 1600px)
+					font-size: 20px
 				span
 					font-weight: 800
 					color: $dark
 					font-size: 18px
 					display: block
+					+mq($max-width: 1600px)
+						font-size: 16px
 			&__img
 				display: block
 				height: 80px
 				width: auto
+				+mq($max-width: 1600px)
+					height: 60px
 		&-line
 			+flex(row, between, center, nowrap)
 			min-height: 65px
 			position: relative
 			z-index: 2
+			+mq($max-width: 1600px)
+				min-height: 55px
 			&:before
 				content: ''
 				display: block
@@ -47,30 +63,51 @@
 				height: 100%
 				background: #F6F6F7
 				z-index: -1
+				+mq($max-width: 1600px)
+					left: -20px
+					right: -20px
 			&__text
 				font-size: 16px
 				font-family: 'UniBook', sans-serif
+				+mq($max-width: 1600px)
+					font-size: 14px
 		&-price
 			padding: 26px 0
 			+flex(row, between, end, nowrap)
+			+mq($max-width: 1600px)
+				flex-wrap: wrap
+				text-align: left
+				padding: 15px 0
 			&__text
 				font-weight: 700
 				font-size: 16px
 				line-height: 1
+				+mq($max-width: 1600px)
+					width: 100%
+					font-size: 14px
 			&__old
 				line-height: 1
 				color: #565656
 				font-size: 19px
 				margin: 0 15px 0 auto
 				text-decoration: line-through
+				+mq($max-width: 1600px)
+					font-size: 16px
 			&__current
 				line-height: 1
 				font-weight: 700
 				font-size: 28px
 				color: $brown
+				+mq($max-width: 1600px)
+					font-size: 22px
 		.action
 			width: 100%
 			text-align: center
+			&__link
+				width: 100%
+				padding: 25px 10px
+				+mq($max-width: 1600px)
+					padding: 15px 5px
 
 	.arrow
 		position: absolute
@@ -86,26 +123,6 @@
 			right: -80px
 			+mq($max-width: 1200px)
 				transform: translate(0, -50%)
-
-	.slick-dots
-		display: flex
-		justify-content: center
-		align-items: center
-		margin: 15px 0
-		li
-			margin: 0 5px
-			&.slick-active button
-				background: $brown
-		button
-			cursor: pointer
-			display: block
-			font-size: 0
-			border-radius: 100%
-			width: 12px
-			height: 12px
-			transition: all .3s ease-out
-			background: $gray
-
 
 	.slide-line
 		&:nth-child(even)

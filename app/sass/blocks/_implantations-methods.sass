@@ -1,9 +1,13 @@
 .implantations-methods
 	padding: 50px 0
+	+mq($max-width: 575px)
+		padding: 25px 0
 	.block-title
 		text-align: center
 	.container
 		max-width: 1530px
+		+mq($max-width: 1600px)
+			max-width: 1170px
 	.tabs
 		+flex(row, null, null, wrap)
 		background: white
@@ -12,17 +16,42 @@
 		padding: 30px
 		border-radius: 30px
 		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15)
+		+mq($max-width: 1200px)
+			+flex(column, null, center, nowrap)
+		+mq($max-width: 575px)
+			margin: 25px 0 0
+			border-radius: 10px
+			padding: 10px
 		&-list
 			width: 38%
 			background: #F3F3F3
+			+mq($max-width: 1200px)
+				width: 100%
+				overflow-x: scroll
+				+flex(row, null, null, nowrap)
+				+scrollbar(auto, 4px, $yellow, $gray, black, null)
 			&-item
 				width: 100%
+				+mq($max-width: 1200px)
+					min-width: 190px
+					margin: 0 0 10px 0
+					display: flex
+				+mq($max-width: 575px)
+					min-width: 140px
+					line-height: 1
 			&__link
 				color: #5F5F5F
 				font-size: 27px
 				font-weight: 400
 				width: 100%
 				padding: 30px
+				+mq($max-width: 1600px)
+					font-size: 20px
+					padding: 15px
+				+mq($max-width: 1200px)
+					font-size: 14px
+				+mq($max-width: 575px)
+					padding: 10px
 				&.active
 					background: $yellow
 					color: white
@@ -30,6 +59,9 @@
 			padding: 0 0 0 30px
 			width: 62%
 			display: none
+			+mq($max-width: 1200px)
+				width: 100%
+				padding: 20px 0 0 0
 			&.active
 				display: block
 	.text-container
@@ -40,12 +72,22 @@
 			width: 316px
 			height: auto
 			margin: 0 30px 30px 0
+			+mq($max-width: 700px)
+				width: 100%
+				margin: 0 0 15px
+				float: none
 		h3
 			color: $yellow
 			font-size: 28px
+			+mq($max-width: 1600px)
+				font-size: 20px
+			+mq($max-width: 700px)
+				font-size: 18px
 		ul
 			column-count: 2
 			padding: 0 0 0 20px
+			+mq($max-width: 1200px)
+				column-count: 1
 			li
 				list-style-type: disc
 

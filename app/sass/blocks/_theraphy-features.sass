@@ -1,10 +1,16 @@
 .theraphy-features
 	padding: 65px 0
+	+mq($max-width: 1600px)
+		padding: 40px 0
 	.container
 		max-width: 1400px
+		+mq($max-width: 1600px)
+			max-width: 1170px
 	.inner
 		margin: 32px 0 0 0
 		+flex(row, between, null, wrap)
+		+mq($max-width: 1200px)
+			padding: 0 0 0 40px
 	.block-title
 		text-align: center
 	.inner
@@ -18,6 +24,11 @@
 		padding: 30px 70px
 		margin: 20px 0
 		font-size: 18px
+		+mq($max-width: 1200px)
+			padding: 20px 15px 20px 70px
+		+mq($max-width: 1000px)
+			width: 100%
+			margin: 10px 0
 		&-icon
 			position: absolute
 			top: 50%
@@ -36,9 +47,13 @@
 		&__title
 			font-weight: 700
 			margin: 0 0 20px 0
+			+mq($max-width: 1200px)
+				font-size: 16px
 		&__text
 			font-family: 'UniBook', sans-serif
 			line-height: 1.6
+			+mq($max-width: 1200px)
+				font-size: 14px
 
 	&.type2
 		padding: 30px 0

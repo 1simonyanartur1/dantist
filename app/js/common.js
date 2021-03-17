@@ -388,13 +388,15 @@
 				{
 					breakpoint: 1200,
 					settings: {
-						slidesToShow: 2
+						slidesToShow: 2,
+						dots: true
 					}
 				},
 				{
 					breakpoint: 800,
 					settings: {
-						slidesToShow: 1
+						slidesToShow: 1,
+						dots: true
 					}
 				}
 			]

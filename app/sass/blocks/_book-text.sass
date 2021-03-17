@@ -2,8 +2,15 @@
 	padding: 130px 0
 	position: relative
 	z-index: 2
+	+mq($max-width: 1600px)
+		padding: 100px 0
+	+mq($max-width: 1200px)
+		padding: 40px 0
+		text-align: center
 	.container
 		max-width: 1450px
+		+mq($max-width: 1600px)
+			max-width: 1170px
 	&__img
 		position: absolute
 		left: 0
@@ -11,8 +18,12 @@
 		transform: translate(0, -50%)
 		width: 50%
 		z-index: -1
+		+mq($max-width: 1200px)
+			display: none
 	.block-title
 		margin: 0 0 60px 0
+		+mq($max-width: 1200px)
+			margin: 0 0 30px 0
 	.text-container
 		p
 			b
@@ -23,7 +34,16 @@
 		max-width: 620px
 		width: 100%
 		margin: 0 0 0 auto
+		+mq($max-width: 1600px)
+			max-width: 540px
+		+mq($max-width: 1200px)
+			max-width: 50%
+			margin: 0 auto
+		+mq($max-width: 800px)
+			max-width: 100%
 	.action
 		margin: 60px 0 0 0
+		+mq($max-width: 1200px)
+			margin: 30px 0 0 0
 	&.type2
 		+bg(null, null, 'rating/bg.png', no-repeat, center, center, auto)
