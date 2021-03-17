@@ -1,7 +1,11 @@
 .frequent-problems
 	padding: 80px 0 40px 0
+	+mq($max-width: 1200px)
+		padding: 40px 0
 	.container
 		max-width: 1460px
+		+mq($max-width: 1600px)
+			max-width: 1170px
 	&-price
 		text-align: right
 		margin: 0 0 20px 0
@@ -13,6 +17,8 @@
 				font-size: 32px
 	.tabs
 		+flex(row, between, start, wrap)
+		+mq($max-width: 1000px)
+			flex-wrap: wrap-reverse
 		&-card
 			padding: 40px
 			width: 82%
@@ -22,6 +28,9 @@
 			position: relative
 			z-index: 2
 			display: none
+			+mq($max-width: 1000px)
+				width: 100%
+				padding: 15px
 			&.active
 				display: block
 			&::after
@@ -33,13 +42,36 @@
 				width: 100%
 				margin: 0 28px 28px 0
 				float: left
+				+mq($max-width: 1600px)
+					max-width: none
+					width: 40%
+				+mq($max-width: 575px)
+					float: none
+					width: 100%
+					margin: 0 0 15px 0
 		&-list
 			padding: 50px 0 0 0
 			width: 18%
 			position: relative
 			z-index: 1
+			+mq($max-width: 1000px)
+				width: 100%
+				+flex(row, null, null, nowrap)
+				overflow-x: scroll
+				background: white
+				padding: 0
+				margin: 0 0 15px 0
+				border-radius: 10px
+				box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15)
+				+scrollbar(auto, 4px, $yellow, $gray, black, null)
 			&-item
 				margin: 15px 0
+				+mq($max-width: 1000px)
+					margin: 0 0 5px
+					min-width: 200px
+					display: flex
+				+mq($max-width: 575px)
+					min-width: 150px
 			&__link
 				background: #FFFFFF
 				box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15)
@@ -50,6 +82,15 @@
 				color: #A3A9B0
 				font-weight: 500
 				font-size: 20px
+				+mq($max-width: 1000px)
+					font-size: 18px
+					background: none
+					box-shadow: none
+					text-align: center
+					width: 100%
+					display: block
+					min-height: 0
+					padding: 20px 0
 				&.active
 					color: $brown
 					text-decoration: underline
@@ -64,3 +105,5 @@
 	.text-container
 		ol
 			column-count: 2
+			+mq($max-width: 575px)
+				column-count: 1
