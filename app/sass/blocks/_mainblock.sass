@@ -277,11 +277,12 @@
 				color: $yellow2
 
 	.anchor-menu
-		width: 90%
+		width: 100%
 		margin: 30px 0 0 0
 		+flex(row, between, null, wrap)
+		+mq($max-width: 1600px)
+			margin: 10px 0 0 0
 		+mq($max-width: 1200px)
-			width: 100%
 			margin: 15px 0
 			flex-wrap: nowrap
 			overflow-x: scroll
@@ -296,11 +297,12 @@
 			font-size: 18px
 			color: $dark2
 			position: relative
+			+mq($max-width: 1500px)
+				font-size: 14px
 			+mq($max-width: 575px)
 				padding: 10px 0
 				width: 100%
 				text-align: center
-				font-size: 14px
 			&:after
 				content: ''
 				display: block

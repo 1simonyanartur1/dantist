@@ -1,7 +1,11 @@
 .setting-indication
 	padding: 40px 0
+	+mq($max-width: 1600px)
+		padding: 20px 0
 	.container
 		max-width: 1430px
+		+mq($max-width: 1600px)
+			max-width: 1200px
 	.block-title
 		text-align: center
 	.inner
@@ -12,6 +16,12 @@
 		margin: 0 1%
 		text-align: center
 		color: $dark
+		+mq($max-width: 1200px)
+			width: 48%
+			margin: 1%
+		+mq($max-width: 575px)
+			width: 100%
+			margin: 1% 0
 		&__img
 			width: 100%
 			display: block
@@ -19,9 +29,17 @@
 		&__title
 			margin: 20px 0
 			font: italic 23px/1 'PF', sans-serif
+			+mq($max-width: 1600px)
+				font-size: 20px
+				margin: 15px 0
+			+mq($max-width: 575px)
+				font-size: 16px
+				margin: 10px 0
 		&__text
 			font-family: 'UniBook', sans-serif
 			font-size: 16px
+			+mq($max-width: 1600px)
+				font-size: 14px
 
 
 		

@@ -14,8 +14,15 @@
 			margin: 0 0 40px 0
 		.container
 			max-width: 1590px
+			+mq($max-width: 1600px)
+				max-width: 1200px
 		.item
 			max-width: 460px
+			+mq($max-width: 1600px)
+				max-width: 100%
+				width: 31.3%
+			+mq($max-width: 1000px)
+				width: 48%
 	.container
 		+flex(row, around, start, wrap)
 	.block-title
@@ -27,6 +34,8 @@
 		max-width: 260px
 		width: 100%
 		text-align: center
+		+mq($max-width: 1000px)
+			margin: 1%
 		+mq($max-width: 575px)
 			max-width: 48%
 			margin: 2% 1%
@@ -44,12 +53,17 @@
 			font-weight: 700
 			font-size: 18px
 			min-height: 48px
+			+mq($max-width: 1000px)
+				font-size: 16px
+				min-height: auto
 			+mq($max-width: 575px)
 				margin: 10px 0
 				font-size: 15px
 		&__text
 			font-size: 18px
+			+mq($max-width: 1000px)
+				font-size: 14px
 			+mq($max-width: 575px)
-				font-size: 13px
+				font-size: 12px
 	
 
