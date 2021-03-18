@@ -1,10 +1,18 @@
 .modern-equipment
 	padding: 45px 0
+	+mq($max-width: 1600px)
+		padding: 30px 0
+	+mq($max-width: 1200px)
+		padding: 30px 15px
 	.container
 		padding: 40px
 		background: white
 		border-radius: 10px
 		max-width: 1500px
+		+mq($max-width: 1600px)
+			max-width: 1200px
+		+mq($max-width: 800px)
+			padding: 20px
 	.block-title
 		text-align: center
 		position: relative
@@ -12,22 +20,44 @@
 	.inner
 		margin: 65px 0 0 0
 		+flex(row, between, null, wrap)
+		+mq($max-width: 800px)
+			margin: 35px 0 0 0
 	.col
 		width: 48%
+		+mq($max-width: 800px)
+			width: 100%
+			margin: 2% 0
 		&:first-child
 			width: 40%
 			margin: -75px 4% 0 auto
+			+mq($max-width: 1600px)
+				width: 48%
+				margin: -50px 4% 0 auto
+			+mq($max-width: 800px)
+				width: 100%
+				margin: 2% 0
 			.item__img
 				margin: 0
+				+mq($max-width: 1600px)
+					width: 80%
 	.item
 		&__title
 			font-weight: 300
 			font-size: 37px
+			+mq($max-width: 1600px)
+				font-size: 30px
+			+mq($max-width: 700px)
+				font-size: 24px
 			b
 				color: $brown
 		&-list
 			margin: 50px 0 0 0
 			font-size: 18px
+			+mq($max-width: 1600px)
+				margin: 30px 0 0 0
+				font-size: 16px
+			+mq($max-width: 700px)
+				font-size: 14px
 			li
 				position: relative
 				margin: 20px 0
@@ -51,4 +81,9 @@
 			line-height: 1.4
 			margin: 50px 0 0 0
 			width: 100%
+			+mq($max-width: 1600px)
+				font-size: 20px
+				margin: 30px 0 0 0
+			+mq($max-width: 700px)
+				font-size: 16px
 		

@@ -1,7 +1,11 @@
 .whitening-steps
 	padding: 45px 0 85px
+	+mq($max-width: 1600px)
+		padding: 35px 0
 	.container
 		max-width: 1710px
+		+mq($max-width: 1600px)
+			max-width: 1200px
 	.block-title
 		text-align: center
 	.inner
@@ -9,6 +13,8 @@
 		+flex(row, null, null, wrap)
 		list-style: none
 		counter-reset: my-awesome-counter
+		+mq($max-width: 1200px)
+			margin: 25px 0 0 0
 	.item
 		position: relative
 		background: #FFFFFF
@@ -17,6 +23,14 @@
 		width: 23%
 		margin: 1%
 		counter-increment: my-awesome-counter
+		+mq($max-width: 1600px)
+			padding: 10px 10px 40px
+		+mq($max-width: 1200px)
+			width: 48%
+			margin: 15px 1%
+		+mq($max-width: 400px)
+			width: 100%
+			margin: 15px 0
 		&:before
 			content: counter(my-awesome-counter)
 			width: 62px
@@ -31,6 +45,10 @@
 			left: 50%
 			bottom: 0
 			transform: translate(-50%, 50%)
+			+mq($max-width: 1200px)
+				width: 50px
+				height: 50px
+				font-size: 26px
 		&__img
 			display: block
 			width: 100%
@@ -39,3 +57,7 @@
 			margin: 20px 0 0 0
 			line-height: 1.4
 			font-size: 18px
+			+mq($max-width: 1600px)
+				font-size: 15px
+			+mq($max-width: 575px)
+				font-size: 14px
