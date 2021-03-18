@@ -1,7 +1,11 @@
 .choose-prosthetics
 	padding: 65px 0
+	+mq($max-width: 1200px)
+		padding: 30px 0
 	.container
 		max-width: 1600px
+		+mq($max-width: 1600px)
+			max-width: 1170px
 	.block-title
 		text-align: center
 	.inner
@@ -12,27 +16,56 @@
 		border-radius: 10px
 		background: white
 		margin: 1%
+		+mq($max-width: 1600px)
+			padding: 15px
 		&_middle
 			width: 30%
+			+mq($max-width: 1200px)
+				width: 48%
+			+mq($max-width: 575px)
+				width: 100%
 		&_small
 			width: 22%
+			+mq($max-width: 1200px)
+				width: 48%
+			+mq($max-width: 575px)
+				width: 100%
 		&_big
 			width: 42%
+			+mq($max-width: 1200px)
+				width: 100%
 			.card-list
 				column-count: 2
+				+mq($max-width: 575px)
+					column-count: 1
 		&__title
 			font-size: 24px
 			font-weight: 700
+			+mq($max-width: 1600px)
+				font-size: 20px
+			+mq($max-width: 575px)
+				font-size: 17px
 		&__text
 			font-size: 17px
 			margin: 5px 0 0 0
+			+mq($max-width: 1600px)
+				font-size: 15px
 		&-list
 			margin: 38px 0 0 0
 			font-size: 17px
+			+mq($max-width: 1600px)
+				font-size: 15px
+				margin: 15px 0 0 0
+			+mq($max-width: 575px)
+				font-size: 13px
 			li
 				margin: 0 0 30px 0
 				padding: 0 0 0 20px
 				position: relative
+				+mq($max-width: 1600px)
+					margin: 0 0 20px 0
+				+mq($max-width: 575px)
+					margin: 0 0 10px 0
 				&:before
 					content: ''
 					display: block
