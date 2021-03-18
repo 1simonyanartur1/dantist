@@ -218,13 +218,14 @@ body
 		+mq($max-width: 575px)
 			flex-direction: column
 	&.vertical
-		width: 282px
+		width: 330px
 		+flex(column, null, null, nowrap)
 		.entry-form-label
 			margin: 0 0 12px 0
 			width: 100%
 		.entry-form__input
 			width: 100%
+			text-align: center
 		.entry-form__btn
 			width: 100%
 			margin: 0
@@ -266,9 +267,6 @@ body
 		color: $brown
 		font-size: 18px
 		+trs
-		&:hover,
-		&:focus
-			border-color: $dark
 		+mq($max-width: 1450px)
 			width: 285px
 		+mq($max-width: 1200px)
@@ -341,3 +339,11 @@ body
 		background: white
 		&:hover
 			background: $dark
+
+
+
+
+.privacy-policy
+	padding: 75px 0
+	+mq($max-width: 1500px)
+		padding: 45px 0
