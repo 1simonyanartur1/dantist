@@ -115,3 +115,16 @@
 		+mq($max-width: 575px)
 			margin: 15px 0 0 0
 			width: 100%
+		a
+			color: white
+			+mq($min-width: 1200px)
+				&:hover
+					color: $brown
+
+	.logo
+		+mq($min-width: 1200px)
+			&:hover
+				.logo__title
+					color: $brown
+		&__title
+			+trs
