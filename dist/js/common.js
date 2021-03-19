@@ -39,8 +39,8 @@
 		$('.popup-video').magnificPopup({
 			type: 'iframe'
 		});
-		var $video = 'https://www.youtube.com/watch?v=';
-		$('.popup-video').attr('href', $video + $('.popup-video').attr('href'));
+		// var $video = 'https://www.youtube.com/watch?v=';
+		// $('.popup-video').attr('href', $video + $('.popup-video').attr('href'));
 
 		// SmartMenus init
 		$(function () {
