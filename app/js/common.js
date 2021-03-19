@@ -1,6 +1,14 @@
 (function ($) {
 	$(document).ready(function () {
 		
+		$(document).on('click', '.anchor', function (e) {
+			var fixed_offset = 50;
+			$('html, body').stop().animate({
+				scrollTop: $(this.hash).offset().top - fixed_offset
+			}, 500);
+			e.preventDefault();
+		});
+
 		$(document).on('click', '.choose-tel .city__curr', function () {
 			$(this).toggleClass('active').next('.city-list').slideToggle();
 		});
@@ -444,8 +452,9 @@
 	});
 })(jQuery);
 
+
 (function (document, window, index) {
-	var inputs = document.querySelectorAll('.fileinput');
+	var inputs = document.querySelectorAll('.fileinput__input');
 	Array.prototype.forEach.call(inputs, function (input) {
 		var label = input.nextElementSibling,
 			labelVal = label.innerHTML;
@@ -458,17 +467,9 @@
 				fileName = e.target.value.split('\\').pop();
 
 			if (fileName)
-				label.querySelector('span').innerHTML = fileName;
+				label.innerHTML = fileName;
 			else
 				label.innerHTML = labelVal;
-		});
-
-		// Firefox bug fix
-		input.addEventListener('focus', function () {
-			input.classList.add('has-focus');
-		});
-		input.addEventListener('blur', function () {
-			input.classList.remove('has-focus');
 		});
 	});
 }(document, window, 0));

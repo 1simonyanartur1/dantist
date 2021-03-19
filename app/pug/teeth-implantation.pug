@@ -34,17 +34,17 @@ html
 							include blocks/_entry-form.pug
 							ul.anchor-menu
 								li.anchor-menu-item
-									a.anchor-menu__link.anchor(href="#") Описание
+									a.anchor-menu__link.anchor(href="#category-about") Описание
 								li.anchor-menu-item
-									a.anchor-menu__link.anchor(href="#") Методы имплантации
+									a.anchor-menu__link.anchor(href="#implantations-methods") Методы имплантации
 								li.anchor-menu-item
-									a.anchor-menu__link.anchor(href="#") Имплантация под ключ
+									a.anchor-menu__link.anchor(href="#implantations-cost-key") Имплантация под ключ
 								li.anchor-menu-item
-									a.anchor-menu__link.anchor(href="#") Примеры
+									a.anchor-menu__link.anchor(href="#portfolio") Примеры
 								li.anchor-menu-item
-									a.anchor-menu__link.anchor(href="#") Врачи
+									a.anchor-menu__link.anchor(href="#doctors") Врачи
 								li.anchor-menu-item
-									a.anchor-menu__link.anchor(href="#") Стоимость работ
+									a.anchor-menu__link.anchor(href="#material-cost") Стоимость работ
 			
 			section.mini-cards
 				.container
@@ -66,7 +66,7 @@ html
 								.card__title Стоимость известна заранее
 								.card__text На первичной консультации вы <span>получие поэтапный план</span> лечения
 
-			section.category-about
+			section.category-about#category-about
 				.container
 					.category-about-left
 						img.category-about__img(src=img+"category-about/img3.jpg", alt="")
@@ -165,7 +165,7 @@ html
 									li
 										a.submit.popup-link(href="#callback") Записаться
 
-			section.implantations-methods
+			section.implantations-methods#implantations-methods
 				.container
 					.block-title.type2 <span>Методы имплантации</span> зубов
 					.tabs
@@ -276,7 +276,7 @@ html
 							.item__title Индивидуальный план лечения
 							.item__text Для каждого пациента разрабатывается поэтапный план лечения, который учитывает состояние и особенности десен и зубного ряда
 
-			section.implantations-cost-key
+			section.implantations-cost-key#implantations-cost-key
 				.container
 					.block-title.type2 Стоимость имплантации <span>под ключ</span>
 					.block-text Работаем с лучшими системами для имплантации зубов от ведущих производителей
@@ -461,7 +461,7 @@ html
 						.block-text на импланты и протезы по технологии "Все зубы за 1 день"
 					a.submit.popup-link(href="#callback") Консультация врача
 
-			section.portfolio
+			section.portfolio#portfolio
 				.container
 					.block-title.type2 Примеры  имплантации
 					.slider
@@ -502,7 +502,7 @@ html
 			include blocks/doctors.pug
 			include blocks/security.pug
 
-			section.material-cost
+			section.material-cost#material-cost
 				.container
 					.block-title Стоимость работ и материалов
 					.items

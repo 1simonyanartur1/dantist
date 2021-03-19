@@ -295,8 +295,8 @@
           <img class="shield__img" src="../img/icons/shield.svg" alt="">
         </div>
         <div class="inner">
-          <div class="security__title">
-            <span>Усиленные меры безопасности</span> в клинике FullClinic
+          <div class="block-title type2">
+            <b>Усиленные меры безопасности</b> в клинике FullClinic
           </div>
         </div>
       </div>
@@ -556,7 +556,86 @@
         <input class="popup-form__input" type="email" placeholder="Эл.почта" name="leader_mail">
       </div>
       <div class="popup-form-item">
-        <textarea class="popup-form__textarea" placeholder="Текст сообщения..." name=""> </textarea>
+        <textarea class="popup-form__textarea" placeholder="Текст сообщения..." name="leader_message"></textarea>
+      </div>
+      <div class="popup-form-item popup-form-item_center">
+        <button class="popup-form__btn submit" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+  <div class="popup mfp-hide" id="popup-reviews">
+    <div class="popup-header">
+      <div class="popup__title">Воспользовались нашими услугами?</div>
+      <div class="popup__subtitle">Оставьте о нас своё мнение</div>
+    </div>
+    <form class="popup-form" action="#">
+      <div class="popup-form-item">
+        <div class="popup-form-icon">
+          <svg viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.99" fill-rule="evenodd" clip-rule="evenodd" d="M12.1034 2.42067C10.098 2.42067 8.47235 4.04633 8.47235 6.05168C8.47235 8.05703 10.098 9.68269 12.1034 9.68269C14.1087 9.68269 15.7344 8.05703 15.7344 6.05168C15.7344 4.04633 14.1087 2.42067 12.1034 2.42067ZM6.05168 6.05168C6.05168 2.70943 8.76111 0 12.1034 0C15.4456 0 18.155 2.70943 18.155 6.05168C18.155 9.39393 15.4456 12.1034 12.1034 12.1034C8.76111 12.1034 6.05168 9.39393 6.05168 6.05168ZM0 25.4171C0 18.7326 5.41888 13.3137 12.1034 13.3137C18.7879 13.3137 24.2067 18.7326 24.2067 25.4171C24.2067 26.0855 23.6648 26.6274 22.9964 26.6274C22.3279 26.6274 21.7861 26.0855 21.7861 25.4171C21.7861 20.0695 17.451 15.7344 12.1034 15.7344C6.75578 15.7344 2.42067 20.0695 2.42067 25.4171C2.42067 26.0855 1.87879 26.6274 1.21034 26.6274C0.541886 26.6274 0 26.0855 0 25.4171Z" fill="url(#paint0_linear)" fill-opacity="0.65" />
+            <defs>
+              <linearGradient id="paint0_linear" x1="12.1034" y1="0" x2="12.1034" y2="26.6274" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#CE9D20" />
+                <stop offset="0.583333" stop-color="#D6A526" />
+                <stop offset="1" stop-color="#DFAD2D" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <input class="popup-form__input" type="text" placeholder="Как вас зовут?" name="reviews_name">
+      </div>
+      <div class="popup-form-item">
+        <div class="popup-form-icon">
+          <svg viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.07244 4.46095C0.963937 3.51925 1.63937 2.6679 2.58106 2.5594L14.5167 1.18415C15.4584 1.07564 16.3097 1.75108 16.4182 2.69277L18.1864 18.0385C18.2949 18.9803 17.6195 19.8316 16.6778 19.9401L4.74217 21.3153C3.80048 21.4239 2.94913 20.7484 2.84062 19.8067L1.07244 4.46095ZM14.7131 2.88923L2.77753 4.26448L3.85808 13.6425L15.7937 12.2672L14.7131 2.88923ZM15.9902 13.9723L4.05455 15.3475L4.54571 19.6103L16.4813 18.235L15.9902 13.9723ZM8.56284 16.9877C8.50859 16.5169 8.84631 16.0912 9.31715 16.037L11.0222 15.8405C11.4931 15.7863 11.9188 16.124 11.973 16.5948C12.0273 17.0657 11.6896 17.4913 11.2187 17.5456L9.51362 17.7421C9.04277 17.7963 8.6171 17.4586 8.56284 16.9877Z" fill="url(#paint0_linear)" fill-opacity="0.65" />
+            <defs>
+              <linearGradient id="paint0_linear" x1="8.54887" y1="1.87177" x2="10.71" y2="20.6277" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#CE9D20" />
+                <stop offset="0.583333" stop-color="#D6A526" />
+                <stop offset="1" stop-color="#DFAD2D" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <input class="popup-form__input" type="tel" placeholder="Номер телефона" name="reviews_tel">
+      </div>
+      <div class="popup-form-item">
+        <div class="popup-form-icon">
+          <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.9436 0.212891C16.0523 0.215082 16.1554 0.234952 16.2584 0.283929C16.3647 0.334725 16.4581 0.411261 16.5288 0.505474C16.5751 0.574518 16.5643 0.553799 16.5288 0.505474C16.6235 0.631798 16.6751 0.78648 16.6751 0.944348C16.6748 0.905387 16.6732 0.888476 16.6751 0.944348V11.9162C16.6751 12.3202 16.3476 12.6477 15.9436 12.6477H1.31447C0.910493 12.6477 0.583008 12.3202 0.583008 11.9162V0.944348C0.583008 0.813397 0.618532 0.68337 0.685356 0.571063C0.821531 0.341612 1.0574 0.218073 1.31447 0.212891H15.9436ZM15.2122 2.40726L9.06792 7.01545C8.83385 7.191 8.52079 7.20855 8.27092 7.06811L8.19017 7.01545L2.04592 2.40726V11.1848H15.2122V2.40726ZM3.50884 1.67581L8.62904 5.51596L13.7492 1.67581H3.50884Z" fill="#E2C370" />
+          </svg>
+        </div>
+        <input class="popup-form__input" type="email" placeholder="Эл.почта" name="reviews_mail">
+      </div>
+      <div class="popup-form-item">
+        <div class="popup-form-icon">
+          <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.62988 2.45117C8.30417 2.45117 6.43478 2.51076 4.01464 2.63139C3.13938 2.67502 2.43133 3.35936 2.35792 4.23264C2.24692 5.55313 2.19238 6.69715 2.19238 7.66783C2.19238 8.65038 2.24826 9.81047 2.36199 11.1513C2.43515 12.0137 3.12781 12.6931 3.99153 12.7496C6.04946 12.8842 7.92857 12.9512 9.62988 12.9512C11.3314 12.9512 13.2112 12.8842 15.2703 12.7496C16.1344 12.6931 16.8271 12.0132 16.8999 11.1504C17.0122 9.82007 17.0674 8.66017 17.0674 7.66783C17.0674 6.68758 17.0135 5.5437 16.904 4.23347C16.831 3.35985 16.1228 2.67507 15.2471 2.63143C12.8258 2.5108 10.9557 2.45117 9.62988 2.45117ZM3.92752 0.883557C6.35769 0.762426 8.26086 0.701172 9.62988 0.701172C10.999 0.701172 12.9029 0.76247 15.3342 0.8836C17.0854 0.970865 18.5019 2.34041 18.6479 4.08768C18.7603 5.43219 18.8174 6.62649 18.8174 7.66783C18.8174 8.72195 18.7589 9.93277 18.6437 11.2976C18.4981 13.0231 17.1125 14.3828 15.3845 14.4958C13.2948 14.6325 11.3763 14.7012 9.62988 14.7012C7.88369 14.7012 5.96584 14.6325 3.87732 14.4959C2.14989 14.3829 0.764569 13.0241 0.618256 11.2992C0.501665 9.9247 0.442383 8.71319 0.442383 7.66783C0.442383 6.63503 0.500254 5.44009 0.61407 4.08606C0.760889 2.3395 2.17699 0.970824 3.92752 0.883557Z" fill="url(#paint0_linear)" fill-opacity="0.65" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.44335 5.78018C7.44335 4.80402 8.55148 4.17853 9.3908 4.74285L12.2771 6.68361C13.0033 7.17182 13.0177 8.26909 12.269 8.76389L9.38273 10.6715C8.57182 11.2075 7.44335 10.6354 7.44335 9.62882V5.78018ZM9.19335 6.71891L10.6784 7.71749L9.19335 8.699V6.71891Z" fill="url(#paint1_linear)" fill-opacity="0.65" />
+            <defs>
+              <linearGradient id="paint0_linear" x1="9.62988" y1="0.701172" x2="9.62988" y2="14.7012" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#CE9D20" />
+                <stop offset="0.583333" stop-color="#D6A526" />
+                <stop offset="1" stop-color="#DFAD2D" />
+              </linearGradient>
+              <linearGradient id="paint1_linear" x1="9.62988" y1="0.701172" x2="9.62988" y2="14.7012" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#CE9D20" />
+                <stop offset="0.583333" stop-color="#D6A526" />
+                <stop offset="1" stop-color="#DFAD2D" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <input class="popup-form__input" type="text" name="reviews-link" id="reviews_videolink" placeholder="Ссылка на видео отзыв">
+      </div>
+      <div class="popup-form-item">
+        <textarea class="popup-form__textarea" placeholder="Текст сообщения..." name="reviews_message"></textarea>
+      </div>
+      <div class="popup-form-item popup-form-item_right">
+        <div class="fileinput">
+          <input class="fileinput__input" type="file" name="reviews_file" id="fileinput" data-multiple-caption="{count} файлa(ов) выбрано" multiple>
+          <label class="fileinput__label" for="fileinput">Прикрепить фото</label>
+        </div>
       </div>
       <div class="popup-form-item popup-form-item_center">
         <button class="popup-form__btn submit" type="submit">Отправить</button>
